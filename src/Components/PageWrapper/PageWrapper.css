@@ -1,0 +1,11 @@
+.page-wrapper {
+    width: 90vw;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 0px; /* Adiciona um espaçamento interno */
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    box-sizing: border-box; /* Inclui padding e border no cálculo de largura */
+    margin-bottom: 50px;
+  }
+  

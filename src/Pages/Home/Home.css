@@ -1,0 +1,127 @@
+/* Home.css */
+
+.home-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Permite que a altura cresça além da viewport */
+  flex-direction: column;
+  gap: 0px;
+}
+
+
+.content-box {
+  position: relative;
+  width: 80%; /* Ajuste conforme necessário */
+  max-width: 100%;
+  height: 80vh;
+  background-image: url('../../Images/foto-bebe.jpg'); /* Substitua com o caminho da sua imagem */
+  background-size: cover; /* Cobre todo o retângulo */
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px; /* Borda arredondada opcional */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+img.home-image {
+  width: 100%;
+  border-radius: 40px;
+}
+
+.section-about-me{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 55px;
+
+}
+
+.description-about-me, .photo-about-me{
+  width: 50%;
+  font-size: 19px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.photo-about-me{
+  width: 50%;
+  display: flex
+;
+  justify-content: center;
+}
+
+.schedule-button {
+  background-color: rgba(247, 243, 207, 0.1);;
+    color: #000;
+    display: flex;
+    border: none;
+    margin: auto;
+    border: 3px solid white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.schedule-button:hover {
+  background-color: none;
+  border: 4px solid white;
+}
+
+.message-home{
+  font-size: 28px;
+  color: #000;
+  font-weight: bold;
+}
+
+
+.scroll-indicator {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+  animation: bounce 2s infinite; /* Adiciona a animação */
+}
+
+.arrow-icon {
+  font-size: 24px;
+  color: #000;
+}
+
+/* Animação de "pular" */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+
+.title-about-me{
+  margin-bottom: 5px;
+  font-size: 28px;
+    color: #000;
+    font-weight: bold;
+  display: block;
+
+}

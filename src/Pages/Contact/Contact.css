@@ -1,0 +1,168 @@
+.contact-container {
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.959); /* Cor com opacidade */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title-contact .title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.title-contact .subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Always Floating Label */
+.form-group {
+  position: relative;
+  width: 100%;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 5px 10px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  background: transparent;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+label {
+  position: absolute;
+  top: -9px; /* Sempre acima */
+  left: 10px;
+  font-size: 14px; /* Fonte menor para dar espaço */
+  color: #007bff; /* Cor de destaque */
+  background: rgba(255, 255, 255, 0.959); /* Cor com opacidade */; /* Fundo para evitar sobreposição */
+  padding: 0 5px;
+  pointer-events: none; /* Evita interferência no clique */
+}
+
+.submit-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-left {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+
+.error-message {
+  color: #ff0000;
+    font-size: 14px;
+    display: contents;
+    text-align: left;
+}
+
+
+.checkbox-group {
+  display: flex
+;
+  align-items: center;
+  gap: 8px;
+  padding: 0px 0px 15px 0px;
+}
+ 
+.checkbox-group .checkbox {
+  transform: scale(0.6); /* Aumenta o tamanho do checkbox em 1.5 vezes */
+  margin: 0;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.contact-form .forms{
+  display: flex;
+  gap: 15px;
+}
+
+.card-time {
+  margin: 0 auto;
+    width: 100%;
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.959); /* Cor com opacidade */
+    margin-top: 45px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.959);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-left,.form-right{
+  width: 50%;
+}
+
+.contact-form .form-right{
+  width: 50%;
+}
+
+.card-time .right-side{
+  width: 50%;
+}
+
+.card-time .left-side{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 28px;
+}
+
+.card-time-image{
+  width: 100%;
+}
+
+img.contact-image {
+  width: 100%;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.card-time .days{
+  font-size: 20px;
+}
+
+.card-time .open{
+  font-size: 14px;
+}
+
