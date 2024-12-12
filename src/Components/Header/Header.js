@@ -1,19 +1,29 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom'; // Importando NavLink
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { HiMenu, HiX } from 'react-icons/hi'; // Ícones de menu
 import './Header.css';
-import logo from '../../Images/logo-teste.avif';
+import logo from '../../Images/logo-turtle.jpg';
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="header">
       <div className="logo-header">
         <img src={logo} alt="Logo" className="logo" />
       </div>
-      <nav className="nav">
+      <div className="menu-icon" onClick={toggleMenu}>
+        {isMenuOpen ? <HiX size={30} /> : <HiMenu size={30} />}
+      </div>
+      <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
         <NavLink 
           to="/" 
-          className={({ isActive }) => `nav-link ${isActive ? 'active-link' : ''}`} 
+          className={({ isActive }) => `nav-link ${isActive ? 'active-link' : ''}`}
           exact
         >
           Home
@@ -22,7 +32,7 @@ const Header = () => {
           to="/gallery" 
           className={({ isActive }) => `nav-link ${isActive ? 'active-link' : ''}`}
         >
-          Photos Galerry
+          Photos Gallery
         </NavLink>
         <NavLink 
           to="/contact" 

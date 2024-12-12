@@ -116,12 +116,26 @@ img.home-image {
   }
 }
 
-
 .title-about-me{
   margin-bottom: 5px;
   font-size: 28px;
     color: #000;
     font-weight: bold;
   display: block;
+}
 
+/* Responsividade */
+@media (max-width: 700px) {
+  .content-box{
+    width: 90%;
+  }
+
+  .section-about-me{
+    width: 90%;
+    flex-direction: column;
+  }
+  
+  .description-about-me, .photo-about-me{
+    width: 100%;
+  }
 }

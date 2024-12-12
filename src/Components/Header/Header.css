@@ -1,69 +1,92 @@
+/* Container principal */
 .header {
   display: flex;
-  background-color: rgba(247, 243, 207, 0.1); /* Cor com opacidade */
-  padding: 10px 20px;
   align-items: center;
+  justify-content: space-between;
+  background-color: #333c51;
+  padding: 10px 20px;
   position: sticky;
   top: 0px;
-  backdrop-filter: blur(5px); /* Aplica um desfoque no fundo da header */
   z-index: 999999;
+  backdrop-filter: blur(5px);
 }
 
-  
-  .nav {
+/* Logo */
+.logo-header {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 170px;
+  height: 68px;
+  object-fit: cover;
+}
+
+/* Links de navegação */
+.nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.nav-link {
+  text-decoration: none;
+  color: #a2c037;
+  padding: 5px 10px;
+}
+.nav-link:hover {
+  border-bottom: 2px solid #a2c037;
+}
+.active-link {
+  border-bottom: 2px solid #a2c037;
+}
+
+/* Ícone do menu hambúrguer */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+/* Redes sociais */
+.social-links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.social-icon {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+  .menu-icon {
     display: flex;
-    justify-content: center;
-    gap: 20px;
   }
-  
-  .nav-link {
-    text-decoration: none;
-    color: #333;
-    padding: 5px 10px;
-    border: none;
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
-  
-  .nav-link:hover {
-    color: #000;
-    border-bottom: 2px solid #302F2F;
+
+  .nav.open {
+    display: flex;
   }
-  
-  .active-link {
-    color: #000;
-    border-bottom: 2px solid #302F2F; /* Adiciona a borda ao link ativo */
-  }
-  
 
   .social-links {
-    display: flex;
-    gap: 10px;
-    margin-left: auto;
-    align-items: center;
+    display: none;
+    
   }
-  
-  .social-icon {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.2s;
-  }
-  
-  .social-icon:hover {
-    transform: scale(1.2);
-  }
-
-  
-  .logo-header {
-    display: flex;
-    align-items: center;
-    margin-right: auto;
-  }
-  
-  .logo {
-    width: 170px;
-    height: 68px;
-    object-fit: cover;
-  }
-  
-  
+}

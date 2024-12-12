@@ -7,5 +7,13 @@
     align-items: center; /* Centraliza o conteúdo horizontalmente */
     box-sizing: border-box; /* Inclui padding e border no cálculo de largura */
     margin-bottom: 50px;
+    margin-top: 50px;
   }
+
+  /* Responsividade */
+@media (max-width: 700px) {
+  .page-wrapper{
+    width: 100vw;
+  }
+}
   

@@ -166,3 +166,20 @@ img.contact-image {
   font-size: 14px;
 }
 
+
+@media (max-width: 700px) {
+  .contact-form .forms {
+    flex-direction: column;
+  }
+
+  .contact-form .form-left,.contact-form  .form-right{
+    width: 100%;
+  }
+
+  .contact-container,.card-time{
+  max-width: 90%;
+}
+.card-time .left-side{
+  padding-left: 10px;
+}
+}
