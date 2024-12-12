@@ -54,26 +54,30 @@ label {
   top: -9px; /* Sempre acima */
   left: 10px;
   font-size: 14px; /* Fonte menor para dar espaço */
-  color: #007bff; /* Cor de destaque */
+  color: #a2c037; /* Cor de destaque */
   background: rgba(255, 255, 255, 0.959); /* Cor com opacidade */; /* Fundo para evitar sobreposição */
   padding: 0 5px;
   pointer-events: none; /* Evita interferência no clique */
 }
 
+.terms-submit{
+  color:#a2c037;
+}
+
 .submit-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
-  background-color: #007bff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333c51;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #a2c037;
 }
 
 .submit-button:hover {
-  background-color: #0056b3;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 

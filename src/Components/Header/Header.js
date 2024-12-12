@@ -43,12 +43,13 @@ const Header = () => {
       </nav>
       <div className="social-links">
         <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-          <FaInstagram size={26} color="#E4405F" />
+          <FaInstagram size={26} color="#a2c037" />
         </a>
         <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-          <FaFacebook size={26} color="#1877F2" />
+          <FaFacebook size={26} color="#a2c037" />
         </a>
       </div>
+
     </header>
   );
 };

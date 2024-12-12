@@ -71,7 +71,7 @@ img.home-image {
     display: flex;
     border: none;
     margin: auto;
-    border: 3px solid white;
+    border: 3px solid #a2c037;
     padding: 10px 20px;
     font-size: 1rem;
     border-radius: 8px;
@@ -81,12 +81,12 @@ img.home-image {
 
 .schedule-button:hover {
   background-color: none;
-  border: 4px solid white;
+  border: 4px solid #a2c037;
 }
 
 .message-home{
   font-size: 28px;
-  color: #000;
+  color: #333c51;
   font-weight: bold;
 }
 
