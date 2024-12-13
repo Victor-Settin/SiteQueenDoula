@@ -6,13 +6,13 @@
   background-color: #333c51;
   padding: 10px 20px;
   position: sticky;
-  top: 0px;
+  top: 0;
   z-index: 999999;
-  backdrop-filter: blur(5px);
 }
 
 /* Logo */
 .logo-header {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -20,6 +20,44 @@
   width: 170px;
   height: 68px;
   object-fit: cover;
+}
+
+/* Linha curvada */
+.curved-line-container-1 {
+  position: absolute;
+    bottom: -4px;
+    left: 180%;
+    transform: translateX(-40%);
+    width: 110px;
+    height: 101%;
+    border: 0px;
+    transform: rotate(123deg);
+}
+
+/* Linha curvada */
+.curved-line-container-2 {
+  position: absolute;
+  bottom: 19px;
+  right: 5%;
+  transform: translateX(-40%);
+  width: 178px;
+  height: 110%;
+  border: 0px;
+  transform: rotate(328deg);
+}
+
+.curved-line {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.curved-line-2 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 /* Links de navegação */
@@ -87,6 +125,5 @@
 
   .social-links {
     display: none;
-    
   }
 }

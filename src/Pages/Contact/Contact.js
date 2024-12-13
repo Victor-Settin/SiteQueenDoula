@@ -4,6 +4,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import bebefofo from '../../Images/bebe-fofo.jpg'; // Corrigido o caminho da imagem
 import * as yup from 'yup';
 import './Contact.css';
+import { motion } from 'framer-motion'; // Importa o framer-motion
 
 // Esquema de validação Yup
 const schema = yup.object().shape({
@@ -33,73 +34,113 @@ const Contact = () => {
   };
 
   return (
-    <div >
-        <div className="contact-container">
-           
-      <div className="title-contact">
+    <div className="contact-container">
+      <motion.div
+        className="title-contact"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
         <div className="title">Contact Us</div>
         <div className="subtitle">We'd love to hear from you!</div>
-      </div>
-      <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
-      <div className="forms">
-        <div className="form-left">
-          <div className="form-group">
-            <input
-              type="text"
-              id="first-name"
-              className="input-field"
-              {...register('firstName')}
-            />
-            <label htmlFor="first-name">First Name</label>
-            {errors.firstName && <p className="error-message">{errors.firstName.message}</p>}
+      </motion.div>
+
+      <motion.form
+        className="contact-form"
+        onSubmit={handleSubmit(onSubmit)}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.3 }}
+      >
+        <div className="forms">
+          <div className="form-left">
+            <motion.div
+              className="form-group"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.5 }}
+            >
+              <input
+                type="text"
+                id="first-name"
+                className="input-field"
+                {...register('firstName')}
+              />
+              <label htmlFor="first-name">First Name</label>
+              {errors.firstName && <p className="error-message">{errors.firstName.message}</p>}
+            </motion.div>
+            <motion.div
+              className="form-group"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.6 }}
+            >
+              <input
+                type="text"
+                id="last-name"
+                className="input-field"
+                {...register('lastName')}
+              />
+              <label htmlFor="last-name">Last Name</label>
+              {errors.lastName && <p className="error-message">{errors.lastName.message}</p>}
+            </motion.div>
+            <motion.div
+              className="form-group"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.7 }}
+            >
+              <input
+                type="email"
+                id="email"
+                className="input-field"
+                {...register('email')}
+              />
+              <label htmlFor="email">Email</label>
+              {errors.email && <p className="error-message">{errors.email.message}</p>}
+            </motion.div>
+            <motion.div
+              className="form-group"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.8 }}
+            >
+              <input
+                type="tel"
+                id="phone"
+                className="input-field"
+                {...register('phone')}
+              />
+              <label htmlFor="phone">Phone</label>
+              {errors.phone && <p className="error-message">{errors.phone.message}</p>}
+            </motion.div>
           </div>
-          <div className="form-group">
-            <input
-              type="text"
-              id="last-name"
-              className="input-field"
-              {...register('lastName')}
-            />
-            <label htmlFor="last-name">Last Name</label>
-            {errors.lastName && <p className="error-message">{errors.lastName.message}</p>}
+
+          <div className="form-right">
+            <motion.div
+              className="form-group"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.9 }}
+            >
+              <textarea
+                id="message"
+                className="input-field textarea-field"
+                rows="9"
+                {...register('message')}
+              ></textarea>
+              <label htmlFor="message">Message</label>
+              {errors.message && <p className="error-message">{errors.message.message}</p>}
+            </motion.div>
           </div>
-          <div className="form-group">
-            <input
-              type="email"
-              id="email"
-              className="input-field"
-              {...register('email')}
-            />
-            <label htmlFor="email">Email</label>
-            {errors.email && <p className="error-message">{errors.email.message}</p>}
-          </div>
-          <div className="form-group">
-            <input
-              type="tel"
-              id="phone"
-              className="input-field"
-              {...register('phone')}
-            />
-            <label htmlFor="phone">Phone</label>
-            {errors.phone && <p className="error-message">{errors.phone.message}</p>}
-          </div>
-        </div>
-       
-        <div className="form-right">
-          <div className="form-group">
-            <textarea
-              id="message"
-              className="input-field textarea-field"
-              rows="9"
-              {...register('message')}
-            ></textarea>
-            <label htmlFor="message">Message</label>
-            {errors.message && <p className="error-message">{errors.message.message}</p>}
-          </div>
-        </div>
         </div>
         <div className="form-footer">
-          <div className="checkbox-group">
+          <motion.div
+            className="checkbox-group"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1 }}
+          >
             <input
               type="checkbox"
               id="terms"
@@ -107,31 +148,45 @@ const Contact = () => {
               {...register('terms')}
             />
             <div htmlFor="terms" className="terms-submit">
-              I agree to the <a href="#terms" className="terms-link"> terms and conditions</a>
+              I agree to the <a href="#terms" className="terms-link">terms and conditions</a>
             </div>
-          </div>
+          </motion.div>
           {errors.terms && <p className="error-message">{errors.terms.message}</p>}
-          <button
+          <motion.button
             type="submit"
             className="submit-button"
             disabled={!isValid}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1.2 }}
           >
             Send Message
-          </button>
+          </motion.button>
         </div>
-      </form>
-      </div>
-      <div className="card-time">
+      </motion.form>
+
+      <motion.div
+        className="card-time"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 1.5 }}
+      >
         <div className="left-side">
-            <div className="days">
-            Monday - Sunday </div> <div className="open">Open</div>
+          <div className="days">Monday - Sunday</div>
+          <div className="open">Open</div>
         </div>
         <div className="right-side">
-            <img src={bebefofo} alt="Deusa Grega" className="contact-image" />
+          <motion.img
+            src={bebefofo}
+            alt="Deusa Grega"
+            className="contact-image"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1.8 }}
+          />
         </div>
-      </div>
+      </motion.div>
     </div>
-    
   );
 };
 

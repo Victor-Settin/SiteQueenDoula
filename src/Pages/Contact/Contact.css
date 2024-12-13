@@ -45,7 +45,7 @@
 }
 
 .input-field:focus {
-  border-color: #007bff;
+  border-color: 21688e;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
 }
 
@@ -65,16 +65,15 @@ label {
 }
 
 .submit-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #333c51;
-    background-color: #f4f4f4;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    border: 2px solid #a2c037;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #cad22b;
+  background-color: #21688e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .submit-button:hover {
@@ -164,10 +163,13 @@ img.contact-image {
 
 .card-time .days{
   font-size: 20px;
+  color: #333c51;
 }
 
 .card-time .open{
   font-size: 14px;
+  color: #333c51;
+  font-style: italic;
 }
 
 
