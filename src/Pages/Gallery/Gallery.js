@@ -1,6 +1,11 @@
 import React from 'react';
 import './Gallery.css';
-import bebefofo from '../../Images/bebe-fofo.jpg'; // Corrigido o caminho da imagem
+import img1 from '../../Images/image-2.jpeg';
+import img2 from '../../Images/image-3.jpeg';
+import img3 from '../../Images/image-4.jpeg';
+import img4 from '../../Images/image-5.jpeg';
+import img5 from '../../Images/image-6.jpeg'; 
+import img6 from '../../Images/bebe-fofo.jpg';
 import { motion } from 'framer-motion'; // Importa o framer-motion
 
 const Gallery = () => {
@@ -23,7 +28,7 @@ const Gallery = () => {
           transition={{ duration: 1.5, delay: 0.5 }} 
         >
           <motion.img 
-            src={bebefofo} 
+            src={img1} 
             alt="Deusa Grega" 
             className="gallery-image"
             initial={{ opacity: 0 }} 
@@ -31,7 +36,7 @@ const Gallery = () => {
             transition={{ duration: 1, delay: 0.5 }}
           />
           <motion.img 
-            src={bebefofo} 
+            src={img2} 
             alt="Deusa Grega" 
             className="gallery-image"
             initial={{ opacity: 0 }} 
@@ -39,7 +44,7 @@ const Gallery = () => {
             transition={{ duration: 1, delay: 0.6 }}
           />
           <motion.img 
-            src={bebefofo} 
+            src={img3} 
             alt="Deusa Grega" 
             className="gallery-image"
             initial={{ opacity: 0 }} 
@@ -47,7 +52,7 @@ const Gallery = () => {
             transition={{ duration: 1, delay: 0.7 }}
           />
           <motion.img 
-            src={bebefofo} 
+            src={img4} 
             alt="Deusa Grega" 
             className="gallery-image"
             initial={{ opacity: 0 }} 
@@ -55,7 +60,7 @@ const Gallery = () => {
             transition={{ duration: 1, delay: 0.8 }}
           />
           <motion.img 
-            src={bebefofo} 
+            src={img5} 
             alt="Deusa Grega" 
             className="gallery-image"
             initial={{ opacity: 0 }} 
@@ -63,7 +68,7 @@ const Gallery = () => {
             transition={{ duration: 1, delay: 0.9 }}
           />
           <motion.img 
-            src={bebefofo} 
+            src={img6} 
             alt="Deusa Grega" 
             className="gallery-image"
             initial={{ opacity: 0 }} 
@@ -71,7 +76,7 @@ const Gallery = () => {
             transition={{ duration: 1, delay: 1 }}
           />
           <motion.img 
-            src={bebefofo} 
+            src={img6} 
             alt="Deusa Grega" 
             className="gallery-image"
             initial={{ opacity: 0 }} 
@@ -79,7 +84,7 @@ const Gallery = () => {
             transition={{ duration: 1, delay: 1.1 }}
           />
           <motion.img 
-            src={bebefofo} 
+            src={img6} 
             alt="Deusa Grega" 
             className="gallery-image"
             initial={{ opacity: 0 }} 
