@@ -34,6 +34,7 @@
   display: flex;
   flex-direction: column;
   gap: 26px;
+  top: -50px;
 }
 
 img.home-image {
@@ -85,7 +86,7 @@ img.home-image {
 }
 
 .message-home{
-  font-size: 28px;
+  font-size: 25px;
   color: #333c51;
   font-weight: bold;
 }
@@ -124,21 +125,7 @@ img.home-image {
   display: block;
 }
 
-/* Responsividade */
-@media (max-width: 700px) {
-  .content-box{
-    width: 95%;
-  }
 
-  .section-about-me{
-    width: 95%;
-    flex-direction: column;
-  }
-  
-  .description-about-me, .photo-about-me{
-    width: 100%;
-  }
-}
 
 .recommendations-section {
   width: 60%;
@@ -205,9 +192,25 @@ img.home-image {
 }
 
 
+/* Responsividade */
 @media (max-width: 700px) {
+  .content-box{
+    width: 95%;
+  }
+
+  .section-about-me{
+    width: 95%;
+    flex-direction: column;
+  }
+  
+  .description-about-me, .photo-about-me{
+    width: 100%;
+  }
   .recommendations-section {
     width: 100%;
     margin-top: 40px;
-}
+  }
+  .content-box{
+    height: 75vh;
+  }
 }
