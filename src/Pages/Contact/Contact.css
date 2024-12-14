@@ -164,6 +164,7 @@ img.contact-image {
 .card-time .days{
   font-size: 20px;
   color: #333c51;
+  text-align: left;
 }
 
 .card-time .open{

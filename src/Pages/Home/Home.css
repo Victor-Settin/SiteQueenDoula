@@ -94,7 +94,7 @@ img.home-image {
 .scroll-indicator {
   display: flex;
   justify-content: center;
-  margin: 20px 0px;
+  margin: 20px 0px 0px 0px;
   animation: bounce 2s infinite; /* Adiciona a animação */
 }
 
@@ -138,4 +138,76 @@ img.home-image {
   .description-about-me, .photo-about-me{
     width: 100%;
   }
+}
+
+.recommendations-section {
+  width: 60%;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333c51;
+  margin-bottom: 20px;
+}
+
+.recommendation-card {
+  min-height: 350px;
+  background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #a2c037;
+}
+
+.client-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  object-fit: cover;
+}
+
+.client-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333c51;
+}
+
+.client-rating {
+  font-size: 18px;
+  color: #FFD700; /* Cor dourada para as estrelas */
+  margin: 10px 0;
+}
+
+.client-comment {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.slick-dots li button:before {
+  color: #21688e;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #a2c037;
+}
+
+.slick-slide > div {
+  margin: 0 15px; /* Define o espaçamento horizontal entre os slides */
+}
+
+.slick-list {
+  margin: 0 -15px; /* Compensa a margem extra para alinhar os slides com o contêiner */
+}
+
+
+@media (max-width: 700px) {
+  .recommendations-section {
+    width: 100%;
+    margin-top: 20px;
+}
 }

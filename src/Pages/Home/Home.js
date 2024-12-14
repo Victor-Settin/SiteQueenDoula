@@ -1,11 +1,52 @@
 import React from 'react';
 import './Home.css';
 import deusaGregaImg from '../../Images/deusa-grega.jpg'; // Corrigido o caminho da imagem
+import cliente1 from '../../Images/deusa-grega.jpg'; // Importe imagens fictícias
+import cliente2 from '../../Images/deusa-grega.jpg';
+import cliente3 from '../../Images/deusa-grega.jpg';
 import { AiOutlineCalendar } from 'react-icons/ai';
 import { FaArrowDown } from 'react-icons/fa'; // Importa o ícone da seta
 import { motion } from 'framer-motion'; // Importa o framer-motion
+import Slider from 'react-slick'; // Importa o componente Slider
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 const Home = () => {
+  const recommendations = [
+    {
+      name: "Nath",
+      image: cliente1,
+      rating: 5,
+      comment: "Excellent service, very professional and caring throughout the entire process."
+    },
+    {
+      name: "Cliente2",
+      image: cliente2,
+      rating: 4,
+      comment: "Amazing experience! Made us feel so comfortable and supported."
+    },
+    {
+      name: "Cliente3",
+      image: cliente3,
+      rating: 5,
+      comment: "Highly recommend! Great attention to detail and a very warm presence."
+    }
+  ];
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    centerMode: true, // Ativa espaçamento entre os slides
+    centerPadding: '60px' // Define o espaçamento interno
+  };
+  
+
   return (
     <div className="home-wrapper">
       <div className="content-box">
@@ -81,6 +122,23 @@ const Home = () => {
             Schedule a Free Consultation
           </motion.button>
         </div>
+      </div>
+
+      {/* Secção de recomendações */}
+      <div className="recommendations-section">
+        <h2 className="section-title">What Our Clients Say</h2>
+        <Slider {...settings}>
+          {recommendations.map((rec, index) => (
+            <div key={index} className="recommendation-card">
+              <img src={rec.image} alt={rec.name} className="client-image" />
+              <h3 className="client-name">{rec.name}</h3>
+              <div className="client-rating">
+                {"★".repeat(rec.rating)}{"☆".repeat(5 - rec.rating)}
+              </div>
+              <p className="client-comment">{rec.comment}</p>
+            </div>
+          ))}
+        </Slider>
       </div>
     </div>
   );
