@@ -22,7 +22,8 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo-header">
-        <img src={logo} alt="Logo" className="logo" />
+        <img src={logo} alt="Logo" className="logo-pc" />
+        <img src={logo} alt="Logo" className="logo-mobile" />
         {/* Linha curvada abaixo do logo */}
         <div className="curved-line-container-1">
           <svg viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg" className="curved-line">

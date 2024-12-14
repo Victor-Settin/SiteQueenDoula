@@ -16,17 +16,17 @@
   display: flex;
   align-items: center;
 }
-.logo {
-  width: 170px;
-  height: 68px;
-  object-fit: cover;
+.logo-pc {
+  max-width: 310px;
+    height: 68px;
+    object-fit: cover;
 }
 
 /* Linha curvada */
 .curved-line-container-1 {
   position: absolute;
     bottom: -4px;
-    left: 180%;
+    left: 110%;
     transform: translateX(-40%);
     width: 110px;
     height: 101%;
@@ -125,5 +125,13 @@
 
   .social-links,.curved-line-container-2,.curved-line-container-1 {
     display: none;
+  }
+  .logo-pc {
+   display: none;
+  }
+  .logo-mobile {
+    display: block;
+    width: 75%;
+    height: 60px;
   }
 }
