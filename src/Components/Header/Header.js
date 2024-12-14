@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import { HiMenu, HiX } from 'react-icons/hi';
 import './Header.css';
@@ -7,10 +7,17 @@ import logo from '../../Images/logo-turtle.jpg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation(); // Hook para detectar mudanças de rota
 
+  // Função para alternar o estado do menu
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  // Fechar o menu automaticamente quando a rota mudar
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [location]); // Quando a localização mudar (i.e., quando a rota mudar), fecha o menu
 
   return (
     <header className="header">
@@ -32,7 +39,6 @@ const Header = () => {
         <NavLink
           to="/"
           className={({ isActive }) => `nav-link ${isActive ? 'active-link' : ''}`}
-          exact
         >
           Home
         </NavLink>
@@ -51,12 +57,11 @@ const Header = () => {
       </nav>
 
       {/* Linha curvada antes das redes sociais */}
-    <div className="curved-line-container-2">
-      <svg viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg" className="curved-line-2">
-        <path d="M 0 50 Q 100 20, 200 50" stroke="#a1cf4a" fill="transparent" strokeWidth="1" />
-      </svg>
-    </div>
-
+      <div className="curved-line-container-2">
+        <svg viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg" className="curved-line-2">
+          <path d="M 0 50 Q 100 20, 200 50" stroke="#a1cf4a" fill="transparent" strokeWidth="1" />
+        </svg>
+      </div>
 
       <div className="social-links">
         <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">

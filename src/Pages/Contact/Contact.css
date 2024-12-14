@@ -42,6 +42,7 @@
   outline: none;
   background: transparent;
   transition: border-color 0.3s ease;
+  max-height: 150px;
 }
 
 .input-field:focus {
@@ -184,8 +185,14 @@ img.contact-image {
   }
 
   .contact-container,.card-time{
-  max-width: 90%;
-}
+    max-width: 95%;
+  }
+
+  .card-time{
+    width: 100%;
+    margin: 20px 0px;
+  }
+
 .card-time .left-side{
   padding-left: 10px;
 }
