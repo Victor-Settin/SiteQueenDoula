@@ -127,11 +127,11 @@ img.home-image {
 /* Responsividade */
 @media (max-width: 700px) {
   .content-box{
-    width: 90%;
+    width: 95%;
   }
 
   .section-about-me{
-    width: 90%;
+    width: 95%;
     flex-direction: column;
   }
   
@@ -208,6 +208,6 @@ img.home-image {
 @media (max-width: 700px) {
   .recommendations-section {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 }
