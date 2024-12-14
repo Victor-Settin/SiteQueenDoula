@@ -214,4 +214,10 @@ img.home-image {
   .content-box{
     height: 75vh;
   }
+  .overlay{
+    padding: 0px 5px;
+  }
+  .message-home{
+    font-size: 24px;
+  }
 }
