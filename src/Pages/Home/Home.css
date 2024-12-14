@@ -126,12 +126,11 @@ img.home-image {
   display: block;
 }
 
-
-
 .recommendations-section {
   width: 60%;
   margin: 0px auto;
   text-align: center;
+  margin-top: 25px;
 }
 
 .section-title {
@@ -191,7 +190,6 @@ img.home-image {
 .slick-list {
   margin: 0 -15px; /* Compensa a margem extra para alinhar os slides com o contêiner */
 }
-
 
 /* Responsividade */
 @media (max-width: 700px) {
