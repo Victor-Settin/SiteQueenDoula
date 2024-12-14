@@ -3,7 +3,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import { HiMenu, HiX } from 'react-icons/hi';
 import './Header.css';
-import logo from '../../Images/logo-turtle.jpg';
+import logo from '../../Images/logo-turtlev2.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
