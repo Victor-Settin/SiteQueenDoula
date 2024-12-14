@@ -101,6 +101,17 @@
   transform: scale(1.2);
 }
 
+.logo-mobile {
+  display: none;
+}
+
+@media (max-width: 900px){
+  .curved-line-container-1,.curved-line-container-2,.social-links{
+    display: none;
+  }
+}
+
+
 /* Responsividade */
 @media (max-width: 700px) {
   .menu-icon {

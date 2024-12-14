@@ -1,10 +1,28 @@
 .footer {
-    background-color: transparent;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    font-size: 14px;
-    display: block;
-  }
-  
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  font-size: 14px;
+  display: block;
+}
+
+.footer-social-links {
+  margin: 10px 0;
+}
+
+.social-icon {
+  margin: 0 10px;
+}
+
+.footer-location {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.footer p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+}
