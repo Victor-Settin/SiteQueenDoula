@@ -91,7 +91,105 @@ const Gallery = () => {
             animate={{ opacity: 1 }} 
             transition={{ duration: 1, delay: 1.2 }}
           />
-        </motion.div>
+          <motion.img 
+            src={img6} 
+            alt="Deusa Grega" 
+            className="gallery-image"
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }} 
+            transition={{ duration: 1, delay: 1.2 }}
+          />
+          <motion.img 
+            src={img6} 
+            alt="Deusa Grega" 
+            className="gallery-image"
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }} 
+            transition={{ duration: 1, delay: 1.2 }}
+          />
+          <motion.img 
+            src={img6} 
+            alt="Deusa Grega" 
+            className="gallery-image"
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }} 
+            transition={{ duration: 1, delay: 1.2 }}
+          />
+          <motion.img 
+            src={img6} 
+            alt="Deusa Grega" 
+            className="gallery-image"
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }} 
+            transition={{ duration: 1, delay: 1.2 }}
+          />
+          <motion.img 
+            src={img6} 
+            alt="Deusa Grega" 
+            className="gallery-image"
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }} 
+            transition={{ duration: 1, delay: 1.2 }}
+          />
+          <motion.img 
+            src={img6} 
+            alt="Deusa Grega" 
+            className="gallery-image"
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }} 
+            transition={{ duration: 1, delay: 1.2 }}
+          />
+          <motion.img 
+            src={img6} 
+            alt="Deusa Grega" 
+            className="gallery-image"
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }} 
+            transition={{ duration: 1, delay: 1.2 }}
+          />
+          <motion.img 
+            src={img6} 
+            alt="Deusa Grega" 
+            className="gallery-image"
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }} 
+            transition={{ duration: 1, delay: 1.2 }}
+          />
+          <motion.img 
+            src={img6} 
+            alt="Deusa Grega" 
+            className="gallery-image"
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }} 
+            transition={{ duration: 1, delay: 1.2 }}
+          />
+          <motion.img 
+            src={img6} 
+            alt="Deusa Grega" 
+            className="gallery-image"
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }} 
+            transition={{ duration: 1, delay: 1.2 }}
+          />
+          <motion.img 
+            src={img6} 
+            alt="Deusa Grega" 
+            className="gallery-image"
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }} 
+            transition={{ duration: 1, delay: 1.2 }}
+          />
+          <motion.img 
+            src={img6} 
+            alt="Deusa Grega" 
+            className="gallery-image"
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }} 
+            transition={{ duration: 1, delay: 1.2 }}
+          />
+          </motion.div>
+
+          
       </div>
     </div>
   );
