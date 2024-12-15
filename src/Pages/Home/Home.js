@@ -37,7 +37,7 @@ const Home = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -135,11 +135,13 @@ const Home = () => {
               <div className="client-rating">
                 {"★".repeat(rec.rating)}{"☆".repeat(5 - rec.rating)}
               </div>
+              <div className="date-time">12/12/2024</div>
               <p className="client-comment">{rec.comment}</p>
             </div>
           ))}
         </Slider>
       </div>
+      <div> adsdsa</div>
     </div>
   );
 };

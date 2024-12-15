@@ -141,8 +141,8 @@ img.home-image {
 }
 
 .recommendation-card {
-  min-height: 350px;
-  background-color: #fff;
+    min-height: 350px;
+    background-color: #fff;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -150,8 +150,8 @@ img.home-image {
 }
 
 .client-image {
-  width: 100px;
-  height: 100px;
+  width: 95px;
+  height: 95px;
   border-radius: 50%;
   margin: 0 auto 10px;
   object-fit: cover;
@@ -166,11 +166,11 @@ img.home-image {
 .client-rating {
   font-size: 18px;
   color: #FFD700; /* Cor dourada para as estrelas */
-  margin: 10px 0;
+  margin: 5px 0px;
 }
 
 .client-comment {
-  font-size: 16px;
+  font-size: 14px;
   color: #555;
   margin-top: 10px;
 }
@@ -191,6 +191,12 @@ img.home-image {
   margin: 0 -15px; /* Compensa a margem extra para alinhar os slides com o contêiner */
 }
 
+.date-time{
+  font-size: 12px;
+    line-height: 18px;
+    color: #888;
+    display: block;
+}
 /* Responsividade */
 @media (max-width: 700px) {
   .content-box{
