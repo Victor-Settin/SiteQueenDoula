@@ -27,9 +27,6 @@ const DoulaServices = () => {
                 <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Routine strategizing and building
             </li>
             <li>
-                <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Navigating infant feeding & lactation support
-            </li>
-            <li>
                 <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Newborn comfort techniques
             </li>
             <li>
