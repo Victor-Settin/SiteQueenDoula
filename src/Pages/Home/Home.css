@@ -191,6 +191,10 @@ img.home-image {
   margin: 0 -15px; /* Compensa a margem extra para alinhar os slides com o contêiner */
 }
 
+.content-side-about-me{
+  font-size: 18px;
+}
+
 .date-time{
   font-size: 12px;
     line-height: 18px;

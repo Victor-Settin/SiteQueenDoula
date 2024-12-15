@@ -10,6 +10,8 @@ import { motion } from 'framer-motion'; // Importa o framer-motion
 import Slider from 'react-slick'; // Importa o componente Slider
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import DoulaServices from '../../Components/DoulaServices/DoulaServices';
+import { useMediaQuery } from 'react-responsive'; // Importa o hook para responsividade
 
 const Home = () => {
   const recommendations = [
@@ -30,20 +32,53 @@ const Home = () => {
       image: cliente3,
       rating: 5,
       comment: "Highly recommend! Great attention to detail and a very warm presence."
-    }
+    }, {
+      name: "Cliente2",
+      image: cliente2,
+      rating: 4,
+      comment: "Amazing experience! Made us feel so comfortable and supported."
+    }, {
+      name: "Cliente2",
+      image: cliente2,
+      rating: 4,
+      comment: "Amazing experience! Made us feel so comfortable and supported."
+    }, {
+      name: "Cliente2",
+      image: cliente2,
+      rating: 4,
+      comment: "Amazing experience! Made us feel so comfortable and supported."
+    }, {
+      name: "Cliente2",
+      image: cliente2,
+      rating: 4,
+      comment: "Amazing experience! Made us feel so comfortable and supported."
+    }, {
+      name: "Cliente2",
+      image: cliente2,
+      rating: 4,
+      comment: "Amazing experience! Made us feel so comfortable and supported."
+    }, {
+      name: "Cliente2",
+      image: cliente2,
+      rating: 4,
+      comment: "Amazing experience! Made us feel so comfortable and supported."
+    },
   ];
+
+   // Define a lógica para diferentes tamanhos de tela
+   const isSmallScreen = useMediaQuery({ maxWidth: 400 });
 
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
     centerMode: true, // Ativa espaçamento entre os slides
-    centerPadding: '60px' // Define o espaçamento interno
+    centerPadding: isSmallScreen ? '100px' : '280px', // Muda dinamicamente
   };
   
 
@@ -141,7 +176,7 @@ const Home = () => {
           ))}
         </Slider>
       </div>
-      <div> adsdsa</div>
+      <DoulaServices></DoulaServices>
     </div>
   );
 };

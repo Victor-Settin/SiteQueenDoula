@@ -1,0 +1,75 @@
+.doula-services {
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 40px 0;
+    margin-top: 55px;
+  }
+  
+  .doula-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .doula-left {
+    flex: 1;
+    padding-right: 30px;
+  }
+  
+  .doula-description {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333c51;
+  }
+  
+  .doula-list {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+  }
+  
+  .doula-footer {
+    font-style: italic;
+    color: #a2c037;
+    margin-top: 10px;
+    display: block;
+  }
+  
+  .doula-right {
+    flex: 1;
+    padding-left: 30px;
+    border-left: 1px solid #ddd;
+  }
+  
+  .doula-right h3 {
+    color: #8b6f5a;
+    margin-bottom: 10px;
+  }
+  
+  .support-list {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+  }
+  
+  .support-list span {
+    font-size: 1.2rem;
+    margin-right: 5px;
+  }
+  
+  .invite-button {
+    background-color: #b65d4c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+  
+  .invite-button:hover {
+    background-color: #9d4b3d;
+  }
+  
