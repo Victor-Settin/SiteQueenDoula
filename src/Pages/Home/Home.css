@@ -23,7 +23,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 10px; /* Borda arredondada opcional */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 }
 
 .overlay {

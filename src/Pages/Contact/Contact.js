@@ -5,6 +5,7 @@ import bebefofo from '../../Images/bebe-fofo.jpg'; // Corrigido o caminho da ima
 import * as yup from 'yup';
 import './Contact.css';
 import { motion } from 'framer-motion'; // Importa o framer-motion
+import { FaPaperPlane } from 'react-icons/fa'; // Importar o ícone
 
 // Esquema de validação Yup
 const schema = yup.object().shape({
@@ -153,15 +154,15 @@ const Contact = () => {
           </motion.div>
           {errors.terms && <p className="error-message">{errors.terms.message}</p>}
           <motion.button
-            type="submit"
-            className="submit-button"
-            disabled={!isValid}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1.2 }}
-          >
-            Send Message
-          </motion.button>
+              type="submit"
+              className="submit-button"
+              disabled={!isValid}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 1.2 }}
+            >
+              Send Message <FaPaperPlane className="icon" />
+            </motion.button>
         </div>
       </motion.form>
 
