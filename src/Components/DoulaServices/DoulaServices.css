@@ -3,6 +3,7 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     padding: 40px 0;
     margin-top: 55px;
+    width: 77%;
   }
   
   .doula-container {
@@ -82,6 +83,9 @@
         line-height: 1.8;
         text-align: justify;
         font-size: 18px;
+    }
+    .doula-services {
+      width: 95%;
     }
   }
   
