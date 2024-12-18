@@ -8,6 +8,8 @@ import AnimatedBackground from './Components/AnimatedBackground/AnimatedBackgrou
 import Contact from './Pages/Contact/Contact';
 import Gallery from './Pages/Gallery/Gallery';
 import Footer from './Components/Footer/Footer';
+import { Toaster } from 'react-hot-toast';
+
 
 function App() {
   return (
@@ -29,11 +31,15 @@ function App() {
           </PageWrapper>
 
           {/* Rodapé com visibilidade condicional */}
-          <Footer /> 
+          <Footer />
         </div>
       </Router>
+
+      {/* Toast container para notificações */}
+      <Toaster position="top-center" /> 
     </>
   );
 }
+
 
 export default App;

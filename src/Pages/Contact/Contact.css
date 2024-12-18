@@ -24,7 +24,7 @@
 .contact-form {
   display: flex;
   gap: 15px;
-  width: 50%;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   margin: auto;
@@ -78,7 +78,8 @@ label {
   left: 10px;
   font-size: 14px; /* Fonte menor para dar espaço */
   color: #a2c037; /* Cor de destaque */
-  background: rgba(255, 255, 255, 0.959); /* Cor com opacidade */; /* Fundo para evitar sobreposição */
+  background: rgba(255, 255, 255, 0.879);
+  border-radius: 5px; /* Cor com opacidade */; /* Fundo para evitar sobreposição */
   padding: 0 5px;
   pointer-events: none; /* Evita interferência no clique */
 }
@@ -147,6 +148,7 @@ label {
 .contact-form .forms{
   display: flex;
   gap: 15px;
+  width:70%
 }
 
 .card-time {
@@ -217,9 +219,26 @@ textarea{
     max-width: 95%;
   }
 
+  .contact-form .forms {
+    display: flex
+;
+    gap: 15px;
+    width: 100%;
+    flex-direction: column;
+}
+
   textarea{
-    min-height: 122px;
+    max-height: 122px;
   }
+
+  .contact-form .form-left,.form-right{
+    width: 100%;
+  }
+  
+  .contact-form .form-right{
+    width: 100%;
+  }
+  
 
 }
 
