@@ -205,6 +205,9 @@ img.contact-image {
   font-style: italic;
 }
 
+textarea{
+  min-height: 150px;
+}
 
 @media (max-width: 700px) {
   .contact-form{
@@ -212,6 +215,10 @@ img.contact-image {
   }
   .contact-container{
     max-width: 95%;
+  }
+
+  textarea{
+    min-height: 122px;
   }
 
 }
