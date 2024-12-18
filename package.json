@@ -44,5 +44,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "description test",
+  "main": "index.js",
+  "repository": "https://github.com/Victor-Settin/SiteRaquel.git",
+  "author": "Victor Settin <victor.profissional22@gmail.com>",
+  "license": "MIT"
 }

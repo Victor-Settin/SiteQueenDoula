@@ -158,7 +158,7 @@ const Home = () => {
           </motion.button>
         </div>
       </div>
-
+      <DoulaServices></DoulaServices>
       {/* Secção de recomendações */}
       <div className="recommendations-section">
         <h2 className="section-title">What Our Clients Say</h2>
@@ -176,7 +176,7 @@ const Home = () => {
           ))}
         </Slider>
       </div>
-      <DoulaServices></DoulaServices>
+      
     </div>
   );
 };
