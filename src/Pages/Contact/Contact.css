@@ -23,8 +23,12 @@
 
 .contact-form {
   display: flex;
-  flex-direction: column;
   gap: 15px;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  
 }
 
 /* Always Floating Label */
@@ -47,6 +51,25 @@
 .input-field:focus {
   border-color: 21688e;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.input-field:focus {
+  border-color: #007bff;
+}
+
+.error .input-field {
+  border-color: #e74c3c;
+  background-color: #ffe6e6;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.checkbox.error {
+  border: 1px solid #e74c3c;
 }
 
 label {
@@ -184,29 +207,13 @@ img.contact-image {
 
 
 @media (max-width: 700px) {
-  .contact-form .forms {
-    flex-direction: column;
-  }
-
-  .contact-form .form-left,.contact-form  .form-right{
+  .contact-form{
     width: 100%;
   }
-
-  .contact-container,.card-time{
+  .contact-container{
     max-width: 95%;
   }
 
-  .card-time{
-    width: 100%;
-    margin: 20px 0px;
-  }
-
-.card-time .left-side{
-  padding-left: 10px;
-}
-.contact-container{
-  padding: 10px;
-}
 }
 
 a.terms-link {

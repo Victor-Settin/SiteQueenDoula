@@ -12,8 +12,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import DoulaServices from '../../Components/DoulaServices/DoulaServices';
 import { useMediaQuery } from 'react-responsive'; // Importa o hook para responsividade
+import { useNavigate } from 'react-router-dom'; // Importar o hook useNavigate
 
 const Home = () => {
+  const navigate = useNavigate(); // Usar o hook useNavigate
+
+  // Função para redirecionar para a página de Contato
+  const handleContactClick = () => {
+    navigate('/contact'); // Redireciona para a página /contact
+  };
+
   const recommendations = [
     {
       name: "Nath",
@@ -32,41 +40,12 @@ const Home = () => {
       image: cliente3,
       rating: 5,
       comment: "Highly recommend! Great attention to detail and a very warm presence."
-    }, {
-      name: "Cliente2",
-      image: cliente2,
-      rating: 4,
-      comment: "Amazing experience! Made us feel so comfortable and supported."
-    }, {
-      name: "Cliente2",
-      image: cliente2,
-      rating: 4,
-      comment: "Amazing experience! Made us feel so comfortable and supported."
-    }, {
-      name: "Cliente2",
-      image: cliente2,
-      rating: 4,
-      comment: "Amazing experience! Made us feel so comfortable and supported."
-    }, {
-      name: "Cliente2",
-      image: cliente2,
-      rating: 4,
-      comment: "Amazing experience! Made us feel so comfortable and supported."
-    }, {
-      name: "Cliente2",
-      image: cliente2,
-      rating: 4,
-      comment: "Amazing experience! Made us feel so comfortable and supported."
-    }, {
-      name: "Cliente2",
-      image: cliente2,
-      rating: 4,
-      comment: "Amazing experience! Made us feel so comfortable and supported."
-    },
+    }, 
+    // Mais recomendações
   ];
 
-   // Define a lógica para diferentes tamanhos de tela
-   const isSmallScreen = useMediaQuery({ maxWidth: 400 });
+  // Define a lógica para diferentes tamanhos de tela
+  const isSmallScreen = useMediaQuery({ maxWidth: 400 });
 
   const settings = {
     dots: true,
@@ -104,6 +83,7 @@ const Home = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.5 }}
+            onClick={handleContactClick} // Ação ao clicar
           >
             <AiOutlineCalendar style={{ marginRight: '8px', fontSize: '20px' }} />
             Schedule a Free Consultation
@@ -152,6 +132,7 @@ const Home = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 2, delay: 1.8 }}
+            onClick={handleContactClick} // Ação ao clicar
           >
             <AiOutlineCalendar style={{ marginRight: '8px', fontSize: '20px' }} />
             Schedule a Free Consultation
@@ -176,7 +157,6 @@ const Home = () => {
           ))}
         </Slider>
       </div>
-      
     </div>
   );
 };
