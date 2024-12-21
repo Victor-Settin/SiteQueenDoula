@@ -8,7 +8,7 @@ const Footer = () => {
 
       {/* Localização */}
       <div className="footer-location">
-        <p>Location:Some City, Country</p>
+        <p>Location: San Mateo, CA</p>
       </div>
 
       {/* Copyright */}

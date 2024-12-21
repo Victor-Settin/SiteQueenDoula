@@ -6,19 +6,16 @@ const DoulaServices = () => {
     <section className="doula-services">
       <div className="doula-container">
         <div className="doula-left">
-          <div className="section-title">Postartum Doulas: What We Do</div>
+          <div className="section-title">Postpartum Doula: What I Do</div>
           <p className="doula-description">
             <strong>
-              Postpartum Doula services are tailored to your family’s needs and include the following:
+              Postpartum Doula services are customized to your family’s needs and include the following:
             </strong>
           </p>
           <ul className="doula-list">
             
             <li>
-                <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Postpartum recovery and self-care
-            </li>
-            <li>
-                <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Exploring parenting styles
+                <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Postpartum recovery 
             </li>
             <li>
                 <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Partner support
@@ -39,7 +36,7 @@ const DoulaServices = () => {
                 <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Newborn product and safety information
             </li>
             <li>
-                <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Day-to-day light housekeeping & laundry
+                <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Day to day baby related house cleaning and laundry
             </li>
             <li>
                 <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Meal preparation
@@ -53,7 +50,7 @@ const DoulaServices = () => {
             </ul>
 
           <em className="doula-footer">
-            We provide solutions, or we have a personally vetted referral for the solution!
+              Doulas: because every family deserves care and support.
           </em>
         </div>
       </div>

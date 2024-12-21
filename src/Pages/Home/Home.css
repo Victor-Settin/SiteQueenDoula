@@ -68,7 +68,7 @@ img.home-image {
 
 .schedule-button {
   background-color: rgba(247, 243, 207, 0.1);;
-    color: #000;
+    color: #29344e;
     display: flex;
     border: none;
     margin: auto;
@@ -193,6 +193,7 @@ img.home-image {
 
 .content-side-about-me{
   font-size: 18px;
+  color: #29344e;
 }
 
 .date-time{

@@ -7,7 +7,6 @@ import './Contact.css';
 import { motion } from 'framer-motion';
 import { FaPaperPlane } from 'react-icons/fa';
 import { toast } from 'react-hot-toast'; // Importando o toast do react-hot-toast
-import { Toaster } from 'react-hot-toast'; // Importando o Toaster para renderizar o toast
 
 // Esquema de validação Yup
 const schema = yup.object().shape({
@@ -57,13 +56,25 @@ const Contact = () => {
       .then(
         (response) => {
           // Notificação de sucesso
-          toast.success('Message sent successfully!');
+          toast.success('Message sent successfully!', {
+            duration: 3000, // Duração do popup
+            style: {
+              backgroundColor: '#4CAF50', // Cor de fundo verde (sucesso)
+              color: 'white', // Cor do texto
+            },
+          });
           console.log('Email sent successfully:', response);
           reset();
         },
         (error) => {
           // Notificação de erro
-          toast.error('Failed to send message. Please try again.');
+          toast.error('Failed to send message. Please try again.', {
+            duration: 3000, // Duração do popup
+            style: {
+              backgroundColor: '#f44336', // Cor de fundo vermelha (erro)
+              color: 'white', // Cor do texto
+            },
+          });
           console.log('Error sending email:', error);
         }
       );
@@ -77,8 +88,8 @@ const Contact = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <div className="title">Contact Us</div>
-        <div className="subtitle">We'd love to hear from you!</div>
+        <div className="title">Contact Me</div>
+        <div className="subtitle">I'd love to hear from you!</div>
       </motion.div>
 
       <motion.form
@@ -155,9 +166,6 @@ const Contact = () => {
           </button>
         </div>
       </motion.form>
-
-      {/* Toast Container para exibir as notificações */}
-      <Toaster position="top-center" />
     </div>
   );
 };

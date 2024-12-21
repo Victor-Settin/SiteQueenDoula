@@ -70,6 +70,7 @@
   text-decoration: none;
   color: #a2c037;
   padding: 5px 10px;
+  font-size: 18px;
 }
 .nav-link:hover {
   border-bottom: 2px solid #a2c037;
@@ -108,7 +109,7 @@
 @media (max-width: 900px){
   .curved-line-container-1,.curved-line-container-2,.social-links{
     display: none;
-  }
+  } 
 }
 
 

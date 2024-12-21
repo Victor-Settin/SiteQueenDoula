@@ -72,9 +72,9 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }} // Aparece com opacidade e se move para a posição original
             transition={{ duration: 2, ease: 'easeOut' }} // Duração e suavização
           >
-            Bundles of Joy Doula Services
+           Purple Turtle Nanny & Doula Services
             <br />
-            Bay Area Birth Doula
+            Bay Area Doula Postpartum
           </motion.div>
 
           {/* Animação do botão */}
@@ -120,12 +120,10 @@ const Home = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 1.5 }}
             >
-              About Bundles of Joy
+              About Me
             </motion.b>
             <br />
-            At Bundles of Joy, Kim Knapp, a San Francisco-based birth doula, provides compassionate, evidence-based support for families through pregnancy, birth, and postpartum. With a love for childbirth woven into her DNA, Kim brings a wealth of experience, empathy, and advocacy to every birthing journey.
-
-            As a proud member of the LGBTQ+ community, Kim is committed to creating safe, inclusive spaces for all families. Whether you’re expecting your first child or adding to your growing family, Kim’s warm presence and treasure chest of tools ensure you’ll feel prepared for an amazing birth experience.
+            aqui
           </div>
           <motion.button
             className="schedule-button"
