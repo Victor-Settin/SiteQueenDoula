@@ -9,6 +9,7 @@ import Contact from './Pages/Contact/Contact';
 import Gallery from './Pages/Gallery/Gallery';
 import Footer from './Components/Footer/Footer';
 import { Toaster } from 'react-hot-toast';
+import Success from './Pages/Success/Success';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/gallery" element={<Gallery />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/success" element={<Success />} />
             </Routes>
           </PageWrapper>
 

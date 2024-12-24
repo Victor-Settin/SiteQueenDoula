@@ -2,6 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import emailjs from 'emailjs-com';
+import { useNavigate } from 'react-router-dom'; // Importa o hook useNavigate
 import * as yup from 'yup';
 import './Contact.css';
 import { motion } from 'framer-motion';
@@ -35,44 +36,43 @@ const Contact = () => {
     mode: 'onChange',
   });
 
+  const navigate = useNavigate(); // Hook para redirecionamento
+
   const onSubmit = (data) => {
-    // Log para depuração
     console.log('Form Data Submitted:', data);
 
-    // Enviar dados para o template do EmailJS
     emailjs
       .send(
-        'ServiceIDRaquel', // Seu service ID
-        'Tamplate-Site-Raquel', // Seu template ID
+        'ServiceIDRaquel',
+        'Tamplate-Site-Raquel',
         {
-          firstName: data.firstName,   // Envia o primeiro nome
-          lastName: data.lastName,     // Envia o sobrenome
-          email: data.email,           // Envia o email
-          phone: data.phone,           // Envia o telefone
-          message: data.message,       // Envia a mensagem
+          firstName: data.firstName,
+          lastName: data.lastName,
+          email: data.email,
+          phone: data.phone,
+          message: data.message,
         },
-        'V1SwNnfO9IA43jdeT' // Sua chave pública
+        'V1SwNnfO9IA43jdeT'
       )
       .then(
         (response) => {
-          // Notificação de sucesso
           toast.success('Message sent successfully!', {
-            duration: 3000, // Duração do popup
+            duration: 3000,
             style: {
-              backgroundColor: '#4CAF50', // Cor de fundo verde (sucesso)
-              color: 'white', // Cor do texto
+              backgroundColor: '#4CAF50',
+              color: 'white',
             },
           });
           console.log('Email sent successfully:', response);
           reset();
+          navigate('/success'); // Redireciona para a página "success"
         },
         (error) => {
-          // Notificação de erro
           toast.error('Failed to send message. Please try again.', {
-            duration: 3000, // Duração do popup
+            duration: 3000,
             style: {
-              backgroundColor: '#f44336', // Cor de fundo vermelha (erro)
-              color: 'white', // Cor do texto
+              backgroundColor: '#f44336',
+              color: 'white',
             },
           });
           console.log('Error sending email:', error);
@@ -94,7 +94,7 @@ const Contact = () => {
 
       <motion.form
         className="contact-form"
-        onSubmit={handleSubmit(onSubmit)}  // O onSubmit é chamado aqui
+        onSubmit={handleSubmit(onSubmit)}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.3 }}
@@ -159,7 +159,7 @@ const Contact = () => {
         <div className="form-footer">
           {errors.terms && <p className="error-message">{errors.terms.message}</p>}
           <button
-            type="submit" // Mudei para "submit" para enviar o formulário
+            type="submit"
             className="submit-button"
           >
             Send Message <FaPaperPlane className="icon" />

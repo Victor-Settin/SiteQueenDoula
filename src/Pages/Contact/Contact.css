@@ -238,7 +238,17 @@ textarea{
   .contact-form .form-right{
     width: 100%;
   }
-  
+  .section-title{
+    font-size: 22px;
+  }
+
+  .doula-description{
+    font-size: 16px;
+  }
+
+  .doula-footer{
+    font-size: 16px;
+  }
 
 }
 

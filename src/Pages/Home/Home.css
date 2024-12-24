@@ -16,7 +16,7 @@
   width: 80%; /* Ajuste conforme necessário */
   max-width: 100%;
   height: 80vh;
-  background-image: url('../../Images/foto-bebe.jpg'); /* Substitua com o caminho da sua imagem */
+  background-image: url('../../Images/pixelcut-export.jpeg'); /* Substitua com o caminho da sua imagem */
   background-size: cover; /* Cobre todo o retângulo */
   background-position: center;
   display: flex;

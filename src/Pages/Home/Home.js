@@ -72,22 +72,8 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }} // Aparece com opacidade e se move para a posição original
             transition={{ duration: 2, ease: 'easeOut' }} // Duração e suavização
           >
-           Purple Turtle Nanny & Doula Services
-            <br />
-            Bay Area Doula Postpartum
+        
           </motion.div>
-
-          {/* Animação do botão */}
-          <motion.button
-            className="schedule-button"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1.5 }}
-            onClick={handleContactClick} // Ação ao clicar
-          >
-            <AiOutlineCalendar style={{ marginRight: '8px', fontSize: '20px' }} />
-            Schedule a Free Consultation
-          </motion.button>
         </div>
       </div>
 
