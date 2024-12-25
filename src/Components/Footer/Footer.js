@@ -12,7 +12,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <p>&copy; {new Date().getFullYear()} By Victor Settin. All rights reserved.</p>
+      <p>Copyright &copy; {new Date().getFullYear()} turtlenewbornchildcare.com - All Rights Reserved.</p>
     </footer>
   );
 };

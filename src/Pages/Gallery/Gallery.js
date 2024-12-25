@@ -14,7 +14,7 @@ const Gallery = () => {
         className="title"
         initial={{ opacity: 0 }} 
         animate={{ opacity: 1 }} 
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.5 }}
       >
         Photo Gallery
       </motion.div>
@@ -24,7 +24,7 @@ const Gallery = () => {
           className="photos-grid"
           initial={{ opacity: 0 }} 
           animate={{ opacity: 1 }} 
-          transition={{ duration: 1.5, delay: 0.5 }} 
+          transition={{ duration: 0.7, delay: 0.5 }} 
         >
           <motion.img 
             src={img1} 
@@ -32,7 +32,7 @@ const Gallery = () => {
             className="gallery-image"
             initial={{ opacity: 0 }} 
             animate={{ opacity: 1 }} 
-            transition={{ duration: 1, delay: 0.5 }}
+            transition={{ duration: 0.7, delay: 0.5 }}
           />
           <motion.img 
             src={img2} 
@@ -40,7 +40,7 @@ const Gallery = () => {
             className="gallery-image"
             initial={{ opacity: 0 }} 
             animate={{ opacity: 1 }} 
-            transition={{ duration: 1, delay: 0.6 }}
+            transition={{ duration: 0.7, delay: 0.6 }}
           />
           <motion.img 
             src={img5} 
@@ -48,7 +48,7 @@ const Gallery = () => {
             className="gallery-image"
             initial={{ opacity: 0 }} 
             animate={{ opacity: 1 }} 
-            transition={{ duration: 1, delay: 0.7 }}
+            transition={{ duration: 0.7, delay: 0.7 }}
           />
           <motion.img 
             src={img4} 
@@ -56,7 +56,7 @@ const Gallery = () => {
             className="gallery-image"
             initial={{ opacity: 0 }} 
             animate={{ opacity: 1 }} 
-            transition={{ duration: 1, delay: 0.8 }}
+            transition={{ duration: 0.7, delay: 0.8 }}
           />
           <motion.img 
             src={img3} 
@@ -64,7 +64,7 @@ const Gallery = () => {
             className="gallery-image"
             initial={{ opacity: 0 }} 
             animate={{ opacity: 1 }} 
-            transition={{ duration: 1, delay: 0.9 }}
+            transition={{ duration: 0.7, delay: 0.9 }}
           />
           </motion.div>
       </div>
