@@ -22,15 +22,18 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo-header">
-        <img src={logo} alt="Logo" className="logo-pc" />
-        <img src={logo} alt="Logo" className="logo-mobile" />
+        <NavLink to="/" className="logo-link">
+          <img src={logo} alt="Logo" className="logo-pc" />
+          <img src={logo} alt="Logo" className="logo-mobile" />
+        </NavLink>
         {/* Linha curvada abaixo do logo */}
         <div className="curved-line-container-1">
           <svg viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg" className="curved-line">
             <path d="M 0 20 Q 50 10, 100 20" stroke="#a1cf4a" fill="transparent" strokeWidth="1" />
           </svg>
         </div>
-      </div>
+</div>    
+
 
       <div className="menu-icon" onClick={toggleMenu}>
         {isMenuOpen ? <HiX size={40} color="#a2c037" /> : <HiMenu size={40} color="#a2c037" />}
