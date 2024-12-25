@@ -61,4 +61,8 @@
   .gallery-container{
     max-width: 95%;
   }
+
+  .photos-grid,.gallery-container{
+    gap: 10px;
+  }
 }
