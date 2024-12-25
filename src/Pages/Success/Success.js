@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Success.css';
 
 const Success = () => {
   const navigate = useNavigate(); // Hook para navegação
@@ -9,7 +10,7 @@ const Success = () => {
   };
 
   return (
-    <div style={{ textAlign: 'center', padding: '20px' }}>
+    <div  className="success-container" >
       <h1>Message Sent Successfully!</h1>
       <p>Thank you for reaching out. I'll get back to you soon.</p>
       <button
