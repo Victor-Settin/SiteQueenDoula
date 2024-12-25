@@ -138,6 +138,7 @@ img.home-image {
   font-weight: bold;
   color: #333c51;
   margin-bottom: 20px;
+  text-wrap: nowrap;
 }
 
 .recommendation-card {
