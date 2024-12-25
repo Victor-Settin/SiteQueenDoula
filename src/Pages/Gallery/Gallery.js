@@ -1,17 +1,13 @@
 import React, { useState } from 'react';
 import './Gallery.css';
 import img1 from '../../Images/a1.jpg';
-import img2 from '../../Images/a2.jpg';
-import img3 from '../../Images/a3.jpg';
-import img4 from '../../Images/a4.jpg';
-import img5 from '../../Images/a5.jpg';
 import img6 from '../../Images/a6.jpg';
 import img7 from '../../Images/a7.jpg';
 import { motion } from 'framer-motion';
 import 'react-image-lightbox/style.css';
 import Lightbox from 'react-image-lightbox';
 
-const images = [img1, img2, img3, img4, img5, img6, img7];
+const images = [img1, img6, img7];
 
 const Gallery = () => {
   const [isOpen, setIsOpen] = useState(false);

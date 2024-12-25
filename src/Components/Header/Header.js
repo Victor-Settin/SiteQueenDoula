@@ -32,8 +32,7 @@ const Header = () => {
             <path d="M 0 20 Q 50 10, 100 20" stroke="#a1cf4a" fill="transparent" strokeWidth="1" />
           </svg>
         </div>
-</div>    
-
+      </div>    
 
       <div className="menu-icon" onClick={toggleMenu}>
         {isMenuOpen ? <HiX size={40} color="#a2c037" /> : <HiMenu size={40} color="#a2c037" />}
