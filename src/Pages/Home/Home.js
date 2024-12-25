@@ -57,7 +57,7 @@ const Home = () => {
     autoplaySpeed: 3000,
     arrows: false,
     centerMode: true, // Ativa espaçamento entre os slides
-    centerPadding: isSmallScreen ? '60px' : '200px', // Muda dinamicamente
+    centerPadding: isSmallScreen ? '60px' : '220px', // Muda dinamicamente
   };
   
 
