@@ -45,7 +45,7 @@ const Home = () => {
   ];
 
   // Define a lógica para diferentes tamanhos de tela
-  const isSmallScreen = useMediaQuery({ maxWidth: 400 });
+  const isSmallScreen = useMediaQuery({ maxWidth: 700 });
 
   const settings = {
     dots: true,
@@ -57,7 +57,7 @@ const Home = () => {
     autoplaySpeed: 3000,
     arrows: false,
     centerMode: true, // Ativa espaçamento entre os slides
-    centerPadding: isSmallScreen ? '60px' : '280px', // Muda dinamicamente
+    centerPadding: isSmallScreen ? '60px' : '200px', // Muda dinamicamente
   };
   
 
