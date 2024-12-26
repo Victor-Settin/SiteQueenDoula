@@ -1,24 +1,25 @@
 /* Home.css */
 
 .home-wrapper {
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh; /* Permite que a altura cresça além da viewport */
   flex-direction: column;
-  gap: 0px;
+  gap: 35px;
 }
 
 
 .content-box {
   position: relative;
-  width: 80%; /* Ajuste conforme necessário */
+  width: 100%; /* Ajuste conforme necessário */
   max-width: 100%;
   height: 80vh;
-  background-image: url('../../Images/foto-home.jpg'); /* Substitua com o caminho da sua imagem */
-  background-size: cover; /* Cobre todo o retângulo */
+  background-image: url('../../Images/foto-home1.jpg'); /* Substitua com o caminho da sua imagem */
   background-position: center;
+  background-size: contain;
+    background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,11 +44,10 @@ img.home-image {
 }
 
 .section-about-me{
-  display: flex
-;
+  display: flex;
     align-items: flex-start;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     gap: 55px;
 
 }
@@ -125,7 +125,7 @@ img.home-image {
 .doula-container .section-title {
   text-wrap: nowrap;
   color: #333c51;
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -160,10 +160,9 @@ img.home-image {
 
 
 .recommendations-section {
-  width: 60%;
+  width: 70%;
   margin: 0px auto;
   text-align: center;
-  margin-top: 25px;
 }
 
 .section-title {
@@ -175,7 +174,7 @@ img.home-image {
 }
 
 .recommendation-card {
-    min-height: 400px;
+    min-height: 320px;
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
@@ -269,11 +268,6 @@ img.home-image {
     width: 100%;
   }
 
-  .recommendations-section {
-    width: 100%;
-    margin-top: 40px;
-  }
-
   .content-box{
     height: 68vh;
   }
@@ -285,10 +279,34 @@ img.home-image {
   }
 }
 
+@media (max-width: 500px){
+
+  .home-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Permite que a altura cresça além da viewport */
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+}
+
 @media (max-width: 350px){
   .doula-container .doula-left .section-title{
     font-size: 22px ;
     text-wrap: wrap;
+  }
+
+  .home-wrapper {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Permite que a altura cresça além da viewport */
+    flex-direction: column;
+    gap: 35px;
   }
   
 }

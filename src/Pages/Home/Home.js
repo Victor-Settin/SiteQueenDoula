@@ -12,6 +12,9 @@ import "slick-carousel/slick/slick-theme.css";
 import DoulaServices from '../../Components/DoulaServices/DoulaServices';
 import { useMediaQuery } from 'react-responsive'; // Importa o hook para responsividade
 import { useNavigate } from 'react-router-dom'; // Importar o hook useNavigate
+import Gallery from '../Gallery/Gallery';
+import Contact from '../Contact/Contact';
+
 
 const Home = () => {
   const navigate = useNavigate(); // Usar o hook useNavigate
@@ -55,7 +58,6 @@ const Home = () => {
     centerMode: true,
     centerPadding: isSmallScreen ? '60px' : '220px',
   };
-  
 
   return (
     <div className="home-wrapper">
@@ -82,7 +84,10 @@ const Home = () => {
         <FaArrowDown className="arrow-icon" />
       </motion.div>
 
-      <div className="section-about-me">
+    <div style={{width:"100%"}}><DoulaServices ></DoulaServices></div>
+    
+
+      <div id="about"  className="section-about-me">
         <div className="photo-about-me">
           <motion.img
             src={deusaGregaImg}
@@ -93,7 +98,9 @@ const Home = () => {
             transition={{ duration: 1, delay: 1.2 }}
           />
         </div>
+        
         <div className="description-about-me">
+          
   <div className="content-side-about-me">
     <motion.b
       className="title-about-me"
@@ -122,8 +129,12 @@ const Home = () => {
 </div>
 
       </div>
-      <DoulaServices></DoulaServices>
+      
       {/* Secção de recomendações */}
+
+      <div id="gallery" style={{width:"100%"}}><Gallery></Gallery></div>
+      <div id="contact" style={{width:"100%"}}><Contact></Contact></div> 
+
       <div className="recommendations-section">
         <h2 className="section-title">What Our Clients Say</h2>
         <Slider {...settings}>

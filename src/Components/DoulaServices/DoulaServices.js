@@ -1,11 +1,12 @@
 import React from 'react';
+import imgDoula from '../../Images/teste3.png';
 import './DoulaServices.css';
 
 const DoulaServices = () => {
   return (
     <section className="doula-services">
       <div className="doula-container">
-        <div className="doula-left">
+        <div className="doula-text">
           <div className="section-title">Postpartum Doula: What I Do</div>
           <p className="doula-description">
             <strong>
@@ -52,6 +53,10 @@ const DoulaServices = () => {
           <em className="doula-footer">
               Doulas: because every family deserves care and support.
           </em>
+        </div>
+        <div className="doula-img">
+        <img src={imgDoula} alt="doulaImg"/>
+
         </div>
       </div>
     </section>
