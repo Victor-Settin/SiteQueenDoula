@@ -58,12 +58,12 @@ const Home = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    arrows: false,
-    centerMode: true, // Ativa espaçamento entre os slides
-    centerPadding: isSmallScreen ? '60px' : '220px', // Muda dinamicamente
+    autoplay: false, // Autoplay desativado
+    arrows: true, // Adiciona botões de navegação
+    centerMode: true,
+    centerPadding: isSmallScreen ? '60px' : '220px',
   };
+  
 
   return (
     <div className="home-wrapper">
