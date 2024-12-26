@@ -180,6 +180,7 @@
 .menu-icon-wrapper svg {
   width: 100%; /* Faz o SVG ocupar o espaço disponível */
   height: 100%;
+  color: #a2c037;
 }
 
 /* Responsividade */
