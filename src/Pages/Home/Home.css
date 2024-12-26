@@ -43,8 +43,9 @@ img.home-image {
 }
 
 .section-about-me{
-  display: flex;
-    align-items: center;
+  display: flex
+;
+    align-items: flex-start;
     justify-content: center;
     width: 80%;
     gap: 55px;
@@ -125,13 +126,28 @@ img.home-image {
   margin-bottom: 20px;
 }
 
-.title-about-me{
+.title-about-me {
   margin-bottom: 5px;
   font-size: 30px;
   color: #333c51;
-    font-weight: bold;
-  display: block;
+  font-weight: bold;
+  display: inline-block; /* Para ajustar o tamanho da borda ao texto */
+  position: relative; /* Necessário para posicionar a borda */
+  margin: 30px;
 }
+
+.title-about-me::after {
+  content: ''; /* Garante que o elemento pseudo exista */
+  display: block; /* Cria uma linha abaixo do texto */
+  width: 65%; /* Define a largura da borda como 40% do texto */
+  height: 3.5px; /* Espessura da borda */
+  background-color: #a2c037; /* Cor da borda */
+  border-radius: 10px;
+  margin: 0 auto; /* Centraliza a borda */
+  position: relative; /* Para manter alinhado ao texto */
+  top: -6px; /* Espaçamento entre o texto e a borda */
+}
+
 
 .recommendations-section {
   width: 60%;
