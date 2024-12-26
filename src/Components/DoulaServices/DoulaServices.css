@@ -92,6 +92,7 @@
     .doula-services {
       width: 95%;
       margin-top: 20px
+      
     }
     .doula-left {
       flex: 1;
@@ -99,6 +100,13 @@
     }
     .doula-container{
       padding: 12px;
+      padding: 12px;
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+    }
+    .doula-text,.doula-img{
+      width: 100%;
     }
   }
 
