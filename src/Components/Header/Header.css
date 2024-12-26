@@ -153,4 +153,8 @@
     width: 75%;
     height: 60px;
   }
+
+  .menu-icon svg{
+      font-size: 34px;
+  }
 }

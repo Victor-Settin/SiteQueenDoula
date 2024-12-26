@@ -35,7 +35,7 @@ const Header = () => {
       </div>    
 
       <div className="menu-icon" onClick={toggleMenu}>
-        {isMenuOpen ? <HiX size={40} color="#a2c037" /> : <HiMenu size={40} color="#a2c037" />}
+        {isMenuOpen ? <HiX color="#a2c037" /> : <HiMenu color="#a2c037" />}
       </div>
 
       <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
