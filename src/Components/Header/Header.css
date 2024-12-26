@@ -167,6 +167,7 @@
 .menu-icon {
   display: none;
   cursor: pointer;
+  z-index: 99;
 }
 
 .menu-icon-wrapper {
