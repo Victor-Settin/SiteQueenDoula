@@ -8,6 +8,7 @@ import Contact from './Pages/Contact/Contact';
 import Gallery from './Pages/Gallery/Gallery';
 import Footer from './Components/Footer/Footer';
 import Success from './Pages/Success/Success';
+import ReviewPage from './Pages/ReviewPage/ReviewPage';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <Route path="/gallery" element={<Gallery />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/success" element={<Success />} />
+              <Route path="/leave-review" element={<ReviewPage />} />  {/* Certifique-se de que a rota está correta */}
             </Routes>
           </PageWrapper>
         </div>
@@ -31,7 +33,5 @@ function App() {
     </Router>
   );
 }
-
-
 
 export default App;
