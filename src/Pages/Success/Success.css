@@ -20,4 +20,5 @@
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     margin: auto;
     margin-top: 35px;
+    font-weight: 600;
   }

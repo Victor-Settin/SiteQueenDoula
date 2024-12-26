@@ -115,12 +115,19 @@ img.home-image {
   60% {
     transform: translateY(-5px);
   }
-  
+}
+
+.doula-container .section-title {
+  text-wrap: nowrap;
+  color: #333c51;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .title-about-me{
   margin-bottom: 5px;
-  font-size: 28px;
+  font-size: 30px;
   color: #333c51;
     font-weight: bold;
   display: block;

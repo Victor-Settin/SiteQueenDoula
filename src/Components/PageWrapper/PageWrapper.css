@@ -1,21 +1,20 @@
 .page-wrapper {
-    width: 90vw;
-    margin: 0 auto; /* Centraliza horizontalmente */
-    padding: 0px; /* Adiciona um espaçamento interno */
-    display: flex;
-    flex-direction: column; /* Organiza o conteúdo em coluna */
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    box-sizing: border-box; /* Inclui padding e border no cálculo de largura */
-    margin-bottom: 50px;
-    margin-top: 50px;
+  width: 90vw;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  margin-top: 25px;
   }
 
   /* Responsividade */
 @media (max-width: 700px) {
   .page-wrapper{
     width: 100vw;
-    margin-bottom: 50px;
-    margin-top: 23px;
   }
 }
   

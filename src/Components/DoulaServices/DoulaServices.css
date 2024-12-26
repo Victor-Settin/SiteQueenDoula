@@ -24,6 +24,7 @@
     font-weight: bold;
     margin-bottom: 15px;
     color: #333c51;
+    font-size: 18px;
   }
   
   .doula-list {
@@ -75,6 +76,10 @@
     background-color: #9d4b3d;
   }
 
+  .doula-list{
+    font-size: 18px;
+  }
+
  
 @media (max-width: 400px){
     .doula-list {
@@ -86,6 +91,7 @@
     }
     .doula-services {
       width: 95%;
+      margin-top: 20px
     }
   }
   

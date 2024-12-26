@@ -45,7 +45,7 @@ const Home = () => {
   ];
 
   // Define a lógica para diferentes tamanhos de tela
-  const isSmallScreen = useMediaQuery({ maxWidth: 700 });
+  const isSmallScreen = useMediaQuery({ maxWidth: 1200 });
 
   const settings = {
     dots: true,
