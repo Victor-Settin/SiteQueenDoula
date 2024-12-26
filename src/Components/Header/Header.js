@@ -35,8 +35,11 @@ const Header = () => {
       </div>    
 
       <div className="menu-icon" onClick={toggleMenu}>
-        {isMenuOpen ? <HiX color="#a2c037" /> : <HiMenu color="#a2c037" />}
-      </div>
+  <div className="menu-icon-wrapper">
+    {isMenuOpen ? <HiX /> : <HiMenu />}
+  </div>
+</div>
+
 
       <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
         <NavLink

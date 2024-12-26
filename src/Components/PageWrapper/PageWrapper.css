@@ -11,4 +11,10 @@
   margin-top: 0px;
   }
 
+
+  @media (max-width: 700px) {
+    .page-wrapper {
+      padding: 10px 0px;
+      }
+  }
   

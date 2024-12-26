@@ -83,18 +83,6 @@
   border-bottom: 2px solid #a2c037;
 }
 
-  /* Ícone do menu hambúrguer */
-  .menu-icon {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .menu-icon svg {
-    width: 34px !important; /* Força o tamanho para navegadores móveis */
-    height: 34px !important;
-    font-size: 34px; /* Garantia adicional */
-  }
-
 /* Redes sociais */
 .social-links {
   display: flex;
@@ -125,10 +113,6 @@
 
 /* Responsividade */
 @media (max-width: 700px) {
-  .menu-icon {
-    display: block;
-    padding: 08px;
-  }
 
   .curved-line-container-1{
     bottom: 1px;
@@ -163,20 +147,6 @@
     height: 60px;
   }
 
-/* Responsividade */
-@media (max-width: 700px) {
-  .menu-icon {
-    display: block;
-    padding: 8px;
-  }
-
-  .menu-icon svg {
-    width: 34px !important; /* Garante tamanho para dispositivos móveis */
-    height: 34px !important;
-  }
-}
-
-  
 }
 
 
@@ -190,5 +160,32 @@
 
   .header {
     padding:8px;
+  }
+}
+
+/* Contêiner do ícone do menu */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon-wrapper {
+  width: 34px; /* Largura fixa */
+  height: 34px; /* Altura fixa */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza o ícone */
+}
+
+.menu-icon-wrapper svg {
+  width: 100%; /* Faz o SVG ocupar o espaço disponível */
+  height: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+  .menu-icon {
+    display: block;
+    padding: 8px;
   }
 }
