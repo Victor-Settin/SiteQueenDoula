@@ -158,3 +158,13 @@
       font-size: 34px;
   }
 }
+
+
+/* Responsividade */
+@media (max-width: 350px) {
+
+  .curved-line-container-1{
+    bottom: 1px;
+    left: 72%;
+  } 
+}

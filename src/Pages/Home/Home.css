@@ -96,7 +96,7 @@ img.home-image {
 .scroll-indicator {
   display: flex;
   justify-content: center;
-  margin: 20px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
   animation: bounce 2s infinite; /* Adiciona a animação */
 }
 
