@@ -156,10 +156,12 @@
     width: 75%;
     height: 60px;
   }
-
-  .menu-icon svg{
-      font-size: 34px;
+  .menu-icon svg {
+    width: 34px;
+    height: 34px;
+    font-size: 34px; /* Garantia adicional */
   }
+  
 }
 
 
