@@ -177,6 +177,7 @@ img.home-image {
     padding: 20px;
     text-align: center;
     border: 2px solid #a2c037;
+    cursor: grab;
 }
 
 .client-image {
@@ -263,14 +264,14 @@ img.home-image {
   .description-about-me, .photo-about-me{
     width: 100%;
   }
-  
+
   .recommendations-section {
     width: 100%;
     margin-top: 40px;
   }
 
   .content-box{
-    height: 75vh;
+    height: 68vh;
   }
   .overlay{
     padding: 0px 5px;
