@@ -44,6 +44,6 @@ footer {
 /* Responsividade para garantir o layout em telas menores */
 @media (max-width: 700px) {
   .content-wrapper {
-    padding: 10px;
+    padding: 0px 10px 10px 10px;
   }
 }

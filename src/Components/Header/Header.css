@@ -117,6 +117,7 @@
 @media (max-width: 700px) {
   .menu-icon {
     display: block;
+    padding: 10px 0px 10px 10px;
   }
 
   .curved-line-container-1{
