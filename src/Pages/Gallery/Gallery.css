@@ -67,3 +67,11 @@
     gap: 10px;
   }
 }
+
+
+@media (max-width: 500px) {
+  .gallery-container,.contact-container,.recommendations-section{
+    width: 100% !important;
+  }
+}
+
