@@ -7,17 +7,15 @@ import PageWrapper from './Components/PageWrapper/PageWrapper';
 import Contact from './Pages/Contact/Contact';
 import Gallery from './Pages/Gallery/Gallery';
 import Footer from './Components/Footer/Footer';
-import { Toaster } from 'react-hot-toast';
 import Success from './Pages/Success/Success';
-
 
 function App() {
   return (
-    <>
-      {/* Conteúdo Principal */}
-      <Router>
-        <div className="App">
-          <Header />
+    <Router>
+      <div className="App">
+        <Header />
+        {/* Ajuste para garantir altura total da página */}
+        <div className="content-wrapper">
           <PageWrapper>
             <Routes>
               <Route path="/" element={<Home />} />
@@ -27,16 +25,13 @@ function App() {
               <Route path="/success" element={<Success />} />
             </Routes>
           </PageWrapper>
-          {/* Rodapé com visibilidade condicional */}
         </div>
         <Footer />
-      </Router>
-
-      {/* Toast container para notificações */}
-      <Toaster position="top-center" /> 
-    </>
+      </div>
+    </Router>
   );
 }
+
 
 
 export default App;
