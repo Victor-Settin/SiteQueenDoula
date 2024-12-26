@@ -118,6 +118,10 @@ img.home-image {
   }
 }
 
+.text-about-me{
+  text-align: justify;
+}
+
 .doula-container .section-title {
   text-wrap: nowrap;
   color: #333c51;
