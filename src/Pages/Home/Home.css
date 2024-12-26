@@ -280,6 +280,13 @@ img.home-image {
 }
 
 @media (max-width: 500px){
+  .doula-container .section-title{
+    font-size: 22px;
+  }
+
+  .doula-container  .doula-description{
+    font-size: 14px;
+  }
 
   .home-wrapper {
     width: 100%;
