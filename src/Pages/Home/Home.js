@@ -3,7 +3,6 @@ import './Home.css';
 import deusaGregaImg from '../../Images/deusa-grega.jpg'; // Corrigido o caminho da imagem
 import cliente1 from '../../Images/img_rnt.jpg'; // Importe imagens fictícias
 import cliente2 from '../../Images/img_rnt.jpg';
-import cliente3 from '../../Images/deusa-grega.jpg';
 import { AiOutlineCalendar } from 'react-icons/ai';
 import { FaArrowDown } from 'react-icons/fa'; // Importa o ícone da seta
 import { motion } from 'framer-motion'; // Importa o framer-motion
@@ -38,14 +37,7 @@ const Home = () => {
       date: "09/02/2024", // Data individual
       location: "San Mateo - California", // Local individual
       comment: "“Raquel had helped us a lot with my first baby and we had no doubts about being with her when our second princess arrived. We highly recommend her!”"
-    },
-    {
-      name: "Victor",
-      rating: 4,
-      date: "25/08/2024", // Data individual
-      location: "Redwood City - California", // Local individual
-      comment: "Raquel made my children cry all day, she couldn't solve it, I don't recommend it ”"
-    },
+    }
     // Mais recomendações
   ];
 
