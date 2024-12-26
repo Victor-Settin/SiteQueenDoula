@@ -101,7 +101,7 @@ const Home = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay: 1.5 }}
     >
-      About Me 2
+      About Me
     </motion.b>
     <br />
     <div className='text-about-me'>
