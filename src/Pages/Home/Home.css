@@ -148,6 +148,12 @@ img.home-image {
   top: -6px; /* Espaçamento entre o texto e a borda */
 }
 
+.date-location {
+  font-size: 14px;
+  color: gray;
+  margin-top: 5px;
+}
+
 
 .recommendations-section {
   width: 60%;
@@ -165,7 +171,7 @@ img.home-image {
 }
 
 .recommendation-card {
-    min-height: 350px;
+    min-height: 400px;
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
@@ -179,7 +185,17 @@ img.home-image {
   border-radius: 50%;
   margin: 0 auto 10px;
   object-fit: cover;
+  background-color: #f0f0f0; /* Cor de fundo para o ícone padrão */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.default-image {
+  font-size: 40px;
+  color: #a2c037; /* Cor do ícone */
+}
+
 
 .client-name {
   font-size: 20px;
@@ -195,7 +211,7 @@ img.home-image {
 
 .client-comment {
   font-size: 14px;
-  color: #555;
+  color: #333c51;
   margin-top: 10px;
 }
 
