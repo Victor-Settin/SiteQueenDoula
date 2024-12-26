@@ -3,3 +3,21 @@
     padding: 20px;
     height: 57vh;
 }
+
+.custom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #f4f4f4;
+    background-color: #cad22b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin: auto;
+    margin-top: 35px;
+  }

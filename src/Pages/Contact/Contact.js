@@ -43,8 +43,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        'ServiceIDRaquel',
-        'Tamplate-Site-Raquel',
+        'service_zki2kus',
+        'template_hxbakrl',
         {
           firstName: data.firstName,
           lastName: data.lastName,
@@ -52,7 +52,7 @@ const Contact = () => {
           phone: data.phone,
           message: data.message,
         },
-        'V1SwNnfO9IA43jdeT'
+        '7FdB2dxffPybWl9d4'
       )
       .then(
         (response) => {
