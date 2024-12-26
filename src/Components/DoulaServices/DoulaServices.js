@@ -1,5 +1,5 @@
 import React from 'react';
-import imgDoula from '../../Images/teste3.png';
+import imgDoula from '../../Images/teste4.png';
 import './DoulaServices.css';
 
 const DoulaServices = () => {
