@@ -83,11 +83,17 @@
   border-bottom: 2px solid #a2c037;
 }
 
-/* Ícone do menu hambúrguer */
-.menu-icon {
-  display: none;
-  cursor: pointer;
-}
+  /* Ícone do menu hambúrguer */
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .menu-icon svg {
+    width: 34px !important; /* Força o tamanho para navegadores móveis */
+    height: 34px !important;
+    font-size: 34px; /* Garantia adicional */
+  }
 
 /* Redes sociais */
 .social-links {
@@ -156,11 +162,20 @@
     width: 75%;
     height: 60px;
   }
-  .menu-icon svg {
-    width: 34px;
-    height: 34px;
-    font-size: 34px; /* Garantia adicional */
+
+/* Responsividade */
+@media (max-width: 700px) {
+  .menu-icon {
+    display: block;
+    padding: 8px;
   }
+
+  .menu-icon svg {
+    width: 34px !important; /* Garante tamanho para dispositivos móveis */
+    height: 34px !important;
+  }
+}
+
   
 }
 
