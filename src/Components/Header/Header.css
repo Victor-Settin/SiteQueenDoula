@@ -68,14 +68,17 @@
   align-items: center;
 }
 .nav-link {
-  text-decoration: none;
   color: #a2c037;
-  padding: 5px 10px;
   font-size: 18px;
+  padding: 5px 10px;
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease; /* Animação suave */
 }
+
 .nav-link:hover {
-  border-bottom: 2px solid #a2c037;
+  transform: scale(1.05); /* Aumenta o texto em 10% */
 }
+
 .active-link {
   border-bottom: 2px solid #a2c037;
 }
@@ -167,4 +170,8 @@
     bottom: 1px;
     left: 72%;
   } 
+
+  .header {
+    padding:8px;
+  }
 }
