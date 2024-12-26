@@ -14,6 +14,7 @@ import { useMediaQuery } from 'react-responsive'; // Importa o hook para respons
 import { useNavigate } from 'react-router-dom'; // Importar o hook useNavigate
 import Gallery from '../Gallery/Gallery';
 import Contact from '../Contact/Contact';
+import FirstimgHome from '../../Images/foto-home1.jpg';
 
 
 const Home = () => {
@@ -62,16 +63,7 @@ const Home = () => {
   return (
     <div className="home-wrapper">
       <div className="content-box">
-        <div className="overlay">
-          {/* Animação do texto */}
-          <motion.div
-            className="message-home"
-            initial={{ opacity: 0, y: -50 }} // Começa invisível e levemente acima
-            animate={{ opacity: 1, y: 0 }} // Aparece com opacidade e se move para a posição original
-            transition={{ duration: 2, ease: 'easeOut' }} // Duração e suavização
-          >
-          </motion.div>
-        </div>
+        <img src={FirstimgHome} alt="FirstimgHome"/>
       </div>
 
       {/* Seta animada */}
