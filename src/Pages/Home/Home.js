@@ -41,7 +41,6 @@ const Home = () => {
     },
     {
       name: "Victor",
-      image: cliente3,
       rating: 4,
       date: "25/08/2024", // Data individual
       location: "Redwood City - California", // Local individual
