@@ -116,7 +116,7 @@
 /* Responsividade */
 @media (max-width: 700px) {
   .menu-icon {
-    display: flex;
+    display: block;
   }
 
   .curved-line-container-1{
