@@ -139,8 +139,8 @@ img.home-image {
 .title-about-me::after {
   content: ''; /* Garante que o elemento pseudo exista */
   display: block; /* Cria uma linha abaixo do texto */
-  width: 65%; /* Define a largura da borda como 40% do texto */
-  height: 3.5px; /* Espessura da borda */
+  width: 64%; /* Define a largura da borda como 40% do texto */
+  height: 2.5px; /* Espessura da borda */
   background-color: #a2c037; /* Cor da borda */
   border-radius: 10px;
   margin: 0 auto; /* Centraliza a borda */
@@ -233,9 +233,14 @@ img.home-image {
     width: 95%;
   }
 
+  .title-about-me{
+    margin: 0px 0px 20px 30px;
+  }
+
   .section-about-me{
     width: 95%;
     flex-direction: column;
+    gap: 20px;
   }
   
   .description-about-me, .photo-about-me{

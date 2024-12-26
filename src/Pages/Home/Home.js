@@ -24,10 +24,10 @@ const Home = () => {
 
   const recommendations = [
     {
-      name: "Nath",
+      name: "Renata",
       image: cliente1,
       rating: 5,
-      comment: "Excellent service, very professional and caring throughout the entire process."
+      comment: "“When my first daughter was born I felt very alone because I didn't have any family around and Raquel helped me a lot! I'm very grateful for everything!”"
     },
     {
       name: "Cliente2",
