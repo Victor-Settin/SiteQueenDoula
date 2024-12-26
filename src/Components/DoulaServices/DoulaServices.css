@@ -94,5 +94,12 @@
       width: 95%;
       margin-top: 20px
     }
+    .doula-left {
+      flex: 1;
+      padding-right: 0px;
+    }
+    .doula-container{
+      padding: 12px;
+    }
   }
   
