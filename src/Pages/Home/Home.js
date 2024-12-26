@@ -101,7 +101,7 @@ const Home = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay: 1.5 }}
     >
-      About Me
+      About Me 2
     </motion.b>
     <br />
     {`I am a Brazilian postpartum doula who has been living in San Mateo for over 5 years. I have been a nanny for almost 10 years caring for toddlers, babies and school-aged children. I pride myself on being loving, warm, trustworthy, loyal, empathetic and communicative. Back home I have a bachelor’s degree in accounting and two MBAs in accounting and finance, but I have found myself once again working with newborns and babies here in the United States. It is wonderful to be with families at such a special time and to be able to treat each child as the individual person they are, with respect, warmth and integrity. I am fully vaccinated and do not smoke. I have my own reliable car. I am pet-friendly and completely stigma-free. I would be happy to share more information with your family over the phone or in an interview to further discuss my qualifications and provide my references.`
