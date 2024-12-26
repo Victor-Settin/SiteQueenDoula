@@ -263,10 +263,12 @@ img.home-image {
   .description-about-me, .photo-about-me{
     width: 100%;
   }
+  
   .recommendations-section {
     width: 100%;
     margin-top: 40px;
   }
+
   .content-box{
     height: 75vh;
   }

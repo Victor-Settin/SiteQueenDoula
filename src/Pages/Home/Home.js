@@ -59,7 +59,7 @@ const Home = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false, // Autoplay desativado
-    arrows: true, // Adiciona botões de navegação
+    arrows: false, // Adiciona botões de navegação
     centerMode: true,
     centerPadding: isSmallScreen ? '60px' : '220px',
   };
