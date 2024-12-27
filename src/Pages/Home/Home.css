@@ -252,6 +252,11 @@ img.home-image {
     width: 95%;
   }
 
+  .content-box img{
+    width: 100%;
+    height: auto;
+  }
+
   .title-about-me{
     margin: 0px 0px 20px 30px;
   }
