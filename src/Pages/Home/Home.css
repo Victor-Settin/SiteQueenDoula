@@ -23,6 +23,7 @@
 .content-box img{
   width: 100%;
   height: auto;
+  
 }
 
 .overlay {
@@ -267,7 +268,7 @@ img.home-image {
   }
 
   .content-box{
-    height: 68vh;
+    height: 48vh;
   }
   .overlay{
     padding: 0px 5px;
@@ -299,7 +300,7 @@ img.home-image {
 
 @media (max-width: 450px){
   .content-box {
-    height: 50vh;
+    height: 41vh;
 }
 }
 

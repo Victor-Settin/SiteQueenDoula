@@ -23,7 +23,6 @@ function App() {
               <Route path="/gallery" element={<Gallery />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/success" element={<Success />} />
-              <Route path="/leave-review" element={<ReviewPage />} />  {/* Certifique-se de que a rota está correta */}
             </Routes>
           </PageWrapper>
         </div>
