@@ -4,8 +4,12 @@ body, html {
   padding: 0;
   height: 100%;
   width: 100%;
-  overflow-x: hidden; /* Remove apenas o scroll horizontal */
 }
+
+* {
+  box-sizing: border-box !important;
+}
+
 
 
 /* Ajusta o container principal para ocupar toda a altura */

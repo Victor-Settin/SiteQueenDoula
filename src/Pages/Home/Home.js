@@ -26,8 +26,8 @@ const Home = () => {
   // Inicializa AOS
   useEffect(() => {
     AOS.init({
-      duration: 1200, // Duração da animação
-      offset: 370, // Offset da animação
+      duration: 1500, // Duração da animação
+      offset: 360, // Offset da animação
       once: false, // Animação ocorre apenas uma vez
     });
   }, []);
@@ -103,17 +103,17 @@ const Home = () => {
       </div>
 
       {/* Seta animada */}
-      <div className="scroll-indicator" data-aos="fade-down">
+      <div className="scroll-indicator" data-aos="fade-up">
         <FaArrowDown className="arrow-icon" />
       </div>
 
       {/* Serviços */}
-      <div style={{ width: "100%" }} data-aos="fade-right">
-        <DoulaServices />
+      <div style={{ width: "100%" }} data-aos="fade-up">
+        <DoulaServices data-aos="fade-up" />
       </div>
 
       {/* About Me */}
-      <div id="about" className="section-about-me" data-aos="fade-left">
+      <div id="about" className="section-about-me" data-aos="fade-up">
         <div className="photo-about-me" data-aos="zoom-in">
           <img src={deusaGregaImg} alt="Deusa Grega" className="home-image" />
         </div>
