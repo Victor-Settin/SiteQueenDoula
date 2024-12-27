@@ -222,11 +222,11 @@ textarea{
   }
   .contact-container{
     max-width: 95%;
+    width: 100%;
   }
 
   .contact-form .forms {
-    display: flex
-;
+    display: flex;
     gap: 15px;
     width: 100%;
     flex-direction: column;
