@@ -223,6 +223,10 @@ img.home-image {
   color: #21688e;
 }
 
+button.schedule-button.aos-init.aos-animate{
+  margin-top: 50px;
+}
+
 .slick-dots li.slick-active button:before {
   color: #a2c037;
 }
