@@ -3,6 +3,8 @@ import './Home.css';
 import deusaGregaImg from '../../Images/deusa-grega.jpg'; // Corrigido o caminho da imagem
 import cliente1 from '../../Images/img_rnt.jpg'; // Importe imagens fictícias
 import cliente2 from '../../Images/img_rnt.jpg';
+import cliente3 from '../../Images/profile_photo.jpg';
+import cliente4 from '../../Images/img123.jpg';
 import { AiOutlineCalendar } from 'react-icons/ai';
 import { FaArrowDown } from 'react-icons/fa'; // Importa o ícone da seta
 import { motion } from 'framer-motion'; // Importa o framer-motion
@@ -41,6 +43,22 @@ const Home = () => {
       date: "09/02/2024", // Data individual
       location: "San Mateo - California", // Local individual
       comment: "“Raquel had helped us a lot with my first baby and we had no doubts about being with her when our second princess arrived. We highly recommend her!”"
+    },
+    {
+      name: "Nathalia",
+      image: cliente3,
+      rating: 5,
+      date: "10/26/2023", // Data individual
+      location: "Daly City - California", // Local individual
+      comment: "“I had my baby in November 2023 and I don't know what my postpartum period would have been like without Raquel's help. She was essential for my recovery and the baby's well-being. Postpartum was the most difficult time of my life and it was great to have someone so experienced and respectful helping me recover and take care of my baby. She taught me how to bathe my son, how to keep him safe, and took care of him so I could rest. Raquel, thank you so much for everything!”"
+    },
+    {
+      name: "Revşan",
+      image: cliente4,
+      rating: 5,
+      date: "12/26/2024", // Data individual
+      location: "San Mateo - California", // Local individual
+      comment: "“ I came to US already pregnant with no English. Raquel was very supportive and patient with me and my family. It was very important having her around. Thank you ”"
     }
     // Mais recomendações
   ];
@@ -57,7 +75,7 @@ const Home = () => {
     autoplay: false, // Autoplay desativado
     arrows: false, // Adiciona botões de navegação
     centerMode: true,
-    centerPadding: isSmallScreen ? '60px' : '220px',
+    centerPadding: isSmallScreen ? '30px' : '220px',
   };
 
   return (
