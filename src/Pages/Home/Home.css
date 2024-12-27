@@ -213,6 +213,10 @@ img.home-image {
   font-size: 14px;
   color: #333c51;
   margin-top: 10px;
+  max-height: 200px;
+  height: 85px;
+  overflow: overlay;
+  text-align: justify;
 }
 
 .slick-dots li button:before {
