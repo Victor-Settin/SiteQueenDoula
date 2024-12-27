@@ -27,7 +27,7 @@ const Home = () => {
   useEffect(() => {
     AOS.init({
       duration: 1400, // Duração da animação
-      offset: 290, // Offset da animação
+      offset: 275, // Offset da animação
       once: false, // Animação ocorre apenas uma vez
     });
   }, []);
@@ -143,7 +143,7 @@ I would be happy to share more information with your family over the phone or in
       </div>
 
       {/* Galeria */}
-      <div id="gallery" style={{ width: "100%" }} data-aos="zoom-out">
+      <div id="gallery" style={{ width: "100%" }} data-aos="fade-up">
         <Gallery />
       </div>
 
