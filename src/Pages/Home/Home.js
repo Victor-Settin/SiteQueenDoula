@@ -27,7 +27,7 @@ const Home = () => {
   useEffect(() => {
     AOS.init({
       duration: 1400, // Duração da animação
-      offset: 255, // Offset da animação
+      offset: 235, // Offset da animação
       once: false, // Animação ocorre apenas uma vez
     });
   }, []);
