@@ -176,7 +176,7 @@ I would be happy to share more information with your family over the phone or in
       </div>
 
       {/* Recomendações */}
-      <div className="recommendations-section" data-aos="fade-up">
+      <div className="recommendations-section" id="reviews" data-aos="fade-up">
       <h2 className="section-title">What Our Clients Say</h2>
       <Slider {...settings}>
         {recommendations.map((rec, index) => (

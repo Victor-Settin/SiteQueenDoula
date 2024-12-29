@@ -13,12 +13,24 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Função para rolar suavemente até a seção
+  // Função para rolar suavemente até a seção com ajuste de 100 pixels acima
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMenuOpen(false); // Fecha o menu após a navegação
+      // Posição do elemento
+      const elementPosition = element.offsetTop;
+      
+      // Calculando a posição final com o deslocamento
+      const offsetPosition = elementPosition - 100;
+
+      // Rolando suavemente até a posição ajustada
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+
+      // Fecha o menu após a navegação
+      setIsMenuOpen(false);
     }
   };
 
@@ -51,6 +63,9 @@ const Header = () => {
         </div>
         <div onClick={() => scrollToSection('contact')} className="nav-link">
           Contact Us
+        </div>
+        <div onClick={() => scrollToSection('reviews')} className="nav-link">
+          Reviews
         </div>
       </nav>
 
