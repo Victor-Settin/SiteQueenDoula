@@ -36,6 +36,7 @@ const Header = () => {
 
   return (
     <header className="header">
+      <div className="content-header">
       <div className="logo-header">
         <NavLink to="/" className="logo-link">
           <img src={logo} alt="Logo" className="logo-pc" />
@@ -82,6 +83,7 @@ const Header = () => {
         <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
           <FaFacebook size={26} color="#a2c037" />
         </a>
+      </div>
       </div>
     </header>
   );

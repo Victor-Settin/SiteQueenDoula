@@ -255,9 +255,6 @@ button.schedule-button.aos-init.aos-animate{
 }
 /* Responsividade */
 @media (max-width: 700px) {
-  .content-box{
-    width: 95%;
-  }
 
   .content-box img{
     width: 100%;
@@ -276,10 +273,6 @@ button.schedule-button.aos-init.aos-animate{
   
   .description-about-me, .photo-about-me{
     width: 100%;
-  }
-
-  .content-box{
-    height: 48vh;
   }
   .overlay{
     padding: 0px 5px;
@@ -307,12 +300,6 @@ button.schedule-button.aos-init.aos-animate{
     flex-direction: column;
     gap: 30px;
   }
-}
-
-@media (max-width: 450px){
-  .content-box {
-    height: 41vh;
-}
 }
 
 @media (max-width: 370px){

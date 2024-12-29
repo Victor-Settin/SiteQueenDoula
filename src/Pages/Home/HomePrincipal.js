@@ -9,15 +9,14 @@ import cliente5 from '../../Images/img111.jpg';
 import { AiOutlineCalendar } from 'react-icons/ai';
 import { FaArrowDown } from 'react-icons/fa'; // Importa o ícone da seta
 import Slider from 'react-slick'; // Importa o componente Slider
-import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import DoulaServices from '../../Components/DoulaServices/DoulaServices';
 import { useMediaQuery } from 'react-responsive'; // Importa o hook para responsividade
 import { useNavigate } from 'react-router-dom'; // Importar o hook useNavigate
 import Gallery from '../Gallery/Gallery';
 import Contact from '../Contact/Contact';
-import PageWrapper from './../../Components/PageWrapper/PageWrapper';
-import FirstimgHome from '../../Images/teste11.jpg';
+import FirstimgHome from '../../Images/foto-home1.jpg';
 import AOS from 'aos'; // Importa a biblioteca AOS
 import 'aos/dist/aos.css'; // Importa o CSS do AOS
 
@@ -99,7 +98,7 @@ const Home = () => {
 
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -111,108 +110,108 @@ const Home = () => {
 
   return (
     <>
-
-      <div className="content-box" >
+    
+    <div className="content-box" >
         <img src={FirstimgHome} alt="FirstimgHome" />
       </div>
-      <PageWrapper>
-      <div className="home-wrapper">
-        {/* Seção inicial */}
+    
+    <div className="home-wrapper">
+      {/* Seção inicial */}
+      
 
-        {/* Seta animada */}
-        <div className="scroll-indicator" data-aos="fade-up">
-          <FaArrowDown className="arrow-icon" />
+      {/* Seta animada */}
+      <div className="scroll-indicator" data-aos="fade-up">
+        <FaArrowDown className="arrow-icon" />
+      </div>
+
+      {/* Serviços */}
+      <div style={{ width: "100%" }} data-aos="fade-up">
+        <DoulaServices data-aos="fade-up" />
+      </div>
+
+      {/* About Me */}
+      <div id="about" className="section-about-me" data-aos="fade-up">
+        <div className="photo-about-me" data-aos="zoom-in">
+          <img src={deusaGregaImg} alt="Deusa Grega" className="home-image" />
         </div>
-
-        {/* Serviços */}
-        <div style={{ width: "100%" }} data-aos="fade-up">
-          <DoulaServices data-aos="fade-up" />
-        </div>
-
-        {/* About Me */}
-        <div id="about" className="section-about-me" data-aos="fade-up">
-          <div className="photo-about-me" data-aos="zoom-in">
-            <img src={deusaGregaImg} alt="Deusa Grega" className="home-image" />
+        <div className="description-about-me">
+          <div className="content-side-about-me">
+            <b className="title-about-me">About Me</b>
+            <p className="text-about-me">
+            I am a Brazilian postpartum doula who has been living in San Mateo for over 5 years.
+I have been a nanny for almost 10 years caring for toddlers, babies and school-aged children. I pride myself on being loving, warm, trustworthy, loyal, empathetic and communicative.
+Back home I have a bachelor’s degree in accounting and two MBAs in accounting and finance, but I have found myself once again working with newborns and babies here in the United States.
+It is wonderful to be with families at such a special time and to be able to treat each child as the individual person they are, with respect, warmth and integrity.
+I am fully vaccinated and do not smoke.
+I have my own reliable car.
+I am pet-friendly and completely stigma-free.
+I would be happy to share more information with your family over the phone or in an interview to further discuss my qualifications and provide my references.
+            </p>
+            <button
+              className="schedule-button"
+              onClick={handleContactClick}
+              data-aos="fade-up"
+            >
+              <AiOutlineCalendar style={{ marginRight: '8px', fontSize: '20px' }} />
+              Schedule a Free Consultation
+            </button>
           </div>
-          <div className="description-about-me">
-            <div className="content-side-about-me">
-              <b className="title-about-me">About Me</b>
-              <p className="text-about-me">
-                I am a Brazilian postpartum doula who has been living in San Mateo for over 5 years.
-                I have been a nanny for almost 10 years caring for toddlers, babies and school-aged children. I pride myself on being loving, warm, trustworthy, loyal, empathetic and communicative.
-                Back home I have a bachelor’s degree in accounting and two MBAs in accounting and finance, but I have found myself once again working with newborns and babies here in the United States.
-                It is wonderful to be with families at such a special time and to be able to treat each child as the individual person they are, with respect, warmth and integrity.
-                I am fully vaccinated and do not smoke.
-                I have my own reliable car.
-                I am pet-friendly and completely stigma-free.
-                I would be happy to share more information with your family over the phone or in an interview to further discuss my qualifications and provide my references.
-              </p>
-              <button
-                className="schedule-button"
-                onClick={handleContactClick}
-                data-aos="fade-up"
-              >
-                <AiOutlineCalendar style={{ marginRight: '8px', fontSize: '20px' }} />
-                Schedule a Free Consultation
-              </button>
-            </div>
-          </div>
-        </div>
-
-        {/* Galeria */}
-        <div id="gallery" style={{ width: "100%" }} data-aos="fade-up">
-          <Gallery />
-        </div>
-
-        <button
-          className="schedule-button"
-          onClick={handleContactClick}
-          data-aos="fade-up"
-          style={{ marginTop: "0px" }}
-        >
-          <AiOutlineCalendar style={{ marginRight: '8px', fontSize: '20px' }} />
-          Schedule a Free Consultation
-        </button>
-
-        {/* Contato */}
-        <div id="contact" style={{ width: "100%" }} data-aos="fade-up">
-          <Contact />
-        </div>
-
-        {/* Recomendações */}
-        <div className="recommendations-section" id="reviews" data-aos="fade-up">
-          <h2 className="section-title">What Our Clients Say</h2>
-          <Slider {...settings}>
-            {recommendations.map((rec, index) => (
-              <div key={index} className="recommendation-card" data-aos="zoom-in">
-                <img src={rec.image} alt={rec.name} className="client-image" />
-                <h3 className="client-name">{rec.name}</h3>
-                <div className="client-rating">
-                  {"★".repeat(rec.rating)}{"☆".repeat(5 - rec.rating)}
-                </div>
-                <div className="date-location">
-                  <span className="date">{rec.date}</span> |{" "}
-                  <span className="location">{rec.location}</span>
-                </div>
-                <p className={`client-comment ${expanded[index] ? 'expanded' : 'collapsed'}`}>
-                  {rec.comment}
-                </p>
-                {rec.comment.length > 100 && (
-                  <button
-                    className="read-more-button"
-                    onClick={() => toggleExpand(index)}
-                    aria-expanded={expanded[index]}
-                  >
-                    {expanded[index] ? "Read Less" : "Read More"}
-                  </button>
-                )}
-              </div>
-            ))}
-          </Slider>
         </div>
       </div>
-      </PageWrapper>
-    </>);
+
+      {/* Galeria */}
+      <div id="gallery" style={{ width: "100%" }} data-aos="fade-up">
+        <Gallery />
+      </div>
+
+            <button
+              className="schedule-button"
+              onClick={handleContactClick}
+              data-aos="fade-up"
+              style={{ marginTop: "0px" }}
+            >
+              <AiOutlineCalendar style={{ marginRight: '8px', fontSize: '20px' }} />
+              Schedule a Free Consultation
+            </button>
+
+      {/* Contato */}
+      <div id="contact" style={{ width: "100%" }} data-aos="fade-up">
+        <Contact />
+      </div>
+
+      {/* Recomendações */}
+      <div className="recommendations-section" id="reviews" data-aos="fade-up">
+      <h2 className="section-title">What Our Clients Say</h2>
+      <Slider {...settings}>
+        {recommendations.map((rec, index) => (
+          <div key={index} className="recommendation-card" data-aos="zoom-in">
+            <img src={rec.image} alt={rec.name} className="client-image" />
+            <h3 className="client-name">{rec.name}</h3>
+            <div className="client-rating">
+              {"★".repeat(rec.rating)}{"☆".repeat(5 - rec.rating)}
+            </div>
+            <div className="date-location">
+              <span className="date">{rec.date}</span> |{" "}
+              <span className="location">{rec.location}</span>
+            </div>
+            <p className={`client-comment ${expanded[index] ? 'expanded' : 'collapsed'}`}>
+              {rec.comment}
+            </p>
+            {rec.comment.length > 100 && (
+              <button
+              className="read-more-button"
+              onClick={() => toggleExpand(index)}
+              aria-expanded={expanded[index]}
+            >
+              {expanded[index] ? "Read Less" : "Read More"}
+            </button>
+            )}
+          </div>
+        ))}
+      </Slider>
+    </div>
+    </div>
+    </> );
 };
 
 export default Home;
