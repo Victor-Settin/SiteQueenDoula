@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import emailjs from 'emailjs-com';
@@ -26,6 +26,8 @@ const schema = yup.object().shape({
 });
 
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false); // Estado de envio
+
   const {
     register,
     handleSubmit,
@@ -40,6 +42,8 @@ const Contact = () => {
 
   const onSubmit = (data) => {
     console.log('Form Data Submitted:', data);
+
+    setIsSubmitting(true); // Ativa o estado de envio
 
     emailjs
       .send(
@@ -77,7 +81,10 @@ const Contact = () => {
           });
           console.log('Error sending email:', error);
         }
-      );
+      )
+      .finally(() => {
+        setIsSubmitting(false); // Desativa o estado de envio após o processo
+      });
   };
 
   return (
@@ -161,8 +168,17 @@ const Contact = () => {
           <button
             type="submit"
             className="submit-button"
+            disabled={isSubmitting} // Desabilita o botão enquanto o envio está em andamento
           >
-            Send Message <FaPaperPlane className="icon" />
+            {isSubmitting ? (
+              <>
+                Sending... <FaPaperPlane className="icon" style={{ color: '#a2c037' }} />
+              </>
+            ) : (
+              <>
+                Send Message <FaPaperPlane className="icon" />
+              </>
+            )}
           </button>
         </div>
       </motion.form>

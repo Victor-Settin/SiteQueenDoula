@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
       {/* Informações de Contato */}
       <div className="footer-contact">
-        <p>Contact us at: <a href="mailto:raquel@turtlepurple.com">raquel@turtlepurple.com</a></p>
+        <p>Contact us at: <a href="mailto:raquel@purpleturtleservices.com">raquel@purpleturtleservices.com</a></p>
         <p>Location: San Mateo, CA</p>
       </div>
       

@@ -103,7 +103,7 @@ const Home = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
-    arrows: false,
+    arrows: true,
     centerMode: true,
     centerPadding: isSmallScreen ? '30px' : '220px',
   };
