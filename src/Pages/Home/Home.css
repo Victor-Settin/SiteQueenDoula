@@ -152,9 +152,10 @@ img.home-image {
 }
 
 .date-location {
-  font-size: 14px;
+  font-size: 15px;
   color: gray;
   margin-top: 5px;
+  font-family: 'EB Garamond';
 }
 
 

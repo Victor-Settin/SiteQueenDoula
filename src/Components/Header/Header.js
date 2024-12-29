@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import { HiMenu, HiX } from 'react-icons/hi';
@@ -18,6 +18,7 @@ const Header = () => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      setIsMenuOpen(false); // Fecha o menu após a navegação
     }
   };
 

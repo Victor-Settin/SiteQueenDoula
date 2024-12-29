@@ -160,6 +160,16 @@ I would be happy to share more information with your family over the phone or in
         <Gallery />
       </div>
 
+      <button
+              className="schedule-button"
+              onClick={handleContactClick}
+              data-aos="fade-up"
+              style={{ marginTop: "0px" }}
+            >
+              <AiOutlineCalendar style={{ marginRight: '8px', fontSize: '20px' }} />
+              Schedule a Free Consultation
+            </button>
+
       {/* Contato */}
       <div id="contact" style={{ width: "100%" }} data-aos="fade-up">
         <Contact />
