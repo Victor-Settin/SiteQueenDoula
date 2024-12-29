@@ -17,7 +17,7 @@ import { useNavigate } from 'react-router-dom'; // Importar o hook useNavigate
 import Gallery from '../Gallery/Gallery';
 import Contact from '../Contact/Contact';
 import PageWrapper from './../../Components/PageWrapper/PageWrapper';
-import FirstimgHome from '../../Images/teste11.jpg';
+import FirstimgHome from '../../Images/foto-home1.jpg';
 import AOS from 'aos'; // Importa a biblioteca AOS
 import 'aos/dist/aos.css'; // Importa o CSS do AOS
 
