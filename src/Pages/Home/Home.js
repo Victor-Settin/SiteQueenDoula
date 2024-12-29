@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Home.css';
 import deusaGregaImg from '../../Images/deusa-grega.jpg'; // Corrigido o caminho da imagem
 import cliente1 from '../../Images/img_rnt.jpg'; // Importe imagens fictícias
@@ -27,10 +27,12 @@ const Home = () => {
   useEffect(() => {
     AOS.init({
       duration: 1400, // Duração da animação
-      offset: 235, // Offset da animação
+      offset: 25, // Offset da animação
       once: false, // Animação ocorre apenas uma vez
     });
   }, []);
+
+
 
   const handleContactClick = () => {
     navigate('/contact'); // Redireciona para a página /contact
@@ -46,20 +48,20 @@ const Home = () => {
       comment: "“When my first daughter was born I felt very alone because I didn't have any family around and Raquel helped me a lot! I'm very grateful for everything!”"
     },
     {
-      name: "Renata",
-      image: cliente2,
-      rating: 5,
-      date: "09/02/2024", // Data individual
-      location: "San Mateo - California", // Local individual
-      comment: "“Raquel had helped us a lot with my first baby and we had no doubts about being with her when our second princess arrived. We highly recommend her!”"
-    },
-    {
       name: "Nathalia",
       image: cliente3,
       rating: 5,
       date: "10/26/2023", // Data individual
       location: "Daly City - California", // Local individual
       comment: "“I had my baby in November 2023 and I don't know what my postpartum period would have been like without Raquel's help. She was essential for my recovery and the baby's well-being. Postpartum was the most difficult time of my life and it was great to have someone so experienced and respectful helping me recover and take care of my baby. She taught me how to bathe my son, how to keep him safe, and took care of him so I could rest. Raquel, thank you so much for everything!”"
+    },
+    {
+      name: "Renata",
+      image: cliente2,
+      rating: 5,
+      date: "09/02/2024", // Data individual
+      location: "San Mateo - California", // Local individual
+      comment: "“Raquel had helped us a lot with my first baby and we had no doubts about being with her when our second princess arrived. We highly recommend her!”"
     },
     {
       name: "Revşan",
@@ -81,6 +83,17 @@ const Home = () => {
     // Mais recomendações
   ];
 
+  const [expanded, setExpanded] = useState(Array(recommendations.length).fill(false));
+
+  const toggleExpand = (index) => {
+    setExpanded((prev) => {
+      const newExpanded = [...prev];
+      newExpanded[index] = !newExpanded[index];
+      return newExpanded;
+    });
+  };
+
+
   const isSmallScreen = useMediaQuery({ maxWidth: 1200 });
 
   const settings = {
@@ -98,7 +111,7 @@ const Home = () => {
   return (
     <div className="home-wrapper">
       {/* Seção inicial */}
-      <div className="content-box" data-aos="fade-up">
+      <div className="content-box" >
         <img src={FirstimgHome} alt="FirstimgHome" />
       </div>
 
@@ -154,24 +167,35 @@ I would be happy to share more information with your family over the phone or in
 
       {/* Recomendações */}
       <div className="recommendations-section" data-aos="fade-up">
-        <h2 className="section-title">What Our Clients Say</h2>
-        <Slider {...settings}>
-          {recommendations.map((rec, index) => (
-            <div key={index} className="recommendation-card" data-aos="zoom-in">
-              <img src={rec.image} alt={rec.name} className="client-image" />
-              <h3 className="client-name">{rec.name}</h3>
-              <div className="client-rating">
-                {"★".repeat(rec.rating)}{"☆".repeat(5 - rec.rating)}
-              </div>
-              <div className="date-location">
-                <span className="date">{rec.date}</span> |{" "}
-                <span className="location">{rec.location}</span>
-              </div>
-              <p className="client-comment">{rec.comment}</p>
+      <h2 className="section-title">What Our Clients Say</h2>
+      <Slider {...settings}>
+        {recommendations.map((rec, index) => (
+          <div key={index} className="recommendation-card" data-aos="zoom-in">
+            <img src={rec.image} alt={rec.name} className="client-image" />
+            <h3 className="client-name">{rec.name}</h3>
+            <div className="client-rating">
+              {"★".repeat(rec.rating)}{"☆".repeat(5 - rec.rating)}
             </div>
-          ))}
-        </Slider>
-      </div>
+            <div className="date-location">
+              <span className="date">{rec.date}</span> |{" "}
+              <span className="location">{rec.location}</span>
+            </div>
+            <p className={`client-comment ${expanded[index] ? 'expanded' : 'collapsed'}`}>
+              {rec.comment}
+            </p>
+            {rec.comment.length > 100 && (
+              <button
+              className="read-more-button"
+              onClick={() => toggleExpand(index)}
+              aria-expanded={expanded[index]}
+            >
+              {expanded[index] ? "Read Less" : "Read More"}
+            </button>
+            )}
+          </div>
+        ))}
+      </Slider>
+    </div>
     </div>
   );
 };

@@ -77,9 +77,12 @@ img.home-image {
     transition: background-color 0.3s ease;
 }
 
+.schedule-button {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 .schedule-button:hover {
-  background-color: none;
-  border: 3px solid #a2c037;
+  transform: scale(1.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .message-home{
@@ -213,9 +216,6 @@ img.home-image {
   font-size: 14px;
   color: #333c51;
   margin-top: 10px;
-  max-height: 200px;
-  height: 85px;
-  overflow: overlay;
   text-align: justify;
 }
 
@@ -314,14 +314,14 @@ button.schedule-button.aos-init.aos-animate{
 }
 }
 
-@media (max-width: 350px){
+@media (max-width: 370px){
   .doula-container .doula-left .section-title{
     font-size: 22px ;
     text-wrap: wrap;
   }
 
   .home-wrapper {
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -330,4 +330,28 @@ button.schedule-button.aos-init.aos-animate{
     gap: 35px;
   }
   
+}
+
+
+.client-comment.collapsed {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limita a 3 linhas */
+  -webkit-box-orient: vertical;
+}
+
+.client-comment.expanded {
+  overflow: visible;
+  display: block;
+}
+
+.read-more-button {
+  background: none;
+  border: none;
+  color: #a2c037;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 8px;
+  padding: 0;
+  text-decoration: underline;
 }
