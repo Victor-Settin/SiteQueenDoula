@@ -86,6 +86,7 @@
   transition: transform 0.1s ease, color 0.1s ease, border-bottom 0.1s ease; /* Animação suave */
   cursor: pointer; /* Adiciona o cursor pointer */
   outline: none; /* Remove o contorno padrão */
+  
 }
 
 /* Hover nos links */
@@ -98,6 +99,7 @@
 .active-link {
   border-bottom: 2px solid #a2c037; /* Borda ativa para o link */
   outline: none; /* Remove o contorno padrão */
+  outline: 2px solid #a2c037; /* Adiciona um contorno discreto e estilizado */
 }
 
 /* Redes sociais */
