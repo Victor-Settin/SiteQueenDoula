@@ -28,7 +28,7 @@ const Home = () => {
   useEffect(() => {
     AOS.init({
       duration: 1500, // Duração da animação
-      offset: 100, // Offset da animação
+      offset: 80, // Offset da animação
       once: false, // Animação ocorre apenas uma vez
     });
   }, []);
@@ -127,6 +127,17 @@ const Home = () => {
         <div style={{ width: "100%" }} >
           <DoulaServices  />
         </div>
+
+
+        <button
+                className="schedule-button"
+                onClick={handleContactClick}
+                data-aos="fade-up"
+                style={{ marginTop: "10px" }}
+              >
+                <AiOutlineCalendar style={{ marginRight: '8px', fontSize: '20px' }} />
+                Schedule a Free Consultation
+              </button>
 
         {/* About Me */}
         <div id="about" className="section-about-me" >
