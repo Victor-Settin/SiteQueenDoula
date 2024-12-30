@@ -48,7 +48,7 @@
 .curved-line-container-2 {
   position: absolute;
   bottom: 19px;
-  right: 22%;
+  right: 4%;
   transform: translateX(-40%);
   width: 178px;
   height: 110%;
@@ -86,6 +86,7 @@
   transition: transform 0.1s ease, color 0.1s ease, border-bottom 0.1s ease; /* Animação suave */
   cursor: pointer; /* Adiciona o cursor pointer */
   outline: none; /* Remove o contorno padrão */
+  z-index: 9999999;
   
 }
 

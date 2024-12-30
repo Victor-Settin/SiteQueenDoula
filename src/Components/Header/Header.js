@@ -76,14 +76,14 @@ const Header = () => {
         </svg>
       </div>
 
-      <div className="social-links">
+      {/* <div className="social-links">
         <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon">
           <FaInstagram size={26} color="#a2c037" />
         </a>
         <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
           <FaFacebook size={26} color="#a2c037" />
         </a>
-      </div>
+      </div> */}
       </div>
     </header>
   );
