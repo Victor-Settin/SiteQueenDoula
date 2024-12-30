@@ -6,7 +6,12 @@ const DoulaServices = () => {
   return (
     <section className="doula-services">
       <div className="doula-container">
-        <div className="doula-text">
+        <div 
+          className="doula-text" 
+          data-aos="slide-right" 
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <div className="section-title">Postpartum Doula: What I Do</div>
           <p className="doula-description">
             <strong>
@@ -14,49 +19,50 @@ const DoulaServices = () => {
             </strong>
           </p>
           <ul className="doula-list">
-            
             <li>
-                <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Postpartum recovery 
+              <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Postpartum recovery 
             </li>
             <li>
-                <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Partner support
+              <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Partner support
             </li>
             <li>
-                <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Routine strategizing and building
+              <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Routine strategizing and building
             </li>
             <li>
-                <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Newborn comfort techniques
+              <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Newborn comfort techniques
             </li>
             <li>
-                <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Infant sleep positioning & timing
+              <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Infant sleep positioning & timing
             </li>
             <li>
-                <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Troubleshooting issues in real-time
+              <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Troubleshooting issues in real-time
             </li>
             <li>
-                <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Newborn product and safety information
+              <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Newborn product and safety information
             </li>
             <li>
-                <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Day to day baby related house cleaning and laundry
+              <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Day to day baby related house cleaning and laundry
             </li>
             <li>
-                <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Meal preparation
+              <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Meal preparation
             </li>
             <li>
-                <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Sibling care
+              <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> Sibling care
             </li>
             <li>
-                <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> And so much more
+              <div style={{ color: '#a2c037', display: 'inline' }}>➤</div> And so much more
             </li>
-            </ul>
-
+          </ul>
           <em className="doula-footer">
               Doulas: because every family deserves care and support.
           </em>
         </div>
-        <div className="doula-img">
-        <img src={imgDoula} alt="doulaImg"/>
-
+        <div 
+          className="doula-img" 
+          data-aos="slide-right" 
+          data-aos-duration="1700"
+        >
+          <img src={imgDoula} alt="doulaImg" />
         </div>
       </div>
     </section>

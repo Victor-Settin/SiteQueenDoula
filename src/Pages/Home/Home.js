@@ -27,8 +27,8 @@ const Home = () => {
   // Inicializa AOS
   useEffect(() => {
     AOS.init({
-      duration: 1400, // Duração da animação
-      offset: 25, // Offset da animação
+      duration: 1500, // Duração da animação
+      offset: 130, // Offset da animação
       once: false, // Animação ocorre apenas uma vez
     });
   }, []);
@@ -111,13 +111,13 @@ const Home = () => {
 
   return (
     <>
-
+       {/* Seção inicial */}
       <div className="content-box" >
         <img src={FirstimgHome} alt="FirstimgHome" />
       </div>
       <PageWrapper>
       <div className="home-wrapper">
-        {/* Seção inicial */}
+       
 
         {/* Seta animada */}
         <div className="scroll-indicator" data-aos="fade-up">
@@ -125,19 +125,20 @@ const Home = () => {
         </div>
 
         {/* Serviços */}
-        <div style={{ width: "100%" }} data-aos="fade-up">
-          <DoulaServices data-aos="fade-up" />
+        <div style={{ width: "100%" }} >
+          <DoulaServices  />
         </div>
 
         {/* About Me */}
-        <div id="about" className="section-about-me" data-aos="fade-up">
-          <div className="photo-about-me" data-aos="zoom-in">
+        <div id="about" className="section-about-me" >
+          <div className="photo-about-me" data-aos="slide-left"  data-aos-duration="1200">
             <img src={deusaGregaImg} alt="Deusa Grega" className="home-image" />
           </div>
           <div className="description-about-me">
             <div className="content-side-about-me">
-              <b className="title-about-me">About Me</b>
-              <p className="text-about-me">
+              <b className="title-about-me" data-aos="slide-right" data-aos-duration="1300" data-aos-delay="0">About Me</b>
+              <p className="text-about-me" data-aos="slide-left" data-aos-duration="1500"
+          data-aos-delay="0" >
                 I am a Brazilian postpartum doula who has been living in San Mateo for over 5 years.
                 I have been a nanny for almost 10 years caring for toddlers, babies and school-aged children. I pride myself on being loving, warm, trustworthy, loyal, empathetic and communicative.
                 Back home I have a bachelor’s degree in accounting and two MBAs in accounting and finance, but I have found myself once again working with newborns and babies here in the United States.

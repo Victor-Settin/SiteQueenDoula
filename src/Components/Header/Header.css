@@ -85,16 +85,19 @@
   text-decoration: none;
   transition: transform 0.1s ease, color 0.1s ease, border-bottom 0.1s ease; /* Animação suave */
   cursor: pointer; /* Adiciona o cursor pointer */
+  outline: none; /* Remove o contorno padrão */
 }
 
 /* Hover nos links */
 .nav-link:hover {
   transform: scale(1.05); /* Aumenta o texto em 10% */
   border-bottom: 2px solid #a2c037; /* Adiciona borda ao passar o mouse */
+  outline: none; /* Remove o contorno padrão */
 }
 
 .active-link {
   border-bottom: 2px solid #a2c037; /* Borda ativa para o link */
+  outline: none; /* Remove o contorno padrão */
 }
 
 /* Redes sociais */
@@ -197,6 +200,7 @@
   display: none;
   cursor: pointer;
   z-index: 99;
+  outline: none; /* Remove o contorno padrão */
 }
 
 .menu-icon-wrapper {
