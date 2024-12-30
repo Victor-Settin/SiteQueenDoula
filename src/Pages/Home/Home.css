@@ -273,6 +273,7 @@ button.schedule-button.aos-init.aos-animate{
   
   .description-about-me, .photo-about-me{
     width: 100%;
+    padding: 0px 6px;
   }
   .overlay{
     padding: 0px 5px;
