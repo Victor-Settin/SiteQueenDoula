@@ -117,7 +117,6 @@ const Home = () => {
       </div>
       <PageWrapper>
       <div className="home-wrapper">
-       
 
         {/* Seta animada */}
         <div className="scroll-indicator" data-aos="fade-up">
@@ -131,13 +130,13 @@ const Home = () => {
 
         {/* About Me */}
         <div id="about" className="section-about-me" >
-          <div className="photo-about-me" data-aos="slide-left"  data-aos-duration="1200">
+          <div className="photo-about-me" data-aos="fade-up"  data-aos-duration="1200">
             <img src={deusaGregaImg} alt="Deusa Grega" className="home-image" />
           </div>
           <div className="description-about-me">
             <div className="content-side-about-me">
               <b className="title-about-me" data-aos="slide-right" data-aos-duration="1300" data-aos-delay="0">About Me</b>
-              <p className="text-about-me" data-aos="slide-left" data-aos-duration="1500"
+              <p className="text-about-me" data-aos="fade-up" data-aos-duration="1500"
           data-aos-delay="0" >
                 I am a Brazilian postpartum doula who has been living in San Mateo for over 5 years.
                 I have been a nanny for almost 10 years caring for toddlers, babies and school-aged children. I pride myself on being loving, warm, trustworthy, loyal, empathetic and communicative.
