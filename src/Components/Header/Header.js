@@ -50,12 +50,11 @@ const Header = () => {
           </svg>
         </div>
       </div>
-
-      <div className="menu-icon" onClick={toggleMenu}>
-        <div className="menu-icon-wrapper">
-          {isMenuOpen ? <HiX /> : <HiMenu />}
+        <div className="menu-icon" onClick={toggleMenu}>
+          <div className="menu-icon-wrapper">
+            {isMenuOpen ? <HiX /> : <HiMenu />}
+          </div>
         </div>
-      </div>
 
       <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
         <div onClick={() => scrollToSection('about')} className="nav-link">
