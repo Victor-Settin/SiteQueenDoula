@@ -173,6 +173,16 @@ img.home-image {
   text-wrap: nowrap;
 }
 
+.section-title.home {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333c51;
+  margin-bottom: 20px;
+  text-wrap: wrap;
+  text-align: center;
+  padding: 0px 10px;
+}
+
 .recommendation-card {
     min-height: 320px;
     background-color: #fff;
@@ -288,6 +298,10 @@ button.schedule-button.aos-init.aos-animate{
     font-size: 22px;
   }
 
+  .section-title.home {
+    font-size: 22px;
+  }
+
   .doula-container  .doula-description{
     font-size: 14px;
   }
@@ -324,9 +338,8 @@ button.schedule-button.aos-init.aos-animate{
 
 .client-comment.collapsed {
   overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3; /* Limita a 3 linhas */
-  -webkit-box-orient: vertical;
+  height: calc(3 * 1.2em); /* Ajuste o valor 1.2em conforme o tamanho da linha */
+  line-height: 1.2em; /* Define a altura da linha */
 }
 
 .client-comment.expanded {

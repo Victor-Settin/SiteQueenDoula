@@ -36,8 +36,17 @@ const Home = () => {
 
 
   const handleContactClick = () => {
-    navigate('/contact'); // Redireciona para a página /contact
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      const offsetTop = contactSection.getBoundingClientRect().top + window.scrollY; // Posição da seção
+      const offsetAdjustment = 200; // Ajuste de 100px acima
+      window.scrollTo({
+        top: offsetTop - offsetAdjustment, // Rolagem ajustada
+        behavior: 'smooth', // Rolagem suave
+      });
+    }
   };
+  
 
   const recommendations = [
     {
@@ -112,6 +121,11 @@ const Home = () => {
   return (
     <>
        {/* Seção inicial */}
+       {/* <div class="section-welcome">
+        <div class="section-title home">
+        As a postpartum doula, I can bring a lot of love to your new family and try to ease the burden that new parents inevitably feel. What I love most in life is love loving people!
+        </div>
+       </div> */}
       <div className="content-box" >
         <img src={FirstimgHome} alt="FirstimgHome" />
       </div>

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaFacebook, FaInstagram } from 'react-icons/fa';
+// import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import { HiMenu, HiX } from 'react-icons/hi';
 import './Header.css';
-import logo from '../../Images/header-logo-3.png';
+import logoTurtle from '../../Images/logo_turtle.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,11 +37,13 @@ const Header = () => {
   return (
     <header className="header">
       <div className="content-header">
-      <div className="logo-header">
+      <div className="box-header">
         <NavLink to="/" className="logo-link">
-          <img src={logo} alt="Logo" className="logo-pc" />
-          <img src={logo} alt="Logo" className="logo-mobile" />
+            <img src={logoTurtle} alt="LogoTurle" className="logo-turtle" />
         </NavLink>
+        <div className="log-text">
+          Purple Turtle Doula & Nanny Services
+        </div>
         <div className="curved-line-container-1">
           <svg viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg" className="curved-line">
             <path d="M 0 20 Q 50 10, 100 20" stroke="#a1cf4a" fill="transparent" strokeWidth="1" />
