@@ -153,7 +153,7 @@
 
 
 @media (max-width: 900px){
-  .curved-line-container-2,.social-links{
+  .curved-line-container-2,.social-links,.curved-line-container-1{
     display: none;
   } 
 }
