@@ -170,7 +170,8 @@ const Home = () => {
                 I am fully vaccinated and do not smoke.
                 I have my own reliable car.
                 I am pet-friendly and completely stigma-free.
-                I would be happy to share more information with your family over the phone or in an interview to further discuss my qualifications and provide my references.
+                I would be happy to share more information with your family over the phone or in an interview to further discuss my qualifications and provide my references.<br></br>
+                As a postpartum doula, I can bring a lot of love to your new family and try to ease the burden that new parents inevitably feel. What I love most in life is love loving people!
               </p>
               <button
                 className="schedule-button"
