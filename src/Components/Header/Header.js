@@ -40,10 +40,10 @@ const Header = () => {
       <div className="box-header">
         <NavLink to="/" className="logo-link">
             <img src={logoTurtle} alt="LogoTurle" className="logo-turtle" />
+          <div className="log-text">
+            Purple Turtle Doula & Nanny Services
+          </div>
         </NavLink>
-        <div className="log-text">
-          Purple Turtle Doula & Nanny Services
-        </div>
         <div className="curved-line-container-1">
           <svg viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg" className="curved-line">
             <path d="M 0 20 Q 50 10, 100 20" stroke="#a1cf4a" fill="transparent" strokeWidth="1" />
