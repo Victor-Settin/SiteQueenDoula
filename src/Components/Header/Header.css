@@ -200,6 +200,9 @@
     bottom: 1px;
     left: 72%;
   } 
+  .content-header{
+    padding: 11px;
+  }
 }
 
 
