@@ -13,7 +13,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import DoulaServices from '../../Components/DoulaServices/DoulaServices';
 import { useMediaQuery } from 'react-responsive'; // Importa o hook para responsividade
-import { useNavigate } from 'react-router-dom'; // Importar o hook useNavigate
+// import { useNavigate } from 'react-router-dom'; // Importar o hook useNavigate
 import Gallery from '../Gallery/Gallery';
 import Contact from '../Contact/Contact';
 import PageWrapper from './../../Components/PageWrapper/PageWrapper';
@@ -22,7 +22,7 @@ import AOS from 'aos'; // Importa a biblioteca AOS
 import 'aos/dist/aos.css'; // Importa o CSS do AOS
 
 const Home = () => {
-  const navigate = useNavigate(); // Usar o hook useNavigate
+  // const navigate = useNavigate(); // Usar o hook useNavigate
 
   // Inicializa AOS
   useEffect(() => {
