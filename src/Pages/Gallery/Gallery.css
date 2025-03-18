@@ -80,4 +80,7 @@
   .gallery-container,.contact-container,.recommendations-section{
     width: 100% !important;
   }
+  .gallery-image{
+    min-height: 150px;
+  }
 }
