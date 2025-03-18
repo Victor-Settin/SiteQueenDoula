@@ -52,6 +52,7 @@
   transition: transform 0.3s ease;
   border-radius: 10px;
   object-fit: cover;
+  min-height: 260px;
 }
 
 .gallery-image:hover {
