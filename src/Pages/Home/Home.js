@@ -96,7 +96,7 @@ const Home = () => {
       image: cliente6,
       rating: 5,
       date: "03/17/2024", // Data individual
-      location: "San Mateo - California", // Local individual
+      location: "RedWood City- California", // Local individual
       comment: "“ I am thrilled to share my experience with Raquel, our Nanny and Doula. Raquel‘s gentle and loving approach, made quite the difference. It was evident that my girls adored Raquel; they would light up the room whenever they saw her. Raquel was incredibly attentive to our girls, providing the care and support we needed during those early months. Her expertise and sleep training was particularly invaluable. Thanks to her guidance. We were able to establish a sleep routine that had our twin girls sleeping 11 hours a night by just four months of age. That’s not only improved their well-being, but also allowed us to regain some much-needed rest. Additionally, Raquel maintain excellent communication with me, keeping me informed and involved. I highly recommend Raquel. Her warmth experience and dedication have made a lasting positive impact on our family. ”"
     }
     // Mais recomendações
