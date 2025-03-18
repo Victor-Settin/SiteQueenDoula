@@ -7,6 +7,7 @@ import img4 from '../../Images/img11.jpg';
 import img5 from '../../Images/LetterForRaquel.jpg';
 import img6 from '../../Images/a6.jpg';
 import img7 from '../../Images/a7.jpg';
+import img8 from '../../Images/a8.jpg';
 
 
 import { motion } from 'framer-motion';

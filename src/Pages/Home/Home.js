@@ -6,6 +6,7 @@ import cliente2 from '../../Images/img_rnt.jpg';
 import cliente3 from '../../Images/profile_photo.jpg';
 import cliente4 from '../../Images/img123.jpg';
 import cliente5 from '../../Images/img111.jpg';
+import cliente6 from '../../Images/img929.jpg';
 import { AiOutlineCalendar } from 'react-icons/ai';
 import { FaArrowDown } from 'react-icons/fa'; // Importa o ícone da seta
 import Slider from 'react-slick'; // Importa o componente Slider
@@ -89,6 +90,14 @@ const Home = () => {
       date: "12/26/2024", // Data individual
       location: "San Mateo - California", // Local individual
       comment: "“ I have known Raquel Martins Rodrigues for over 5 years. We were coworkers working for the same family in Hillsborough California. This family had 3 children and 3 Nannies. Raquel is very knowledgeable about child development and has taken many classes. She has a lot of experience working with new born babies since she has her postpartum Doula certificate. She also has experience working with toddlers and children of all ages. She's very loving, kind, patient, and caring, warm, compassionate, trustworthy and respectful. She's also a great team player, helpful, gets along with everyone. She is very resourceful and has great problem solving skills. In addition, of being an exceptional Doula and a fantastic Nanny she is the best house cleaner I have ever met. She would transform a very  disorganized and dirty house into a spotless and neat place. She has wonderful organization skills and works in house projects. Raquel goes above and beyond with all the families she works with. I would highly recommend her. ”"
+    },
+    {
+      name: "Aaron",
+      image: cliente6,
+      rating: 5,
+      date: "03/17/2024", // Data individual
+      location: "San Mateo - California", // Local individual
+      comment: "“ I am thrilled to share my experience with Raquel, our Nanny and Doula. Raquel‘s gentle and loving approach, made quite the difference. It was evident that my girls adored Raquel; they would light up the room whenever they saw her. Raquel was incredibly attentive to our girls, providing the care and support we needed during those early months. Her expertise and sleep training was particularly invaluable. Thanks to her guidance. We were able to establish a sleep routine that had our twin girls sleeping 11 hours a night by just four months of age. That’s not only improved their well-being, but also allowed us to regain some much-needed rest. Additionally, Raquel maintain excellent communication with me, keeping me informed and involved. I highly recommend Raquel. Her warmth experience and dedication have made a lasting positive impact on our family. ”"
     }
     // Mais recomendações
   ];
