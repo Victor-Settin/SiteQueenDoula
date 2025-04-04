@@ -13,7 +13,7 @@ import img8 from '../../Images/jul.jpg';
 import { motion } from 'framer-motion';
 import 'react-image-lightbox/style.css';
 import Lightbox from 'react-image-lightbox';
-
+ 
 const images = [img1,img2,img3,img4,img6,img7,img5,img8];
 
 const Gallery = () => {
