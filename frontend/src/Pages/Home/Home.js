@@ -7,6 +7,7 @@ import cliente3 from '../../Images/profile_photo.jpg';
 import cliente4 from '../../Images/img123.jpg';
 import cliente5 from '../../Images/img111.jpg';
 import cliente6 from '../../Images/img929.jpg';
+import cliente7 from '../../Images/jul-profile.jpg';
 import { AiOutlineCalendar } from 'react-icons/ai';
 import { FaArrowDown } from 'react-icons/fa'; // Importa o ícone da seta
 import Slider from 'react-slick'; // Importa o componente Slider
@@ -17,7 +18,7 @@ import { useMediaQuery } from 'react-responsive'; // Importa o hook para respons
 // import { useNavigate } from 'react-router-dom'; // Importar o hook useNavigate
 import Gallery from '../Gallery/Gallery';
 import Contact from '../Contact/Contact';
-import PageWrapper from './../../Components/PageWrapper/PageWrapper';
+import PageWrapper from '../../Components/PageWrapper/PageWrapper';
 import FirstimgHome from '../../Images/foto-home1.jpg';
 import AOS from 'aos'; // Importa a biblioteca AOS
 import 'aos/dist/aos.css'; // Importa o CSS do AOS
@@ -98,6 +99,13 @@ const Home = () => {
       date: "03/17/2024", // Data individual
       location: "RedWood City- California", // Local individual
       comment: "“ I am thrilled to share my experience with Raquel, our Nanny and Doula. Raquel‘s gentle and loving approach, made quite the difference. It was evident that my girls adored Raquel; they would light up the room whenever they saw her. Raquel was incredibly attentive to our girls, providing the care and support we needed during those early months. Her expertise and sleep training was particularly invaluable. Thanks to her guidance. We were able to establish a sleep routine that had our twin girls sleeping 11 hours a night by just four months of age. That’s not only improved their well-being, but also allowed us to regain some much-needed rest. Additionally, Raquel maintain excellent communication with me, keeping me informed and involved. I highly recommend Raquel. Her warmth experience and dedication have made a lasting positive impact on our family. ”"
+    },{
+      name: "Julie Barton",
+      image: cliente7,
+      rating: 5,
+      date: "04/03/2025", // Data individual
+      location: "South San Jose - California", // Local individual
+      comment: "“ I can't say enough good things about Raquel- if you're considering a nighttime doula, you can't go wrong with inviting her into your home and having her take care of your little one. She supported me with my 2-month-old twin boys, helping to get their nighttimes more regulated and their sleep better - a true lifesaver!. ”"
     }
     // Mais recomendações
   ];
