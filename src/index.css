@@ -1,0 +1,99 @@
+/* Definindo variáveis CSS para cores, tamanhos e fontes */
+:root {
+  /* Cores */
+  --primary-color: #333333; /* Cor principal - cinza escuro */
+  --secondary-color: #f5f5f5; /* Cor secundária - fundo claro */
+  --accent-color: #ff7f50; /* Cor de destaque - coral */
+  --text-color-black: #000000; /* Cor do texto - preto */
+  --text-color-white: #e1e1e1; /* Cor do texto - branca */
+  --link-color: #1e90ff; /* Cor dos links - azul */
+  --border-color: #e1e1e1; /* Cor para bordas - cinza claro */
+  --background-color: #ffffff; /* Cor do fundo - branco */
+
+  /* Tamanhos */
+  --font-size-small: 12px;
+  --font-size-medium: 16px;
+  --font-size-large: 24px;
+  --font-size-xlarge: 32px;
+  --line-height-default: 1.5;
+}
+
+/* Resetando estilos globais */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color:#a2c037;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: var(--line-height-default); /* Usando o line-height padrão */
+  background-color: var(--background-color); /* Cor de fundo */
+  color: var(--text-color-black); /* Cor do texto global */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* 1. Remover margin default */
+* {
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Evitar overflow de texto */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  color: var(--text-color-black); /* Cor do texto */
+}
+
+/* 8. Melhorar o wrap de linhas */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text-color-black); /* Cor do texto */
+}
+
+/*
+  9. Criar contexto de empilhamento (stacking context) para o root
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+
+.app-content {
+  position: relative;
+  z-index: 1;
+}

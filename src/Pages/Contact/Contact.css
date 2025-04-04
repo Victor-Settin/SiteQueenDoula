@@ -1,0 +1,258 @@
+.contact-container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.959); /* Cor com opacidade */
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.title-contact .title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.title-contact .subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  
+}
+
+/* Always Floating Label */
+.form-group {
+  position: relative;
+  width: 100%;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 5px 10px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  background: transparent;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: 21688e;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.input-field:focus {
+  border-color: #007bff;
+}
+
+.error .input-field {
+  border-color: #e74c3c;
+  background-color: #ffe6e6;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.checkbox.error {
+  border: 1px solid #e74c3c;
+}
+
+label {
+  position: absolute;
+  top: -9px; /* Sempre acima */
+  left: 10px;
+  font-size: 14px; /* Fonte menor para dar espaço */
+  color: #a2c037; /* Cor de destaque */
+  background: rgba(255, 255, 255, 0.879);
+  border-radius: 5px; /* Cor com opacidade */; /* Fundo para evitar sobreposição */
+  padding: 0 5px;
+  pointer-events: none; /* Evita interferência no clique */
+}
+
+.terms-submit{
+  color:#a2c037;
+}
+
+.submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Espaçamento entre texto e ícone */
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #f4f4f4;
+  background-color: #cad22b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin: auto;
+}
+
+.submit-button .icon {
+  font-size: 16px; /* Tamanho do ícone */
+}
+
+.submit-button:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-left {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+
+.error-message {
+  color: #ff0000;
+    font-size: 14px;
+    display: contents;
+    text-align: left;
+}
+
+
+.checkbox-group {
+  display: flex
+;
+  align-items: center;
+  gap: 8px;
+  padding: 0px 0px 15px 0px;
+}
+ 
+.checkbox-group .checkbox {
+  transform: scale(0.6); /* Aumenta o tamanho do checkbox em 1.5 vezes */
+  margin: 0;
+  cursor: pointer;
+  width: 25px;
+  height: 30px;
+  cursor: pointer;
+}
+
+
+
+.contact-form .forms{
+  display: flex;
+  gap: 15px;
+  width:70%
+}
+
+.card-time {
+  margin: 0 auto;
+    width: 100%;
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.959); /* Cor com opacidade */
+    margin-top: 45px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.959);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-left,.form-right{
+  width: 50%;
+}
+
+.contact-form .form-right{
+  width: 50%;
+}
+
+.card-time .right-side{
+  width: 50%;
+}
+
+.card-time .left-side{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 28px;
+}
+
+.card-time-image{
+  width: 100%;
+}
+
+img.contact-image {
+  width: 100%;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.card-time .days{
+  font-size: 20px;
+  color: #333c51;
+  text-align: left;
+}
+
+.card-time .open{
+  font-size: 14px;
+  color: #333c51;
+  font-style: italic;
+}
+
+textarea{
+  min-height: 150px;
+}
+
+.doula-description{
+  font-size: 16px;
+}
+
+@media (max-width: 700px) {
+  .contact-form{
+    width: 100%;
+  }
+  .contact-container{
+    max-width: 95%;
+    width: 100%;
+  }
+
+  .contact-form .forms {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    flex-direction: column;
+}
+
+  textarea{
+    max-height: 122px;
+  }
+
+  .contact-form .form-left,.form-right{
+    width: 100%;
+  }
+  
+  .contact-form .form-right{
+    width: 100%;
+  }
+  .section-title{
+    font-size: 22px;
+  }
+
+  .doula-footer{
+    font-size: 14px;
+  }
+
+}
+
+a.terms-link {
+  color: #a2c037;
+}

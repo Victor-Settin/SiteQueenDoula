@@ -1,0 +1,56 @@
+/* Garante que o body e html ocupem 100% da altura da tela */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box !important;
+}
+
+
+
+/* Ajusta o container principal para ocupar toda a altura */
+.App {
+  display: flex;
+  flex-direction: column; /* Coloca Header, Conteúdo e Footer em colunas */
+  min-height: 100vh; /* Garante altura mínima de 100% da janela */
+}
+
+/* Header no topo */
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+/* Conteúdo principal ocupa espaço restante */
+.content-wrapper {
+  flex: 1; /* Faz com que o conteúdo cresça para empurrar o Footer */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Alinha o conteúdo ao topo */
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Footer no final */
+footer {
+  background-color: #333c51;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+}
+
+/* Responsividade para garantir o layout em telas menores */
+@media (max-width: 700px) {
+  .content-wrapper {
+    padding: 0px 10px 10px 10px;
+  }
+}
