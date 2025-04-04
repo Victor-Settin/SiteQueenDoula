@@ -9,7 +9,7 @@ import img6 from '../../Images/a6.jpg';
 import img7 from '../../Images/a7.jpg';
 import img8 from '../../Images/jul.jpg';
 import img9 from '../../Images/gem1.jpg';
-import img10 from '../../Images/gem2.jpg';;
+import img10 from '../../Images/gem2.jpg';
 
  
 import { motion } from 'framer-motion';
