@@ -31,7 +31,15 @@ const Home = () => {
 
   const [showTopBtn, setShowTopBtn] = useState(false);
   useEffect(() => {
-    const handleScroll = () => setShowTopBtn(window.scrollY > 300);
+    const handleScroll = () => {
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const scrollPosition = window.scrollY;
+      const nearBottom = scrollPosition + windowHeight >= documentHeight -450;
+
+      setShowTopBtn(nearBottom);
+    };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
