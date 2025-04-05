@@ -69,7 +69,7 @@ const Home = () => {
       rating: 5,
       date: '10/26/2023',
       location: 'Daly City - California',
-      comment: '“I had my baby in November 2023 and I don’t know what my postpartum period would have been like without Raquel’s help. She was essential...”',
+      comment: '“I had my baby in November 2023 and I don´t know what my postpartum period would have been like without Raquel´s help. She was essential for my recovery and the baby´s well-being. Postpartum was the most difficult time of my life and it was great to have someone so experienced and respectful helping me recover and take care of my baby. She taught me how to bathe my son, how to keep him safe, and took care of him so I could rest. Raquel, thank you so much for everything!”',
     },
     {
       name: 'Sarah',
