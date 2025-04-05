@@ -289,3 +289,49 @@ button.schedule-button.aos-init.aos-animate {
   text-decoration: underline;
 }
 
+/* Botão "Voltar ao Topo" */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px; /* Tamanho fixo para torná-lo redondo */
+  height: 50px;
+  background-color: rgba(247, 243, 207, 0.1); /* Mesma cor de fundo do schedule-button */
+  border: 2px solid #a2c037; /* Borda igual ao schedule-button */
+  border-radius: 50%; /* Torna o botão redondo */
+  padding: 10px; /* Padding ajustado para centralizar a seta */
+  font-size: 24px; /* Tamanho da fonte da seta */
+  font-family: 'Roboto', sans-serif; /* Alterando a fonte para algo mais estilizado */
+  color: #29344e; /* Cor da seta igual ao texto do schedule-button */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  opacity: 0.8; /* Leve transparência inicial */
+}
+
+/* Hover com animação */
+.scroll-to-top:hover {
+  transform: scale(1.15) translateY(-5px); /* Escala e leve movimento para cima */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  opacity: 1; /* Totalmente visível no hover */
+}
+
+/* Animação de pulsar */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Aplicando a animação ao botão */
+.scroll-to-top {
+  animation: pulse 2s infinite ease-in-out; /* Animação contínua de pulsar */
+}

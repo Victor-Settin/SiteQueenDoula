@@ -5,14 +5,10 @@ import { FaArrowDown } from 'react-icons/fa';
 import Slider from 'react-slick';
 import AOS from 'aos';
 import { useMediaQuery } from 'react-responsive';
-
-// Estilos
 import 'aos/dist/aos.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Home.css';
-
-// Imagens
 import deusaGregaImg from '../../assets/Images/deusa-grega.jpg';
 import FirstimgHome from '../../assets/Images/foto-home1.jpg';
 import cliente1 from '../../assets/Images/img_rnt.jpg';
@@ -22,8 +18,6 @@ import cliente4 from '../../assets/Images/img123.jpg';
 import cliente5 from '../../assets/Images/img111.jpg';
 import cliente6 from '../../assets/Images/img929.jpg';
 import cliente7 from '../../assets/Images/jul-profile.jpg';
-
-// Componentes
 import DoulaServices from '../../Components/DoulaServices/DoulaServices';
 import Gallery from '../Gallery/Gallery';
 import Contact from '../Contact/Contact';
@@ -31,12 +25,10 @@ import PageWrapper from '../../Components/PageWrapper/PageWrapper';
 import FaqAccordion from '../../Components/FaqAccordion/FaqAccordion';
 
 const Home = () => {
-  // Animação com AOS
   useEffect(() => {
     AOS.init({ duration: 1500, offset: 80, once: false });
   }, []);
 
-  // Botão "voltar ao topo"
   const [showTopBtn, setShowTopBtn] = useState(false);
   useEffect(() => {
     const handleScroll = () => setShowTopBtn(window.scrollY > 300);
@@ -46,7 +38,6 @@ const Home = () => {
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
-  // Scroll até seção de contato
   const handleContactClick = () => {
     const contactSection = document.getElementById('contact');
     if (contactSection) {
@@ -55,7 +46,6 @@ const Home = () => {
     }
   };
 
-  // Depoimentos
   const recommendations = [
     {
       name: 'Sarah',
@@ -156,28 +146,23 @@ const Home = () => {
         <meta name="keywords" content="postpartum doula, nanny services, San Mateo, newborn care" />
       </Helmet>
 
-      {/* Imagem topo */}
       <div className="content-box">
         <img src={FirstimgHome} alt="First image of Purple Turtle Services" loading="lazy" />
       </div>
 
       <PageWrapper>
         <div className="home-wrapper">
-          {/* Scroll Icon */}
           <div className="scroll-indicator" data-aos="fade-up">
             <FaArrowDown className="arrow-icon" />
           </div>
 
-          {/* Serviços */}
           <DoulaServices />
 
-          {/* Botão Agendamento */}
           <button className="schedule-button" onClick={handleContactClick} data-aos="fade-up">
             <AiOutlineCalendar style={{ marginRight: '8px', fontSize: '20px' }} />
             Schedule a Free Consultation
           </button>
 
-          {/* Sobre Mim */}
           <div id="about" className="section-about-me">
             <div className="photo-about-me" data-aos="fade-up">
               <img src={deusaGregaImg} alt="Raquel, Brazilian postpartum doula" className="home-image" loading="lazy" />
@@ -186,8 +171,8 @@ const Home = () => {
               <div className="content-side-about-me">
                 <b className="title-about-me" data-aos="slide-right">About Me</b>
                 <p className="text-about-me" data-aos="fade-up">
-                I am a Brazilian postpartum doula who has been living in San Mateo for over 5 years. I have been a nanny for almost 10 years caring for toddlers, babies and school-aged children. I pride myself on being loving, warm, trustworthy, loyal, empathetic and communicative. Back home I have a bachelor’s degree in accounting and two MBAs in accounting and finance, but I have found myself once again working with newborns and babies here in the United States. It is wonderful to be with families at such a special time and to be able to treat each child as the individual person they are, with respect, warmth and integrity. I am fully vaccinated and do not smoke. I have my own reliable car. I am pet-friendly and completely stigma-free. I would be happy to share more information with your family over the phone or in an interview to further discuss my qualifications and provide my references.<br />
-                As a postpartum doula, I can bring a lot of love to your new family and try to ease the burden that new parents inevitably feel. What I love most in life is love loving people!
+                  I am a Brazilian postpartum doula who has been living in San Mateo for over 5 years. I have been a nanny for almost 10 years caring for toddlers, babies and school-aged children. I pride myself on being loving, warm, trustworthy, loyal, empathetic and communicative. Back home I have a bachelor’s degree in accounting and two MBAs in accounting and finance, but I have found myself once again working with newborns and babies here in the United States. It is wonderful to be with families at such a special time and to be able to treat each child as the individual person they are, with respect, warmth and integrity. I am fully vaccinated and do not smoke. I have my own reliable car. I am pet-friendly and completely stigma-free. I would be happy to share more information with your family over the phone or in an interview to further discuss my qualifications and provide my references.<br />
+                  As a postpartum doula, I can bring a lot of love to your new family and try to ease the burden that new parents inevitably feel. What I love most in life is love loving people!
                 </p>
                 <button className="schedule-button" onClick={handleContactClick} data-aos="fade-up">
                   <AiOutlineCalendar style={{ marginRight: '8px', fontSize: '20px' }} />
@@ -197,14 +182,49 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Galeria */}
           <Gallery />
 
-          {/* Contato */}
           <Contact />
 
-          {/* FAQ Accordion */}
+          <div className="recommendations-section" id="reviews" data-aos="fade-up">
+            <h2 className="section-title">What My Clients Say</h2>
+            <Slider {...settings}>
+              {recommendations.map((rec, index) => (
+                <div key={index} className="recommendation-card" data-aos="zoom-in">
+                  <img src={rec.image} alt={`Photo of ${rec.name}`} className="client-image" loading="lazy" />
+                  <h3 className="client-name">{rec.name}</h3>
+                  <div className="client-rating">
+                    {'★'.repeat(rec.rating)}
+                    {'☆'.repeat(5 - rec.rating)}
+                  </div>
+                  <div className="date-location">
+                    <span className="date">{rec.date}</span> |{' '}
+                    <span className="location">{rec.location}</span>
+                  </div>
+                  <p className={`client-comment ${expanded[index] ? 'expanded' : 'collapsed'}`}>
+                    {rec.comment}
+                  </p>
+                  {rec.comment.length > 100 && (
+                    <button
+                      className="read-more-button"
+                      onClick={() => toggleExpand(index)}
+                      aria-expanded={expanded[index]}
+                    >
+                      {expanded[index] ? 'Read Less' : 'Read More'}
+                    </button>
+                  )}
+                </div>
+              ))}
+            </Slider>
+          </div>
+
           <FaqAccordion faqs={faqs} />
+
+          {showTopBtn && (
+            <button className="scroll-to-top" onClick={scrollToTop}>
+              ↑
+            </button>
+          )}
         </div>
       </PageWrapper>
     </>
