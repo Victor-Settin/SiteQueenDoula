@@ -224,7 +224,7 @@ const Home = () => {
 
         {/* Recomendações */}
         <div className="recommendations-section" id="reviews" data-aos="fade-up">
-          <h2 className="section-title">What Our Clients Say</h2>
+          <h2 className="section-title">What My Clients Say</h2>
           <Slider {...settings}>
             {recommendations.map((rec, index) => (
               <div key={index} className="recommendation-card" data-aos="zoom-in">
