@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import emailjs from 'emailjs-com';
-import { useNavigate } from 'react-router-dom'; // Importa o hook useNavigate
+import { useNavigate } from 'react-router-dom';
 import * as yup from 'yup';
 import './Contact.css';
 import { motion } from 'framer-motion';
 import { FaPaperPlane } from 'react-icons/fa';
-import { toast } from 'react-hot-toast'; // Importando o toast do react-hot-toast
+import { toast } from 'react-hot-toast';
 
 // Esquema de validação Yup
 const schema = yup.object().shape({
@@ -26,7 +26,7 @@ const schema = yup.object().shape({
 });
 
 const Contact = () => {
-  const [isSubmitting, setIsSubmitting] = useState(false); // Estado de envio
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const {
     register,
@@ -38,12 +38,12 @@ const Contact = () => {
     mode: 'onChange',
   });
 
-  const navigate = useNavigate(); // Hook para redirecionamento
+  const navigate = useNavigate();
 
   const onSubmit = (data) => {
     console.log('Form Data Submitted:', data);
 
-    setIsSubmitting(true); // Ativa o estado de envio
+    setIsSubmitting(true);
 
     emailjs
       .send(
@@ -69,7 +69,7 @@ const Contact = () => {
           });
           console.log('Email sent successfully:', response);
           reset();
-          navigate('/success'); // Redireciona para a página "success"
+          navigate('/success');
         },
         (error) => {
           toast.error('Failed to send message. Please try again.', {
@@ -83,12 +83,12 @@ const Contact = () => {
         }
       )
       .finally(() => {
-        setIsSubmitting(false); // Desativa o estado de envio após o processo
+        setIsSubmitting(false);
       });
   };
 
   return (
-    <div className="contact-container">
+    <div id="contact" className="contact-container">
       <motion.div
         className="title-contact"
         initial={{ opacity: 0, y: -50 }}
@@ -168,7 +168,7 @@ const Contact = () => {
           <button
             type="submit"
             className="submit-button"
-            disabled={isSubmitting} // Desabilita o botão enquanto o envio está em andamento
+            disabled={isSubmitting}
           >
             {isSubmitting ? (
               <>

@@ -35,7 +35,7 @@ const Home = () => {
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
       const scrollPosition = window.scrollY;
-      const nearBottom = scrollPosition + windowHeight >= documentHeight -500;
+      const nearBottom = scrollPosition + windowHeight >= documentHeight - 500;
 
       setShowTopBtn(nearBottom);
     };
@@ -155,7 +155,7 @@ const Home = () => {
       </Helmet>
 
       <div className="content-box">
-        <img src={FirstimgHome} alt="First image of Purple Turtle Services" loading="lazy" />
+        <img src={FirstimgHome} alt="Purple Turtle Services" loading="lazy" />
       </div>
 
       <PageWrapper>
@@ -190,6 +190,7 @@ const Home = () => {
             </div>
           </div>
 
+          {/* Galeria */}
           <Gallery />
 
           <Contact />
@@ -199,7 +200,7 @@ const Home = () => {
             <Slider {...settings}>
               {recommendations.map((rec, index) => (
                 <div key={index} className="recommendation-card" data-aos="zoom-in">
-                  <img src={rec.image} alt={`Photo of ${rec.name}`} className="client-image" loading="lazy" />
+                  <img src={rec.image} alt={`${rec.name}`} className="client-image" loading="lazy" />
                   <h3 className="client-name">{rec.name}</h3>
                   <div className="client-rating">
                     {'★'.repeat(rec.rating)}
