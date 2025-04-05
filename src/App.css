@@ -5,11 +5,14 @@ body, html {
   height: 100%;
   width: 100%;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 * {
   box-sizing: border-box !important;
+}
+
+div#reviews {
+  overflow-x: hidden;
 }
 
 
