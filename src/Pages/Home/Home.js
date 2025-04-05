@@ -35,7 +35,7 @@ const Home = () => {
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
       const scrollPosition = window.scrollY;
-      const nearBottom = scrollPosition + windowHeight >= documentHeight -450;
+      const nearBottom = scrollPosition + windowHeight >= documentHeight -500;
 
       setShowTopBtn(nearBottom);
     };
