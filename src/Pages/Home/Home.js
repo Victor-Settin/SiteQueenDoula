@@ -61,7 +61,7 @@ const Home = () => {
       rating: 5,
       date: '04/03/2025',
       location: 'South San Jose - California',
-      comment: '“I can’t say enough good things about Raquel - if you’re considering a nighttime doula, you can’t go wrong with inviting her into your home...”',
+      comment: '“I can’t say enough good things about Raquel - if you’re considering a nighttime doula, you can’t go wrong with inviting her into your home and having her take care of your little one. She supported me with my 2-month-old twin boys, helping to get their nighttimes more regulated and their sleep better - a true lifesaver!”',
     },
     {
       name: 'Nathalia',
@@ -77,7 +77,7 @@ const Home = () => {
       rating: 5,
       date: '09/02/2024',
       location: 'San Mateo - California',
-      comment: '“Raquel had helped us a lot with my first baby and we had no doubts about being with her when our second princess arrived...”',
+      comment: '“Raquel had helped us a lot with my first baby and we had no doubts about being with her when our second princess arrived. We highly recommend her!”',
     },
     {
       name: 'Ana Quinonez',
@@ -85,7 +85,7 @@ const Home = () => {
       rating: 5,
       date: '12/26/2024',
       location: 'San Mateo - California',
-      comment: '“I have known Raquel Martins Rodrigues for over 5 years. We were coworkers working for the same family...”',
+      comment: '“I have known Raquel Martins Rodrigues for over 5 years. We were coworkers working for the same family in Hillsborough California. This family had 3 children and 3 Nannies. Raquel is very knowledgeable about child development and has taken many classes. She has a lot of experience working with new born babies since she has her postpartum Doula certificate. She also has experience working with toddlers and children of all ages. She´s very loving, kind, patient, and caring, warm, compassionate, trustworthy and respectful.  She´s also a great team player, helpful, gets along with everyone. She is very resourceful and has great problem solving skills. In addition, of being an exceptional Doula and a fantastic Nanny she is the best house cleaner I have ever met. She would transform a very  disorganized and dirty house into a spotless and neat place. She has wonderful organization skills and works in house projects. Raquel goes above and beyond with all the families she works with. I would highly recommend her.”',
     },
     {
       name: 'Aaron',
@@ -93,7 +93,7 @@ const Home = () => {
       rating: 5,
       date: '03/17/2024',
       location: 'RedWood City - California',
-      comment: '“I am thrilled to share my experience with Raquel, our Nanny and Doula. Raquel‘s gentle and loving approach made quite the difference...”',
+      comment: '“I am thrilled to share my experience with Raquel, our Nanny and Doula. Raquel‘s gentle and loving approach, made quite the difference. It was evident that my girls adored Raquel; they would light up the room whenever they saw her. Raquel was incredibly attentive to our girls, providing the care and support we needed during those early months. Her expertise and sleep training was particularly invaluable. Thanks to her guidance. We were able to establish a sleep routine that had our twin girls sleeping 11 hours a night by just four months of age. That’s not only improved their well-being, but also allowed us to regain some much-needed rest. Additionally, Raquel maintain excellent communication with me, keeping me informed and involved. I highly recommend Raquel. Her warmth experience and dedication have made a lasting positive impact on our family.”',
     },
     {
       name: 'Revşan',
@@ -101,7 +101,7 @@ const Home = () => {
       rating: 5,
       date: '12/26/2024',
       location: 'San Mateo - California',
-      comment: '“I came to US already pregnant with no English. Raquel was very supportive and patient with me and my family...”',
+      comment: '“I came to US already pregnant with no English. Raquel was very supportive and patient with me and my family It was very important having her around. Thank you!”',
     },
     {
       name: 'Sarah',
