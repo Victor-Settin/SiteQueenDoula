@@ -13,6 +13,8 @@ body, html {
 
 div#reviews {
   overflow-x: hidden;
+  overflow-y: hidden;
+  min-height: 418px;
 }
 
 
