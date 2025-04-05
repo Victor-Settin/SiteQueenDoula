@@ -16,13 +16,7 @@ import Lightbox from 'react-image-lightbox';
 import ReactPaginate from 'react-paginate';
 
 const images = [
-  img1, img2, img3, img4, img6, img7, img5, img8, img9, img10,
-  img2, img3, img4, img6, img7, img5, img8, img9, img10,
-  img2, img3, img4, img6, img7, img5, img8, img9, img10,
-  img2, img3, img4, img6, img7, img5, img8, img9, img10,
-  img2, img3, img4, img6, img7, img5, img8, img9, img10,
-  img2, img3, img4, img6, img7, img5, img8, img9, img10,
-  img2, img3, img4, img6, img7, img5, img8, img9, img10,
+  img1, img2, img3, img4, img6, img7, img5, img8, img9, img10
 ];
 
 const ITEMS_PER_PAGE = 9;
