@@ -290,10 +290,9 @@ button.schedule-button.aos-init.aos-animate {
 }
 
 /* Botão "Voltar ao Topo" */
-/* Botão "Voltar ao Topo" */
 .scroll-to-top {
   position: fixed;
-  bottom: 20px;
+  bottom: 30px;
   right: 20px;
   width: 50px;
   height: 50px;
@@ -301,7 +300,8 @@ button.schedule-button.aos-init.aos-animate {
   border: 2px solid #a2c037;
   border-radius: 50%;
   padding: 10px;
-  font-size: 24px;
+  font-size: 28px;
+  font-weight: 800;
   font-family: 'Roboto', sans-serif;
   color: #29344e;
   cursor: pointer;
