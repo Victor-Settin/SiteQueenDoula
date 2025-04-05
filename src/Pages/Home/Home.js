@@ -56,12 +56,12 @@ const Home = () => {
 
   const recommendations = [
     {
-      name: 'Sarah',
-      image: cliente1,
+      name: 'Julie Barton',
+      image: cliente7,
       rating: 5,
-      date: '10/16/2022',
-      location: 'San Bruno - California',
-      comment: '“When my first daughter was born I felt very alone because I didn’t have any family around and Raquel helped me a lot! I’m very grateful for everything!”',
+      date: '04/03/2025',
+      location: 'South San Jose - California',
+      comment: '“I can’t say enough good things about Raquel - if you’re considering a nighttime doula, you can’t go wrong with inviting her into your home...”',
     },
     {
       name: 'Nathalia',
@@ -80,14 +80,6 @@ const Home = () => {
       comment: '“Raquel had helped us a lot with my first baby and we had no doubts about being with her when our second princess arrived...”',
     },
     {
-      name: 'Revşan',
-      image: cliente4,
-      rating: 5,
-      date: '12/26/2024',
-      location: 'San Mateo - California',
-      comment: '“I came to US already pregnant with no English. Raquel was very supportive and patient with me and my family...”',
-    },
-    {
       name: 'Ana Quinonez',
       image: cliente5,
       rating: 5,
@@ -104,12 +96,20 @@ const Home = () => {
       comment: '“I am thrilled to share my experience with Raquel, our Nanny and Doula. Raquel‘s gentle and loving approach made quite the difference...”',
     },
     {
-      name: 'Julie Barton',
-      image: cliente7,
+      name: 'Revşan',
+      image: cliente4,
       rating: 5,
-      date: '04/03/2025',
-      location: 'South San Jose - California',
-      comment: '“I can’t say enough good things about Raquel - if you’re considering a nighttime doula, you can’t go wrong with inviting her into your home...”',
+      date: '12/26/2024',
+      location: 'San Mateo - California',
+      comment: '“I came to US already pregnant with no English. Raquel was very supportive and patient with me and my family...”',
+    },
+    {
+      name: 'Sarah',
+      image: cliente1,
+      rating: 5,
+      date: '10/16/2022',
+      location: 'San Bruno - California',
+      comment: '“When my first daughter was born I felt very alone because I didn’t have any family around and Raquel helped me a lot! I’m very grateful for everything!”',
     },
   ];
 

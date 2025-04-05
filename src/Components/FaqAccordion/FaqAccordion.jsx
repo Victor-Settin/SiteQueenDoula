@@ -5,16 +5,27 @@ import { useState } from 'react';
 const faqItems = [
   {
     question: 'What services do you offer?',
-    answer: 'I offer full-spectrum doula services, including prenatal, birth, and postpartum support.'
+    answer: [
+      'From midnight feedings to soothing fussy moments, I’ve got your back 24/7. My services include:',
+      '• Hands-on baby care (feeding, bathing, soothing)',
+      '• Mommy and baby’s laundry',
+      '• Light meal prep for mommy',
+      '• Emotional support and newborn education',
+      '• Sleep training tips and techniques',
+      '• Guidance for purchasing baby’s layette',
+    ],
   },
   {
-    question: 'When should I hire a doula?',
-    answer: 'The earlier the better! Ideally in your second trimester, so we have time to build trust.'
+    question: 'How distance can you commute to?',
+    answer: ['I’m willing to attend families by 40 miles away from San Mateo'],
   },
   {
-    question: 'Do you work with partners and families?',
-    answer: 'Absolutely! I work with the whole family to create a supportive and empowering birth experience.'
-  }
+    question: 'Do you offer day care services?',
+    answer: [
+      'Only night shifts as postpartum doula.',
+      'And on-call nanny for day time shifts.',
+    ],
+  },
 ];
 
 export default function FaqAccordion() {
@@ -43,7 +54,9 @@ export default function FaqAccordion() {
                 </Accordion.Trigger>
               </Accordion.Header>
               <Accordion.Content className="faq-content">
-                <p>{item.answer}</p>
+                {item.answer.map((line, i) => (
+                  <p key={i}>{line}</p>
+                ))}
               </Accordion.Content>
             </Accordion.Item>
           );

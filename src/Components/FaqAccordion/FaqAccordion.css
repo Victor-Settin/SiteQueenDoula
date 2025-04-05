@@ -72,4 +72,8 @@
       transform: translateY(0);
     }
   }
+
+.faq-content p{
+  padding: 4px;
+}
   
