@@ -56,7 +56,7 @@ const Home = () => {
 
   const recommendations = [
     {
-      name: 'Julie Barton',
+      name: 'Julie',
       image: cliente7,
       rating: 5,
       date: '04/03/2025',
