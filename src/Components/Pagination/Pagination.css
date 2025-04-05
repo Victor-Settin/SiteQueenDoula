@@ -1,0 +1,26 @@
+.pagination {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  
+  .pagination li {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .pagination li.active {
+    background-color: #4b0082;
+    color: white;
+    border-color: #4b0082;
+  }
+  
+  .pagination li.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  

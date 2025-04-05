@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.959); /* Cor com opacidade */
+  background-color: rgba(255, 255, 255, 0.959);
   border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 }
@@ -27,10 +27,8 @@
   flex-direction: column;
   align-items: center;
   margin: auto;
-  
 }
 
-/* Always Floating Label */
 .form-group {
   position: relative;
   width: 100%;
@@ -48,7 +46,7 @@
 }
 
 .input-field:focus {
-  border-color: 21688e;
+  border-color: #21688e;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
 }
 
@@ -73,25 +71,25 @@
 
 label {
   position: absolute;
-  top: -9px; /* Sempre acima */
+  top: -9px;
   left: 10px;
-  font-size: 14px; /* Fonte menor para dar espaço */
-  color: #a2c037; /* Cor de destaque */
+  font-size: 14px;
+  color: #a2c037;
   background: rgba(255, 255, 255, 0.879);
-  border-radius: 5px; /* Cor com opacidade */; /* Fundo para evitar sobreposição */
+  border-radius: 5px;
   padding: 0 5px;
-  pointer-events: none; /* Evita interferência no clique */
+  pointer-events: none;
 }
 
-.terms-submit{
-  color:#a2c037;
+.terms-submit {
+  color: #a2c037;
 }
 
 .submit-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px; /* Espaçamento entre texto e ícone */
+  gap: 8px;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: 500;
@@ -105,7 +103,7 @@ label {
 }
 
 .submit-button .icon {
-  font-size: 16px; /* Tamanho do ícone */
+  font-size: 16px;
 }
 
 .submit-button:hover {
@@ -118,25 +116,22 @@ label {
   gap: 18px;
 }
 
-
 .error-message {
   color: #ff0000;
-    font-size: 14px;
-    display: contents;
-    text-align: left;
+  font-size: 14px;
+  display: contents;
+  text-align: left;
 }
 
-
 .checkbox-group {
-  display: flex
-;
+  display: flex;
   align-items: center;
   gap: 8px;
   padding: 0px 0px 15px 0px;
 }
- 
+
 .checkbox-group .checkbox {
-  transform: scale(0.6); /* Aumenta o tamanho do checkbox em 1.5 vezes */
+  transform: scale(0.6);
   margin: 0;
   cursor: pointer;
   width: 25px;
@@ -144,115 +139,62 @@ label {
   cursor: pointer;
 }
 
-
-
-.contact-form .forms{
+.contact-form .forms {
   display: flex;
   gap: 15px;
-  width:70%
+  width: 70%;
 }
 
-.card-time {
-  margin: 0 auto;
-    width: 100%;
-    max-width: 80%;
-    display: flex;
-    flex-direction: row;
-    background-color: rgba(255, 255, 255, 0.959); /* Cor com opacidade */
-    margin-top: 45px;
-    border-radius: 12px;
-    background-color: rgba(255, 255, 255, 0.959);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form .form-left,.form-right{
+.contact-form .form-left,
+.form-right {
   width: 50%;
 }
 
-.contact-form .form-right{
+.contact-form .form-right {
   width: 50%;
 }
 
-.card-time .right-side{
-  width: 50%;
-}
-
-.card-time .left-side{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding-left: 28px;
-}
-
-.card-time-image{
-  width: 100%;
-}
-
-img.contact-image {
-  width: 100%;
-  border-radius: 0px 10px 10px 0px;
-}
-
-.card-time .days{
-  font-size: 20px;
-  color: #333c51;
-  text-align: left;
-}
-
-.card-time .open{
-  font-size: 14px;
-  color: #333c51;
-  font-style: italic;
-}
-
-textarea{
+textarea {
   min-height: 150px;
 }
 
-.doula-description{
+.doula-description {
   font-size: 16px;
 }
 
 @media (max-width: 700px) {
-  .contact-form{
+  .contact-form {
     width: 100%;
   }
-  .contact-container{
+  .contact-container {
     max-width: 95%;
     width: 100%;
   }
-
   .contact-form .forms {
     display: flex;
     gap: 15px;
     width: 100%;
     flex-direction: column;
-}
-
-  textarea{
+  }
+  textarea {
     max-height: 122px;
   }
-
-  .contact-form .form-left,.form-right{
+  .contact-form .form-left,
+  .form-right {
     width: 100%;
   }
-  
-  .contact-form .form-right{
+  .contact-form .form-right {
     width: 100%;
   }
-  .section-title{
+  .section-title {
     font-size: 22px;
   }
-
-  .doula-footer{
+  .doula-footer {
     font-size: 14px;
   }
-
 }
 
 a.terms-link {
   color: #a2c037;
 }
+
