@@ -164,13 +164,6 @@ const Home = () => {
             <FaArrowDown className="arrow-icon" />
           </div>
 
-          <DoulaServices />
-
-          <button className="schedule-button" onClick={handleContactClick} data-aos="fade-up">
-            <AiOutlineCalendar style={{ marginRight: '8px', fontSize: '20px' }} />
-            Schedule a Free Consultation
-          </button>
-
           <div id="about" className="section-about-me">
             <div className="photo-about-me" data-aos="fade-up">
               <img src={deusaGregaImg} alt="Raquel, Brazilian postpartum doula" className="home-image" loading="lazy" />
@@ -189,6 +182,13 @@ const Home = () => {
               </div>
             </div>
           </div>
+
+          <DoulaServices />
+
+          <button className="schedule-button" onClick={handleContactClick} data-aos="fade-up">
+            <AiOutlineCalendar style={{ marginRight: '8px', fontSize: '20px' }} />
+            Schedule a Free Consultation
+          </button>
 
           {/* Galeria */}
           <Gallery />

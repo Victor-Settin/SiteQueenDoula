@@ -15,16 +15,37 @@ const faqItems = [
       '• Guidance for purchasing baby’s layette',
     ],
   },
+  // {
+  //   question: 'What areas do you serve? ',
+  //   answer: [
+  //       'I´m based in San Mateo and will travel up to 40 miles',
+  //   ],
+  // },
   {
     question: 'How distance can you commute to?',
-    answer: ['I’m willing to attend families by 40 miles away from San Mateo'],
+    answer: [
+        'I’m willing to attend families by 40 miles away from San Mateo',
+    ],
+  },
+  {
+    question: 'Guidance for purchasing baby’s layette.',
+    answer: [
+        'Guidance for baby´s registry - what´s really needed!',
+    ],
+  },
+  {
+    question: 'Do you work nights or days?',
+    answer: [
+        'I do night shifts as a postpartum doula, and this is where my true passion lies. Helping moms and families get much-needed rest and putting their babies on track to sleep through the night is so rewarding! I can also be an on-call nanny for daytime shifts, and appreciate getting to interact with babies and children during the day and providing nurturing, educational playtime.  ',
+    ],
   },
   {
     question: 'Do you offer day care services?',
     answer: [
       'Only night shifts as postpartum doula.',
-      'And on-call nanny for day time shifts.',
+      'And on-call nanny for day time shifts',
     ],
+    
   },
 ];
 
