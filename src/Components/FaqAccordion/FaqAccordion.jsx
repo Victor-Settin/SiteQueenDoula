@@ -33,14 +33,13 @@ const faqItems = [
         'I do night shifts as a postpartum doula, and this is where my true passion lies. Helping moms and families get much-needed rest and putting their babies on track to sleep through the night is so rewarding! I can also be an on-call nanny for daytime shifts, and appreciate getting to interact with babies and children during the day and providing nurturing, educational playtime.  ',
     ],
   },
-  {
-    question: 'Do you offer day care services?',
-    answer: [
-      'Only night shifts as postpartum doula.',
-      'And on-call nanny for day time shifts',
-    ],
-    
-  },
+  // {
+  //   question: 'Do you offer day care services?',
+  //   answer: [
+  //     'Only night shifts as postpartum doula.',
+  //     'And on-call nanny for day time shifts',
+  //   ],
+  // },
 ];
 
 export default function FaqAccordion() {
