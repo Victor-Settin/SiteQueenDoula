@@ -12,7 +12,7 @@ const faqItems = [
       '• Light meal prep for mommy',
       '• Emotional support and newborn education',
       '• Sleep training tips and techniques',
-      '• Guidance for purchasing baby’s layette',
+      '• Guidance for baby´s registry - what´s really needed!',
     ],
   },
   // {
@@ -25,12 +25,6 @@ const faqItems = [
     question: 'How distance can you commute to?',
     answer: [
         'I’m willing to attend families by 40 miles away from San Mateo',
-    ],
-  },
-  {
-    question: 'Guidance for purchasing baby’s layette.',
-    answer: [
-        'Guidance for baby´s registry - what´s really needed!',
     ],
   },
   {
