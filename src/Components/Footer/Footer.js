@@ -11,7 +11,7 @@ const Footer = () => {
       </div>
       
       {/* Copyright */}
-      <p>Copyright &copy; {new Date().getFullYear()} turtlenewbornchildcare.com - All Rights Reserved.</p>
+      <p>Copyright &copy; {new Date().getFullYear()} www.purpleturtlecare.com - All Rights Reserved.</p>
     </footer>
   );
 };
