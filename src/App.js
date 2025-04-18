@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import { HelmetProvider } from 'react-helmet-async'; // Adicionado para SEO
 import Home from './Pages/Home/Home';
 import Header from './Components/Header/Header';
