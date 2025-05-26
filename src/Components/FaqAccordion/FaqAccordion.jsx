@@ -24,7 +24,7 @@ const faqItems = [
   {
     question: 'How distance can you commute to?',
     answer: [
-        'I’m willing to attend families by 40 miles away from San Mateo',
+        'I’m willing to attend families by 40 miles away from Daly City, CA 94014',
     ],
   },
   {

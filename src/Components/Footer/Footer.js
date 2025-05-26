@@ -7,7 +7,7 @@ const Footer = () => {
       {/* Informações de Contato */}
       <div className="footer-contact">
         <p>Contact us at: <a href="mailto:raquel@purpleturtleservices.com">raquel.martins@purpleturtleservices.com</a></p>
-        <p>Location: San Mateo, CA</p>
+        <p>Location: Daly City, CA 94014</p>
       </div>
       
       {/* Copyright */}
