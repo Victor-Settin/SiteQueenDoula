@@ -39,7 +39,7 @@ const Home = () => {
 
 
   const handleContactClick = () => {
-    navigate('/contact'); // Redireciona para a página /contact
+    navigate('/contact'); // Redireciona para a página /c ontact
   };
 
   const recommendations = [
@@ -84,41 +84,7 @@ const Home = () => {
       location: "San Mateo - California", // Local individual
       comment: "“ I have known Raquel Martins Rodrigues for over 5 years. We were coworkers working for the same family in Hillsborough California. This family had 3 children and 3 Nannies. Raquel is very knowledgeable about child development and has taken many classes. She has a lot of experience working with new born babies since she has her postpartum Doula certificate. She also has experience working with toddlers and children of all ages. She's very loving, kind, patient, and caring, warm, compassionate, trustworthy and respectful. She's also a great team player, helpful, gets along with everyone. She is very resourceful and has great problem solving skills. In addition, of being an exceptional Doula and a fantastic Nanny she is the best house cleaner I have ever met. She would transform a very  disorganized and dirty house into a spotless and neat place. She has wonderful organization skills and works in house projects. Raquel goes above and beyond with all the families she works with. I would highly recommend her. ”"
     },
-    {
-      name: "Hind B.",
-      image: cliente6,
-      rating: 5,
-      date: "06/23/2025", // Data individual
-      location: "Redwood City - California", // Local individual
-      comment: "“ I highly recommend Raquel. I delivered few weeks earlier than expected and she made herself available to help us when we got home . It was great having her, she took a great care of my newborn , which allowed me to sleep and recover . In addition she helped with the laundry and tidying up the kitchen. We woke up to a content baby and an organized living area. ”"
-    }
-    ,
-    {
-      name: "Rena and Jake",
-      image: cliente7,
-      rating: 5,
-      date: "06/23/2025", // Data individual
-      location: "San Francisco - California", // Local individual
-      comment: "“ My second baby was my 'rainbow baby,' so I've always been afraid to sleep train her and somewhat over protective. Raquel arrived and made me feel so calm. From the minute I met her I trusted her with my baby. Her calm demeanor and her clear expertise made me feel at ease. In just 2 weeks my baby was sleep trained without any issues. The baby is happy and thriving and the whole family is doing really well. Additionally Raquel is like a therapist and helps the family through stress. 10/10 recommend! ”"
-    }
-    ,
-    {
-      name: "Julie B",
-      image: cliente8,
-      rating: 5,
-      date: "06/23/2025", // Data individual
-      location: "South San Jose - California", // Local individual
-      comment: "“ Raquel is fantastic and I can't recommend her enough. She was so helpful with my baby twins, not just taking good care of them overnight but also helping me as a first-time mom know good scheduling practices and other tips. ”"
-    }
-     ,
-    {
-      name: "Savannah",
-      image: cliente9,
-      rating: 5,
-      date: "06/14/2025", // Data individual
-      location: "San Francisco - California", // Local individual
-      comment: "“ Hi Raquel,I just wanted to say what a true joy it was working with you. I've had the chance to work with a lot of sleep trainers thanks to my eclectic nanny experience, and you were hands down the most immediately effective and also the most kindhearted.You brought such a calming energy into the home and made everything feel so natural and warm. It was an honor to be part of this sleep journey with you. Wishing you all the best and hoping our paths cross again soon. ”"
-    }
+    
     // Mais recomendações
   ];
 
