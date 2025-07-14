@@ -9,7 +9,7 @@ import 'aos/dist/aos.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Home.css';
-import deusaGregaImg from '../../assets/Images/deusa-grega.jpg';
+import deusaGregaImg from '../../assets/Images/raquel_profissional.jpg';
 import FirstimgHome from '../../assets/Images/foto-home1.jpg';
 import cliente2 from '../../assets/Images/no-profile.jpg';
 import cliente3 from '../../assets/Images/profile_photo.jpg';
