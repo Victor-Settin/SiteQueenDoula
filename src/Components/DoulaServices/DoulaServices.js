@@ -1,12 +1,14 @@
 import React from 'react';
-import imgDoula from '../../assets/Images/teste4.png';
+import imgDoula from '../../assets/Images/servicePhoto.png';
+import RaquelIMGside from '../../assets/Images/raquel_profissional.jpg';
+
 import './DoulaServices.css';
 
 const DoulaServices = () => {
   return (
     <section className="doula-services">
       <div className="doula-container">
-        <div 
+        {/* <div 
           className="doula-text" 
           data-aos="slide-right" 
           data-aos-duration="1000"
@@ -56,13 +58,17 @@ const DoulaServices = () => {
           <em className="doula-footer">
               Doulas: because every family deserves care and support.
           </em>
-        </div>
+        </div> */}
         <div 
           className="doula-img" 
-          data-aos="slide-right" 
-          data-aos-duration="1700"
+          data-aos="slide-left" 
+          data-aos-duration="1900"
         >
           <img src={imgDoula} alt="doulaImg" />
+        </div>
+
+         <div className="photo-about-me" data-aos="fade-up" data-aos-duration="1900">
+          <img src={RaquelIMGside} alt="Raquel, Brazilian postpartum doula" className="home-image" loading="lazy" />
         </div>
       </div>
     </section>

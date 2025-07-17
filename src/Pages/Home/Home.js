@@ -9,7 +9,7 @@ import 'aos/dist/aos.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Home.css';
-import deusaGregaImg from '../../assets/Images/raquel_profissional.jpg';
+import deusaGregaImg from '../../assets/Images/Raquel_img2.jpg';
 import FirstimgHome from '../../assets/Images/foto-home1.jpg';
 import cliente2 from '../../assets/Images/no-profile.jpg';
 import cliente3 from '../../assets/Images/profile_photo.jpg';
@@ -189,26 +189,32 @@ const Home = () => {
         <meta name="keywords" content="postpartum doula, nanny services, Daly City 94014, newborn care" />
       </Helmet>
 
-      <div className="content-box">
+     {/* <div className="content-box">
         <img src={FirstimgHome} alt="Purple Turtle Services" loading="lazy" />
-      </div>
+      </div> */}
 
       <PageWrapper>
         <div className="home-wrapper">
-          <div className="scroll-indicator" data-aos="fade-up">
+          {/* <div className="scroll-indicator" data-aos="fade-up">
             <FaArrowDown className="arrow-icon" />
-          </div>
+          </div> */}
 
-          <div id="about" className="section-about-me">
+          <div id="about" className="section-about-me" style={{ marginTop: '15px' }}>
             <div className="photo-about-me" data-aos="fade-up">
-              <img src={deusaGregaImg} alt="Raquel, Brazilian postpartum doula" className="home-image" loading="lazy" />
+              <img src={deusaGregaImg} alt="Raquel, Brazilian postpartum doula" className="home-image" loading="lazy" data-aos="fade-up" data-aos-duration="1900" />
             </div>
             <div className="description-about-me">
               <div className="content-side-about-me">
                 <b className="title-about-me" data-aos="slide-right">About Me</b>
                 <p className="text-about-me" data-aos="fade-up">
-                  I am a Brazilian postpartum doula who has been living in Bay Area for over 5 years. I have been a nanny for almost 10 years caring for toddlers, babies and school-aged children. I pride myself on being loving, warm, trustworthy, loyal, empathetic and communicative. Back home I have a bachelor’s degree in accounting and two MBAs in accounting and finance, but I have found myself once again working with newborns and babies here in the United States. It is wonderful to be with families at such a special time and to be able to treat each child as the individual person they are, with respect, warmth and integrity. I am fully vaccinated and do not smoke. I have my own reliable car. I am pet-friendly and completely stigma-free. I would be happy to share more information with your family over the phone or in an interview to further discuss my qualifications and provide my references.<br />
-                  As a postpartum doula, I can bring a lot of love to your new family and try to ease the burden that new parents inevitably feel. What I love most in life is love loving people!
+                  
+                  Originally from Brazil, Raquel is a dedicated postpartum doula who has been living in the Bay Area for six years. With nearly a decade of experience as a nanny, she has lovingly cared for toddlers, infants, and school-aged children. Known for her warm, empathetic, and trustworthy nature, she brings a deep sense of integrity and communication to every family she supports.
+
+                  Back in Brazil, she earned a bachelor’s degree in accounting along with two MBAs in accounting and finance. However, upon moving to the United States, she felt drawn back to her true passion—working with newborns and supporting families during the early stages of parenthood.
+
+                  As a postpartum doula and sleeping training consultant, she offers more than just practical help—she brings heartfelt care, respect for each child as an individual, and a calming presence to the homes she serves. She is fully vaccinated, a non-smoker, has her own reliable transportation, is pet-friendly, and proudly maintains a stigma-free approach.
+
+                  She would be happy to connect with your family to share more about her background, provide references, and discuss how she can support your unique journey into parenthood. Her greatest joy in life? Loving and caring for people with all her heart.
                 </p>
                 <button className="schedule-button" onClick={handleContactClick} data-aos="fade-up">
                   <AiOutlineCalendar style={{ marginRight: '8px', fontSize: '20px' }} />
