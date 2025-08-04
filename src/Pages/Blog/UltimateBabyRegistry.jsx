@@ -15,9 +15,9 @@ const UltimateBabyRegistry = () => {
       </nav>
 
       {/* Botão back topo */}
-      <Link to="/blog" className="back-button" aria-label="Voltar para o blog">
+      <Link to="/blog" className="back-button" aria-label="Back para o blog">
         <IoArrowBack style={{ marginRight: '8px', fontSize: '20px' }} />
-        Voltar
+        Back
       </Link>
 
       <article className="blog-article">
@@ -81,9 +81,9 @@ const UltimateBabyRegistry = () => {
       </article>
 
       {/* Botão back fim */}
-      <Link to="/blog" className="back-button bottom" aria-label="Voltar para o blog">
+      <Link to="/blog" className="back-button bottom" aria-label="Back para o blog">
         <IoArrowBack style={{ marginRight: '8px', fontSize: '20px' }} />
-        Voltar
+        Back
       </Link>
     </div>
   );

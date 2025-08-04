@@ -13,10 +13,10 @@ const SleepTraining = () => {
         <span>Sleep Training with Dr. Ferber</span>
       </nav>
 
-      {/* Botão voltar (topo) */}
-      <Link to="/blog" className="back-button" aria-label="Voltar para o blog">
+      {/* Botão Back (topo) */}
+      <Link to="/blog" className="back-button" aria-label="Back para o blog">
         <IoArrowBack className="arrow-icon" />
-        Voltar
+        Back
       </Link>
 
       <article className="blog-article">
@@ -101,10 +101,10 @@ const SleepTraining = () => {
         </ul>
       </article>
 
-      {/* Botão voltar (final) */}
-      <Link to="/blog" className="back-button bottom" aria-label="Voltar para o blog">
+      {/* Botão Back (final) */}
+      <Link to="/blog" className="back-button bottom" aria-label="Back para o blog">
         <IoArrowBack className="arrow-icon" />
-        Voltar
+        Back
       </Link>
     </div>
   );
