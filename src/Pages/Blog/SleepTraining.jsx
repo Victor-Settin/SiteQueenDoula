@@ -1,6 +1,6 @@
-// src/Pages/Blog/SleepTraining.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { IoArrowBack } from 'react-icons/io5';
 import './Blog.css';
 
 const SleepTraining = () => {
@@ -13,9 +13,10 @@ const SleepTraining = () => {
         <span>Sleep Training with Dr. Ferber</span>
       </nav>
 
-      {/* Botão Voltar topo */}
+      {/* Botão voltar (topo) */}
       <Link to="/blog" className="back-button" aria-label="Voltar para o blog">
-        ← Voltar
+        <IoArrowBack className="arrow-icon" />
+        Voltar
       </Link>
 
       <article className="blog-article">
@@ -23,17 +24,16 @@ const SleepTraining = () => {
         <p className="blog-author">By Purple Turtle Doula & Nanny Services</p>
 
         <p>Let’s talk about something most new parents dream about (literally): sleep. Or rather, the lack of it.</p>
-
         <p>You’ve swaddled, rocked, bounced, and whispered sweet lullabies in the dark at 3am… and yet, your little one is still wide awake, staring at you like it’s party time.</p>
-
         <p>Enter: The Ferber Method. Yes, it’s that thing you heard someone in your mom group whisper about — “Isn’t that the one where you let your baby cry?” Well… sort of. But also not exactly. Let’s break it down.</p>
 
         <hr />
 
         <h2>💡 What Is the Ferber Method?</h2>
-
-        <p>Developed by Dr. Richard Ferber, this method teaches your baby to self-soothe and fall asleep independently using something called “graduated extinction.”<br />
-        (Yes, it sounds like a dinosaur documentary, but hang with me.)</p>
+        <p>
+          Developed by Dr. Richard Ferber, this method teaches your baby to self-soothe and fall asleep independently using something called “graduated extinction.”<br />
+          (Yes, it sounds like a dinosaur documentary, but hang with me.)
+        </p>
 
         <p>Here’s how it works:</p>
         <ul>
@@ -47,7 +47,6 @@ const SleepTraining = () => {
         <hr />
 
         <h2>🛏 The Real-Life Benefits (for Baby and You)</h2>
-
         <ul>
           <li>✅ Better Sleep for Everyone — Once your baby learns to fall asleep independently, you both sleep longer stretches. Sleep = sanity. It’s science.</li>
           <li>✅ Builds Confidence in Your Baby — Babies actually gain emotional confidence by learning that sleep is safe — and that they can handle it. You’re giving them a gift!</li>
@@ -58,16 +57,15 @@ const SleepTraining = () => {
         <hr />
 
         <h2>🍼 But… What About the Crying?</h2>
-
-        <p>Look, no one likes hearing their baby cry. Your heart will do the cha-cha the first night. That’s normal.<br />
-        But crying is your baby’s way of adjusting. With consistency, most families see big improvements in just 3–7 nights.</p>
-
+        <p>
+          Look, no one likes hearing their baby cry. Your heart will do the cha-cha the first night. That’s normal.<br />
+          But crying is your baby’s way of adjusting. With consistency, most families see big improvements in just 3–7 nights.
+        </p>
         <p>And remember: You’re not ignoring your baby. You’re supporting them — with check-ins, love, and structure.</p>
 
         <hr />
 
         <h2>💬 Common Questions</h2>
-
         <p><strong>Q: What age can I start?</strong><br />
         A: Typically around 4–6 months, when babies are developmentally ready. Always check with your pediatrician.</p>
 
@@ -80,17 +78,19 @@ const SleepTraining = () => {
         <hr />
 
         <h2>🧸 Raquel’s Real Talk:</h2>
+        <p>
+          I’ve supported many families through Ferber-style sleep training — and I can tell you, it’s not just about sleep. It’s about giving parents their confidence back.<br />
+          And watching your baby snooze peacefully on their own? Pure magic.
+        </p>
 
-        <p>I’ve supported many families through Ferber-style sleep training — and I can tell you, it’s not just about sleep. It’s about giving parents their confidence back.<br />
-        And watching your baby snooze peacefully on their own? Pure magic.</p>
-
-        <p>Need help setting up a customized Ferber sleep plan? That’s what I’m here for.<br />
-        Let’s make sleep sweet again — for both of you 💜</p>
+        <p>
+          Need help setting up a customized Ferber sleep plan? That’s what I’m here for.<br />
+          Let’s make sleep sweet again — for both of you 💜
+        </p>
 
         <hr />
 
         <h2>💤 Ready to Try Sleep Training with Support?</h2>
-
         <p><strong>📞 Contact Purple Turtle Doula & Nanny Services</strong><br />
         I’ll help you:</p>
         <ul>
@@ -101,9 +101,10 @@ const SleepTraining = () => {
         </ul>
       </article>
 
-      {/* Botão Voltar fim */}
+      {/* Botão voltar (final) */}
       <Link to="/blog" className="back-button bottom" aria-label="Voltar para o blog">
-        ← Voltar
+        <IoArrowBack className="arrow-icon" />
+        Voltar
       </Link>
     </div>
   );

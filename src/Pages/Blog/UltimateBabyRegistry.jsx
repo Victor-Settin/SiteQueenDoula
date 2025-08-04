@@ -1,6 +1,7 @@
 // src/Pages/Blog/UltimateBabyRegistry.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { IoArrowBack } from 'react-icons/io5';
 import './Blog.css';
 
 const UltimateBabyRegistry = () => {
@@ -13,9 +14,10 @@ const UltimateBabyRegistry = () => {
         <span>The Ultimate Baby Registry Guide</span>
       </nav>
 
-      {/* Botão Voltar topo */}
+      {/* Botão back topo */}
       <Link to="/blog" className="back-button" aria-label="Voltar para o blog">
-        ← Voltar
+        <IoArrowBack style={{ marginRight: '8px', fontSize: '20px' }} />
+        Voltar
       </Link>
 
       <article className="blog-article">
@@ -78,9 +80,10 @@ const UltimateBabyRegistry = () => {
         <p className="doula-tip"><strong>💬 Doula Tip:</strong> Don’t stress about having everything before baby arrives. Focus on the essentials that bring comfort and peace of mind in the early weeks. You can always add more later as your baby grows.</p>
       </article>
 
-      {/* Botão Voltar fim */}
+      {/* Botão back fim */}
       <Link to="/blog" className="back-button bottom" aria-label="Voltar para o blog">
-        ← Voltar
+        <IoArrowBack style={{ marginRight: '8px', fontSize: '20px' }} />
+        Voltar
       </Link>
     </div>
   );

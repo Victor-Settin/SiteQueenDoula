@@ -1,6 +1,7 @@
 // src/Pages/Blog/IntroducingFoodsAndAllergies.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
 import './Blog.css';
 
 const IntroducingFoodsAndAllergies = () => {
@@ -13,20 +14,21 @@ const IntroducingFoodsAndAllergies = () => {
         <span>Introducing Foods & Preventing Allergies</span>
       </nav>
 
-      {/* Botão Voltar topo */}
-      <Link to="/blog" className="back-button" aria-label="Voltar para o blog">
-        ← Voltar
+      {/* Botão back topo */}
+      <Link to="/blog" className="back-button" aria-label="back para o blog">
+        <FaArrowLeft className="back-icon" />
+        Back
       </Link>
 
       <article className="blog-article">
         <h1 className="blog-title">🍽️ Introducing Foods & Preventing Allergies in Babies: What Parents Need to Know</h1>
         <p className="blog-author">By Purple Turtle Doula & Nanny Services</p>
 
-        <p>Starting solids is an exciting (and slightly nerve-wracking) milestone for many parents. It’s not just about what to serve — it’s also about how and when to safely introduce new foods, especially the ones that commonly cause allergies.</p>
+        <p>Starting solids is an exciting (and slightly nerve-wracking) milestone for many parents...</p>
 
         <h2>🍼 When Can I Start Feeding My Baby Solids?</h2>
-        <p>Most babies are ready to start solids around 6 months, but some may show signs a little earlier (closer to 4 months). Always talk to your pediatrician before beginning.</p>
-        <p><strong>Signs baby might be ready:</strong></p>
+        <p>Most babies are ready to start solids around 6 months...</p>
+
         <ul>
           <li>Can sit up with little or no support</li>
           <li>Has good head and neck control</li>
@@ -35,8 +37,8 @@ const IntroducingFoodsAndAllergies = () => {
         </ul>
 
         <h2>🥄 How to Introduce New Foods</h2>
-        <p>Start slow and keep it simple. You can introduce one new food every 3–5 days to monitor for any signs of reaction.</p>
-        <p><strong>Good first foods:</strong></p>
+        <p>Start slow and keep it simple...</p>
+
         <ul>
           <li>Puréed vegetables (carrots, sweet potatoes, peas)</li>
           <li>Mashed fruits (banana, avocado, pear)</li>
@@ -45,8 +47,6 @@ const IntroducingFoodsAndAllergies = () => {
         </ul>
 
         <h2>⚠ What About Allergy-Prone Foods?</h2>
-        <p>Introducing allergy-prone foods early (around 4–6 months, once your baby has tolerated a few basic solids) may actually help reduce the risk of developing food allergies, according to the American Academy of Pediatrics.</p>
-        <p><strong>Top 9 allergy-prone foods to introduce:</strong></p>
         <ul>
           <li>Peanut</li>
           <li>Egg</li>
@@ -59,29 +59,26 @@ const IntroducingFoodsAndAllergies = () => {
           <li>Sesame</li>
         </ul>
 
-        <p>📝 Start with tiny amounts, like a teaspoon of peanut butter thinned with water or breastmilk, and wait 2–3 days before introducing the next allergen.</p>
+        <p>📝 Start with tiny amounts, like a teaspoon of peanut butter thinned with water or breastmilk...</p>
 
         <h2>🧪 How Can I Make It Easier?</h2>
-        <p>If you’re nervous about introducing allergens or want a structured way to do it, there are safe, pediatrician-approved options on the market.</p>
+        <p>If you’re nervous about introducing allergens...</p>
 
         <h2>💡 Spotlight: Ready. Set. Food!</h2>
-        <p>A well-known, science-backed supplement that helps gradually introduce allergens like peanut, egg, and milk in a powder form you mix into breastmilk, formula, or baby food.</p>
         <ul>
           <li>✅ Easy to use daily</li>
           <li>✅ Clinically studied and pediatrician recommended</li>
-          <li>✅ Ideal for families who want an extra layer of support with food introduction</li>
+          <li>✅ Ideal for families who want an extra layer of support</li>
         </ul>
-        <p>Note: It’s a great option for parents who can afford it and want a guided approach — but it’s not required for allergy prevention. You can still do this naturally with whole foods!</p>
 
         <h2>🩺 When to Be Cautious:</h2>
-        <p>Contact your pediatrician before introducing allergenic foods if your baby:</p>
         <ul>
           <li>Has moderate to severe eczema</li>
           <li>Has a diagnosed food allergy</li>
           <li>Has a sibling with a history of food allergies</li>
         </ul>
 
-        <p className="doula-tip"><strong>❤ Doula Tip:</strong> Introducing solids is not just about nutrition — it’s about connection, discovery, and building trust. Take it slow, follow your baby’s cues, and don’t be afraid to ask for help.</p>
+        <p className="doula-tip"><strong>❤ Doula Tip:</strong> Introducing solids is not just about nutrition — it’s about connection...</p>
 
         <p><strong>💬 Want a custom feeding plan?</strong><br />
         Reach out to Purple Turtle Doula & Nanny Services for help with:<br />
@@ -90,9 +87,10 @@ const IntroducingFoodsAndAllergies = () => {
         • One-on-one guidance through your baby’s milestones</p>
       </article>
 
-      {/* Botão Voltar fim */}
-      <Link to="/blog" className="back-button bottom" aria-label="Voltar para o blog">
-        ← Voltar
+      {/* Botão back fim */}
+      <Link to="/blog" className="back-button bottom" aria-label="back para o blog">
+        <FaArrowLeft className="back-icon" />
+        Back
       </Link>
     </div>
   );

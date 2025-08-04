@@ -38,7 +38,7 @@ const BlogIndex = () => {
             <h2 className="blog-article-title" style={{ color: '#7b3f9a' }}>{title}</h2>
             <p className="blog-article-summary">{summary}</p>
             <Link to={`/blog/${id}`} className="blog-readmore-btn" style={{ backgroundColor: '#7b3f9a' }}>
-              Ver mais
+              See more
             </Link>
           </div>
         ))}
