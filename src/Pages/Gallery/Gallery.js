@@ -1,22 +1,38 @@
 import React, { useState } from 'react';
 import './Gallery.css';
-import img1 from '../../assets/Images/a1.jpg';
-import img2 from '../../assets/Images/img2121.jpg';
-import img3 from '../../assets/Images/img321.jpg';
-import img4 from '../../assets/Images/img11.jpg';
-import img5 from '../../assets/Images/LetterForRaquel.jpg';
-import img6 from '../../assets/Images/a6.jpg';
-import img7 from '../../assets/Images/a7.jpg';
-import img8 from '../../assets/Images/jul.jpg';
-import img9 from '../../assets/Images/gem1.jpg';
-import img10 from '../../assets/Images/gem2.jpg';
 import { motion } from 'framer-motion';
 import 'react-image-lightbox/style.css';
 import Lightbox from 'react-image-lightbox';
 import ReactPaginate from 'react-paginate';
+import { importAll } from '../../utils/loadImages';
 
+// Importa todas as imagens da pasta Kids
+const allImages = importAll(
+  require.context('../../assets/Images/Kids', false, /\.(png|jpe?g|svg)$/)
+);
+
+// Função para extrair o nome do arquivo da string do caminho
+const getFileName = (path) => path.split('/').pop();
+
+// Ordem exata que você quer na página 1
+const preferredOrder = [
+  'a6.jpg',
+  'img11.jpg',
+  'a7.jpg',
+  'gem1.jpg',
+  'a1.jpg',
+  'img2121.jpg',
+  'img321.jpg',
+  'LetterForRaquel.jpg',
+  'jul.jpg',
+];
+
+// Reorganiza as imagens: as preferidas primeiro, o resto depois
 const images = [
-  img1, img2, img3, img4, img6, img7, img5, img8, img9, img10
+  ...preferredOrder
+    .map(name => allImages.find(img => getFileName(img) === name))
+    .filter(Boolean), // evita undefined caso alguma não exista
+  ...allImages.filter(img => !preferredOrder.some(name => getFileName(img) === name))
 ];
 
 const ITEMS_PER_PAGE = 9;
@@ -52,6 +68,7 @@ const Gallery = () => {
       >
         Photo Gallery
       </motion.div>
+
       <div className="photos-container">
         <motion.div
           className="photos-grid"
@@ -74,13 +91,14 @@ const Gallery = () => {
           ))}
         </motion.div>
       </div>
+
       <ReactPaginate
-        previousLabel={'Previous'} // Alterado para inglês
-        nextLabel={'Next'}        // Alterado para inglês
+        previousLabel={'Previous'}
+        nextLabel={'Next'}
         breakLabel={'...'}
         pageCount={totalPages}
-        marginPagesDisplayed={1}  // Mostra 1 página nas extremidades antes do "..."
-        pageRangeDisplayed={2}    // Limita a 3 números de página visíveis
+        marginPagesDisplayed={1}
+        pageRangeDisplayed={2}
         onPageChange={handlePageChange}
         containerClassName={'pagination'}
         activeClassName={'active'}
@@ -93,6 +111,7 @@ const Gallery = () => {
         breakClassName={'page-item'}
         breakLinkClassName={'page-link'}
       />
+
       {isOpen && (
         <Lightbox
           mainSrc={images[photoIndex]}
@@ -102,7 +121,9 @@ const Gallery = () => {
           onMovePrevRequest={() =>
             setPhotoIndex((photoIndex + images.length - 1) % images.length)
           }
-          onMoveNextRequest={() => setPhotoIndex((photoIndex + 1) % images.length)}
+          onMoveNextRequest={() =>
+            setPhotoIndex((photoIndex + 1) % images.length)
+          }
         />
       )}
     </div>
