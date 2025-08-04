@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { AiOutlineCalendar } from 'react-icons/ai';
-import { FaArrowDown } from 'react-icons/fa';
 import Slider from 'react-slick';
 import AOS from 'aos';
 import { useMediaQuery } from 'react-responsive';
@@ -10,7 +9,6 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Home.css';
 import deusaGregaImg from '../../assets/Images/Raquel_img2.jpg';
-import FirstimgHome from '../../assets/Images/foto-home1.jpg';
 import cliente2 from '../../assets/Images/no-profile.jpg';
 import cliente3 from '../../assets/Images/profile_photo.jpg';
 import cliente4 from '../../assets/Images/img123.jpg';

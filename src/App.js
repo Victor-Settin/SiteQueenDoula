@@ -9,6 +9,7 @@ import Contact from './Pages/Contact/Contact';
 import Gallery from './Pages/Gallery/Gallery';
 import Footer from './Components/Footer/Footer';
 import Success from './Pages/Success/Success';
+import Blog from './Pages/Blog/Blog';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/success" element={<Success />} />
+            <Route path="/blog" element={<Blog />} />
           </Routes>
           <Footer />
           <Analytics />
