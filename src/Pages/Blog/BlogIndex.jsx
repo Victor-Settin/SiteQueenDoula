@@ -1,7 +1,7 @@
 // src/Pages/Blog/BlogIndex.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaBaby, FaUtensils, FaBed } from 'react-icons/fa';
+import { FaBaby, FaUtensils, FaHourglassStart } from 'react-icons/fa';
 import './Blog.css';
 
 const articles = [
@@ -19,16 +19,16 @@ const articles = [
   },
   {
     id: 'sleep-training',
-    title: '😴 Sleep Training with Dr. Ferber: Why It’s Not Cruel, Just Clever',
-    icon: <FaBed />,
-    summary: 'Discover the Ferber Method and how it helps your baby learn to self-soothe and sleep independently.',
+    title: '⏳ Sleep Training with Dr. Ferber: Why It’s Not Cruel, Just Clever',
+    icon: <FaHourglassStart />,
+    summary: 'Discover the Ferber Method and how it can help your baby learn to sleep independently with gentle guidance.',
   },
 ];
 
 const BlogIndex = () => {
   return (
     <div className="blog-index-container">
-      <h1 className="blog-index-title">Purple Turtle's Blog</h1>
+      <h1 className="blog-index-title">Purple Turtle&apos;s Blog</h1>
       <p className="blog-index-intro">Welcome to our blog! Explore our helpful articles below.</p>
       
       <div className="blog-articles-list">

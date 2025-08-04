@@ -1,10 +1,23 @@
 // src/Pages/Blog/UltimateBabyRegistry.jsx
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Blog.css';
 
 const UltimateBabyRegistry = () => {
   return (
     <div className="blog-container">
+      {/* Breadcrumb */}
+      <nav className="breadcrumb" aria-label="breadcrumb">
+        <Link to="/blog" className="breadcrumb-link">Blog</Link>
+        <span className="breadcrumb-separator"> / </span>
+        <span>The Ultimate Baby Registry Guide</span>
+      </nav>
+
+      {/* Botão Voltar topo */}
+      <Link to="/blog" className="back-button" aria-label="Voltar para o blog">
+        ← Voltar
+      </Link>
+
       <article className="blog-article">
         <h1 className="blog-title">🍼 The Ultimate Baby Registry Guide: What You Actually Need for the First 3 Months</h1>
         <p className="blog-author">By Purple Turtle Doula & Nanny Services</p>
@@ -64,6 +77,11 @@ const UltimateBabyRegistry = () => {
 
         <p className="doula-tip"><strong>💬 Doula Tip:</strong> Don’t stress about having everything before baby arrives. Focus on the essentials that bring comfort and peace of mind in the early weeks. You can always add more later as your baby grows.</p>
       </article>
+
+      {/* Botão Voltar fim */}
+      <Link to="/blog" className="back-button bottom" aria-label="Voltar para o blog">
+        ← Voltar
+      </Link>
     </div>
   );
 };

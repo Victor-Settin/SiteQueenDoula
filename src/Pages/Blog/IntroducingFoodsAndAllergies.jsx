@@ -1,10 +1,23 @@
 // src/Pages/Blog/IntroducingFoodsAndAllergies.jsx
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Blog.css';
 
 const IntroducingFoodsAndAllergies = () => {
   return (
     <div className="blog-container">
+      {/* Breadcrumb */}
+      <nav className="breadcrumb" aria-label="breadcrumb">
+        <Link to="/blog" className="breadcrumb-link">Blog</Link>
+        <span className="breadcrumb-separator"> / </span>
+        <span>Introducing Foods & Preventing Allergies</span>
+      </nav>
+
+      {/* Botão Voltar topo */}
+      <Link to="/blog" className="back-button" aria-label="Voltar para o blog">
+        ← Voltar
+      </Link>
+
       <article className="blog-article">
         <h1 className="blog-title">🍽️ Introducing Foods & Preventing Allergies in Babies: What Parents Need to Know</h1>
         <p className="blog-author">By Purple Turtle Doula & Nanny Services</p>
@@ -76,6 +89,11 @@ const IntroducingFoodsAndAllergies = () => {
         • Product recommendations<br />
         • One-on-one guidance through your baby’s milestones</p>
       </article>
+
+      {/* Botão Voltar fim */}
+      <Link to="/blog" className="back-button bottom" aria-label="Voltar para o blog">
+        ← Voltar
+      </Link>
     </div>
   );
 };
