@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { IoArrowBack } from 'react-icons/io5';
 import './Blog.css';
+import { FaArrowLeft } from 'react-icons/fa';
 
 const SleepTraining = () => {
   return (
@@ -14,10 +15,11 @@ const SleepTraining = () => {
       </nav>
 
       {/* Botão Back (topo) */}
-      <Link to="/blog" className="back-button" aria-label="Back para o blog">
-        <IoArrowBack className="arrow-icon" />
-        Back
-      </Link>
+      {/* Botão back topo */}
+            <Link to="/blog" className="back-button" aria-label="back para o blog">
+              <FaArrowLeft className="back-icon" />
+              Back
+            </Link>
 
       <article className="blog-article">
         <h1 className="blog-title">😴 Sleep Training with Dr. Ferber: Why It’s Not Cruel, Just Clever</h1>
@@ -101,11 +103,11 @@ const SleepTraining = () => {
         </ul>
       </article>
 
-      {/* Botão Back (final) */}
-      <Link to="/blog" className="back-button bottom" aria-label="Back para o blog">
-        <IoArrowBack className="arrow-icon" />
-        Back
-      </Link>
+      {/* Botão back topo */}
+            <Link to="/blog" className="back-button" aria-label="back para o blog">
+              <FaArrowLeft className="back-icon" />
+              Back
+            </Link>
     </div>
   );
 };

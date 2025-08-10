@@ -1,7 +1,6 @@
-// src/Pages/Blog/BlogIndex.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaBaby, FaUtensils, FaHourglassStart } from 'react-icons/fa';
+import { FaBaby, FaUtensils, FaHourglassStart, FaTeethOpen, FaMusic } from 'react-icons/fa';
 import './Blog.css';
 
 const articles = [
@@ -22,6 +21,18 @@ const articles = [
     title: '⏳ Sleep Training with Dr. Ferber: Why It’s Not Cruel, Just Clever',
     icon: <FaHourglassStart />,
     summary: 'Discover the Ferber Method and how it can help your baby learn to sleep independently with gentle guidance.',
+  },
+  {
+    id: 'teething-troubles',
+    title: '🦷 Teething Troubles? How to Help Your Baby (and Yourself) Survive',
+    icon: <FaTeethOpen />,
+    summary: 'Tips and tricks for soothing teething pain while keeping your sanity intact.',
+  },
+  {
+    id: 'classical-music-baby',
+    title: '🎻 Why Is My Baby Smarter Than Me? (Blame Classical Music)',
+    icon: <FaMusic />,
+    summary: 'Discover how classical music can boost your baby’s brain development and create magical bonding moments.',
   },
 ];
 

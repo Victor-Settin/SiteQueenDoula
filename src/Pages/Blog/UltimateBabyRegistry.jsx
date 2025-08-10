@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { IoArrowBack } from 'react-icons/io5';
 import './Blog.css';
+import { FaArrowLeft } from 'react-icons/fa';
 
 const UltimateBabyRegistry = () => {
   return (
@@ -15,10 +16,10 @@ const UltimateBabyRegistry = () => {
       </nav>
 
       {/* Botão back topo */}
-      <Link to="/blog" className="back-button" aria-label="Back para o blog">
-        <IoArrowBack style={{ marginRight: '8px', fontSize: '20px' }} />
-        Back
-      </Link>
+            <Link to="/blog" className="back-button" aria-label="back para o blog">
+              <FaArrowLeft className="back-icon" />
+              Back
+            </Link>
 
       <article className="blog-article">
         <h1 className="blog-title">🍼 The Ultimate Baby Registry Guide: What You Actually Need for the First 3 Months</h1>
@@ -80,11 +81,11 @@ const UltimateBabyRegistry = () => {
         <p className="doula-tip"><strong>💬 Doula Tip:</strong> Don’t stress about having everything before baby arrives. Focus on the essentials that bring comfort and peace of mind in the early weeks. You can always add more later as your baby grows.</p>
       </article>
 
-      {/* Botão back fim */}
-      <Link to="/blog" className="back-button bottom" aria-label="Back para o blog">
-        <IoArrowBack style={{ marginRight: '8px', fontSize: '20px' }} />
-        Back
-      </Link>
+      {/* Botão back topo */}
+            <Link to="/blog" className="back-button" aria-label="back para o blog">
+              <FaArrowLeft className="back-icon" />
+              Back
+            </Link>
     </div>
   );
 };

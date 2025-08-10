@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import './Blog.css';
+import { IoArrowBack } from 'react-icons/io5';
 
 const IntroducingFoodsAndAllergies = () => {
   return (
@@ -87,8 +88,8 @@ const IntroducingFoodsAndAllergies = () => {
         • One-on-one guidance through your baby’s milestones</p>
       </article>
 
-      {/* Botão back fim */}
-      <Link to="/blog" className="back-button bottom" aria-label="back para o blog">
+     {/* Botão back topo */}
+      <Link to="/blog" className="back-button" aria-label="back para o blog">
         <FaArrowLeft className="back-icon" />
         Back
       </Link>

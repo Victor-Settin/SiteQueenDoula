@@ -143,6 +143,14 @@ const Home = () => {
       date: "06/14/2025", // Data individual
       location: "San Francisco - California", // Local individual
       comment: "“ Hi Raquel,I just wanted to say what a true joy it was working with you. I've had the chance to work with a lot of sleep trainers thanks to my eclectic nanny experience, and you were hands down the most immediately effective and also the most kindhearted.You brought such a calming energy into the home and made everything feel so natural and warm. It was an honor to be part of this sleep journey with you. Wishing you all the best and hoping our paths cross again soon. ”"
+    },
+    {
+      name: "Maureen B.",
+      image: noprofile,
+      rating: 5,
+      date: "08/05/2025", // Data individual
+      location: "South San Jose - California", // Local individual
+      comment: "“ It is with great pleasure that I recommend Raquel for any position that helps care for children, especially newborns and babies . I would also recommend her for any position that helps families and households . She came into our home to help with newborn twin boys and was more than a lifesaver. From the moment she greeted us with her great big smile and her confidence and her genuine, caring heart, we knew that we were in for some very special help. Raquel is conscientious, hard-working, and gives her best with everything she does and she loves children with all her heart . She not only helped the babies with their night sleeping, she helped the whole family with support and encouragement for the new venture they were on. It has been a true pleasure to have Raquel as a part of our home and I'm sure, forevermore , a part of our hearts . ”"
     }
   ];
 
