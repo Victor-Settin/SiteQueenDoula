@@ -1,7 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from "@vercel/speed-insights/react";
 import { HelmetProvider } from 'react-helmet-async';
 
 import Home from './Pages/Home/Home';
@@ -20,6 +19,7 @@ import IntroducingFoodsAndAllergies from './Pages/Blog/IntroducingFoodsAndAllerg
 import SleepTraining from './Pages/Blog/SleepTraining';
 import TeethingTroubles from './Pages/Blog/TeethingTroubles';
 import ClassicalMusicBaby from './Pages/Blog/ClassicalMusicBaby';
+import PerfectLatch from './Pages/Blog/PerfectLatch';
 
 function App() {
   return (
@@ -40,6 +40,7 @@ function App() {
             <Route path="/blog/sleep-training" element={<SleepTraining />} />
             <Route path="/blog/teething-troubles" element={<TeethingTroubles />} />
             <Route path="/blog/classical-music-baby" element={<ClassicalMusicBaby />} />
+            <Route path="/blog/perfect-latch" element={<PerfectLatch />} />
           </Routes>
           <Footer />
           <Analytics />

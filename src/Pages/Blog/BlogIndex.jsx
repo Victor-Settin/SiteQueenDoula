@@ -34,6 +34,12 @@ const articles = [
     icon: <FaMusic />,
     summary: 'Discover how classical music can boost your baby’s brain development and create magical bonding moments.',
   },
+  {
+    id: 'perfect-latch',
+    title: '🤱 The Ultimate Guide to the Perfect Latch',
+    icon: <FaBaby />,
+    summary: 'Learn how to achieve a comfortable, effective latch for a smooth breastfeeding journey.',
+  },
 ];
 
 const BlogIndex = () => {
