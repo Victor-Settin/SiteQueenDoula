@@ -1,50 +1,58 @@
-import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Analytics } from '@vercel/analytics/react';
-import { HelmetProvider } from 'react-helmet-async';
+// src/App.js
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
+import ScrollToTop from "./ScrollToTop";
 
-import Home from './Pages/Home/Home';
-import Header from './Components/Header/Header';
-import Contact from './Pages/Contact/Contact';
-import Gallery from './Pages/Gallery/Gallery';
-import Footer from './Components/Footer/Footer';
-import Success from './Pages/Success/Success';
+// Layout fixo
+import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
 
-// Blog index
-import BlogIndex from './Pages/Blog/BlogIndex';
+// Páginas principais
+import Home from "./Pages/Home/Home";
+import BlogIndex from "./Pages/Blog/BlogIndex";
 
-// Blog posts
-import UltimateBabyRegistry from './Pages/Blog/UltimateBabyRegistry';
-import IntroducingFoodsAndAllergies from './Pages/Blog/IntroducingFoodsAndAllergies';
-import SleepTraining from './Pages/Blog/SleepTraining';
-import TeethingTroubles from './Pages/Blog/TeethingTroubles';
-import ClassicalMusicBaby from './Pages/Blog/ClassicalMusicBaby';
-import PerfectLatch from './Pages/Blog/PerfectLatch';
+// Artigos do Blog
+import UltimateBabyRegistry from "./Pages/Blog/UltimateBabyRegistry";
+import IntroducingFoodsAndAllergies from "./Pages/Blog/IntroducingFoodsAndAllergies";
+import SleepTraining from "./Pages/Blog/SleepTraining";
+import TeethingTroubles from "./Pages/Blog/TeethingTroubles";
+import ClassicalMusicBaby from "./Pages/Blog/ClassicalMusicBaby";
+import PerfectLatch from "./Pages/Blog/PerfectLatch";
+import KegelExercises from "./Pages/Blog/KegelExercises";
+import LowPressureExercises from "./Pages/Blog/LowPressureExercises";
 
 function App() {
   return (
     <HelmetProvider>
       <Router>
-        <div className="App">
-          <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/success" element={<Success />} />
+        <ScrollToTop />
 
+        {/* 🔹 Header fixo */}
+        <Header />
+
+        <main style={{ minHeight: "80vh" }}>
+          <Routes>
+            {/* Página inicial */}
+            <Route path="/" element={<Home />} />
             {/* Blog */}
             <Route path="/blog" element={<BlogIndex />} />
+            {/* Artigos do blog */}
             <Route path="/blog/ultimate-baby-registry" element={<UltimateBabyRegistry />} />
             <Route path="/blog/introducing-foods-preventing-allergies" element={<IntroducingFoodsAndAllergies />} />
             <Route path="/blog/sleep-training" element={<SleepTraining />} />
             <Route path="/blog/teething-troubles" element={<TeethingTroubles />} />
             <Route path="/blog/classical-music-baby" element={<ClassicalMusicBaby />} />
             <Route path="/blog/perfect-latch" element={<PerfectLatch />} />
+            <Route path="/blog/kegel-exercises" element={<KegelExercises />} />
+            <Route path="/blog/low-pressure-exercises" element={<LowPressureExercises />} />
+            {/* 404 */}
+            <Route path="*" element={<h1>Page not found</h1>} />
           </Routes>
-          <Footer />
-          <Analytics />
-        </div>
+        </main>
+
+        {/* 🔹 Footer fixo */}
+        <Footer />
       </Router>
     </HelmetProvider>
   );

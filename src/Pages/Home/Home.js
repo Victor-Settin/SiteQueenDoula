@@ -151,7 +151,24 @@ const Home = () => {
       date: "08/05/2025", // Data individual
       location: "South San Jose - California", // Local individual
       comment: "“ It is with great pleasure that I recommend Raquel for any position that helps care for children, especially newborns and babies . I would also recommend her for any position that helps families and households . She came into our home to help with newborn twin boys and was more than a lifesaver. From the moment she greeted us with her great big smile and her confidence and her genuine, caring heart, we knew that we were in for some very special help. Raquel is conscientious, hard-working, and gives her best with everything she does and she loves children with all her heart . She not only helped the babies with their night sleeping, she helped the whole family with support and encouragement for the new venture they were on. It has been a true pleasure to have Raquel as a part of our home and I'm sure, forevermore , a part of our hearts .  ”"
+    },
+    {
+      name: "Seoyoung Fisher",
+      image: noprofile,
+      rating: 5,
+      date: "08/24/2025", // Data individual
+      location: "San Francisco - California", // Local individual
+      comment: "“ We feel so lucky to have Raquel as our babysitter. She is responsible, reliable, and incredibly experienced with children of all ages—whether she’s caring for our 11-year-old, 9-year-old, or our 1-year-old baby, we know they are in excellent hands. She is attentive and thoughtful, going above and beyond without being asked. For example, our baby has severe eczema, and thanks to her diligence in caring for his skin, it always looks so much better after she’s with him. She’s wonderfully communicative, kind, and intelligent, and she naturally finds ways to be helpful around the house—cooking delicious meals, keeping the kitchen tidy, and engaging warmly with our children. Raquel brings peace of mind to our family, and we are so grateful for her care.”"
+    },
+    {
+      name: "Emily B.",
+      image: noprofile,
+      rating: 5,
+      date: "08/25/2025", // Data individual
+      location: "Foster City - California", // Local individual
+      comment: "“ Raquel was such a lifesaver during my postpartum journey. She helped with cleaning, shopping, and laundry, and shared so many newborn tips that made me feel more confident. Her friendly and honest nature made it easy to open up, and she truly made me feel supported and comfortable. We are continuing to use Raquel as a babysitter, now that I am ready to get out of the house on my own.”"
     }
+    
   ];
 
   const [expanded, setExpanded] = useState(Array(recommendations.length).fill(false));

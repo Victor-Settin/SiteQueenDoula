@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaBaby, FaUtensils, FaHourglassStart, FaTeethOpen, FaMusic } from 'react-icons/fa';
+import { FaBaby, FaUtensils, FaHourglassStart, FaTeethOpen, FaMusic, FaHeartbeat, FaLeaf } from 'react-icons/fa';
 import './Blog.css';
 
 const articles = [
@@ -39,6 +39,18 @@ const articles = [
     title: '🤱 The Ultimate Guide to the Perfect Latch',
     icon: <FaBaby />,
     summary: 'Learn how to achieve a comfortable, effective latch for a smooth breastfeeding journey.',
+  },
+  {
+    id: 'kegel-exercises',
+    title: '🤰💪 Kegel (Wegel) Exercises – Strengthening Your Pelvic Floor',
+    icon: <FaHeartbeat />,
+    summary: 'Learn how Kegel exercises help before and after birth, from bladder control to recovery.',
+  },
+  {
+    id: 'low-pressure-exercises',
+    title: '🌸 Low-Pressure Exercises – Gentle but Mighty',
+    icon: <FaLeaf />,
+    summary: 'Discover safe, effective low-pressure exercises for pregnancy and postpartum recovery.',
   },
 ];
 
